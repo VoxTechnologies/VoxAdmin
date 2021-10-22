@@ -5,7 +5,7 @@ var KTSubscriptionsExport = function () {
     var element;
     var submitButton;
     var cancelButton;
-    var closeButton;
+	var closeButton;
     var validator;
     var form;
     var modal;
@@ -13,109 +13,115 @@ var KTSubscriptionsExport = function () {
     // Init form inputs
     var handleForm = function () {
         // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-        validator = FormValidation.formValidation(
-            form,
-            {
-                fields: {
+		validator = FormValidation.formValidation(
+			form,
+			{
+				fields: {
                     'date': {
-                        validators: {
-                            notEmpty: {
-                                message: 'Date range is required'
-                            }
-                        }
-                    },
-                },
-                plugins: {
-                    trigger: new FormValidation.plugins.Trigger(),
-                    bootstrap: new FormValidation.plugins.Bootstrap5({
-                        rowSelector: '.fv-row',
+						validators: {
+							notEmpty: {
+								message: 'Date range is required'
+							}
+						}
+					},
+				},
+				plugins: {
+					trigger: new FormValidation.plugins.Trigger(),
+					bootstrap: new FormValidation.plugins.Bootstrap5({
+						rowSelector: '.fv-row',
                         eleInvalidClass: '',
                         eleValidClass: ''
-                    })
-                }
-            }
-        );
+					})
+				}
+			}
+		);
 
-        // Action buttons
-        submitButton.addEventListener('click', function (e) {
-            e.preventDefault();
+		// Action buttons
+		submitButton.addEventListener('click', function (e) {
+			e.preventDefault();
 
-            const dateEls = form.querySelectorAll("input");
+			// Validate form before submit
+			if (validator) {
+				validator.validate().then(function (status) {
+					console.log('validated!');
 
-            // Disable form on submit click
-            dateEls.forEach(dateEl => {
-                dateEl.disabled = true;
-            });
-
-
-            // Validate form before submit
-            if (validator) {
-                validator.validate().then(function (status) {
-                    console.log('validated!');
-
-                    if (status == 'Valid') {
-                        submitButton.setAttribute('data-kt-indicator', 'on');
+					if (status == 'Valid') {
+						submitButton.setAttribute('data-kt-indicator', 'on');
 
                         // Disable submit button whilst loading
                         submitButton.disabled = true;
 
-                        setTimeout(function () {
-                            submitButton.removeAttribute('data-kt-indicator');
-
-                            Swal.fire({
-                                text: "Customer list has been successfully exported!",
-                                icon: "success",
-                                buttonsStyling: false,
-                                confirmButtonText: "Ok, got it!",
-                                customClass: {
-                                    confirmButton: "btn btn-primary"
-                                }
-                            }).then(function (result) {
-                                if (result.isConfirmed) {
-                                    modal.hide();
+						setTimeout(function() {
+							submitButton.removeAttribute('data-kt-indicator');
+							
+							Swal.fire({
+								text: "Customer list has been successfully exported!",
+								icon: "success",
+								buttonsStyling: false,
+								confirmButtonText: "Ok, got it!",
+								customClass: {
+									confirmButton: "btn btn-primary"
+								}
+							}).then(function (result) {
+								if (result.isConfirmed) {
+									modal.hide();
 
                                     // Enable submit button after loading
                                     submitButton.disabled = false;
+								}
+							});
 
-                                    // Enable datepicker after loading
-                                    dateEls.forEach(dateEl => {
-                                        dateEl.disabled = false;
-                                    });
-                                }
-                            });
-
-                            //form.submit(); // Submit form
-                        }, 2000);
-                    } else {
-                        Swal.fire({
-                            text: "Sorry, looks like there are some errors detected, please try again.",
-                            icon: "error",
-                            buttonsStyling: false,
-                            confirmButtonText: "Ok, got it!",
-                            customClass: {
-                                confirmButton: "btn btn-primary"
-                            }
-                        }).then(function(){
-                            // Enable datepicker after loading
-                            dateEls.forEach(dateEl => {
-                                dateEl.disabled = false;
-                            });           
-                        });
-                    }
-                });
-            }
-        });
+							//form.submit(); // Submit form
+						}, 2000);   						
+					} else {
+						Swal.fire({
+							text: "Sorry, looks like there are some errors detected, please try again.",
+							icon: "error",
+							buttonsStyling: false,
+							confirmButtonText: "Ok, got it!",
+							customClass: {
+								confirmButton: "btn btn-primary"
+							}
+						});
+					}
+				});
+			}
+		});
 
         cancelButton.addEventListener('click', function (e) {
             e.preventDefault();
 
-            const dateEls = form.querySelectorAll("input");
-
-            // Disable form on submit click
-            dateEls.forEach(dateEl => {
-                dateEl.disabled = true;
+            Swal.fire({
+                text: "Are you sure you would like to cancel?",
+                icon: "warning",
+                showCancelButton: true,
+                buttonsStyling: false,
+                confirmButtonText: "Yes, cancel it!",
+                cancelButtonText: "No, return",
+                customClass: {
+                    confirmButton: "btn btn-primary",
+                    cancelButton: "btn btn-active-light"
+                }
+            }).then(function (result) {
+                if (result.value) {
+                    form.reset(); // Reset form	
+                    modal.hide(); // Hide modal				
+                } else if (result.dismiss === 'cancel') {
+                    Swal.fire({
+                        text: "Your form has not been cancelled!.",
+                        icon: "error",
+                        buttonsStyling: false,
+                        confirmButtonText: "Ok, got it!",
+                        customClass: {
+                            confirmButton: "btn btn-primary",
+                        }
+                    });
+                }
             });
+        });
 
+		closeButton.addEventListener('click', function(e){
+			e.preventDefault();
 
             Swal.fire({
                 text: "Are you sure you would like to cancel?",
@@ -131,12 +137,7 @@ var KTSubscriptionsExport = function () {
             }).then(function (result) {
                 if (result.value) {
                     form.reset(); // Reset form	
-                    modal.hide(); // Hide modal	
-                    
-                    // Enable datepicker after loading
-                    dateEls.forEach(dateEl => {
-                        dateEl.disabled = false;
-                    });        			
+                    modal.hide(); // Hide modal				
                 } else if (result.dismiss === 'cancel') {
                     Swal.fire({
                         text: "Your form has not been cancelled!.",
@@ -146,70 +147,15 @@ var KTSubscriptionsExport = function () {
                         customClass: {
                             confirmButton: "btn btn-primary",
                         }
-                    }).then(function(){
-                        // Enable datepicker after loading
-                        dateEls.forEach(dateEl => {
-                            dateEl.disabled = false;
-                        });           
                     });
                 }
             });
-        });
-
-        closeButton.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            const dateEls = form.querySelectorAll("input");
-
-            // Disable form on submit click
-            dateEls.forEach(dateEl => {
-                dateEl.disabled = true;
-            });
-
-
-            Swal.fire({
-                text: "Are you sure you would like to cancel?",
-                icon: "warning",
-                showCancelButton: true,
-                buttonsStyling: false,
-                confirmButtonText: "Yes, cancel it!",
-                cancelButtonText: "No, return",
-                customClass: {
-                    confirmButton: "btn btn-primary",
-                    cancelButton: "btn btn-active-light"
-                }
-            }).then(function (result) {
-                if (result.value) {
-                    form.reset(); // Reset form	
-                    modal.hide(); // Hide modal		
-                    
-                    // Enable datepicker after loading
-                    dateEls.forEach(dateEl => {
-                        dateEl.disabled = false;
-                    });        
-                } else if (result.dismiss === 'cancel') {
-                    Swal.fire({
-                        text: "Your form has not been cancelled!.",
-                        icon: "error",
-                        buttonsStyling: false,
-                        confirmButtonText: "Ok, got it!",
-                        customClass: {
-                            confirmButton: "btn btn-primary",
-                        }
-                    }).then(function(){
-                        // Enable datepicker after loading
-                        dateEls.forEach(dateEl => {
-                            dateEl.disabled = false;
-                        });           
-                    });
-                }
-            });
-        });
+		});
     }
 
     var initForm = function () {
         const datepicker = form.querySelector("[name=date]");
-
+        
         // Handle datepicker range -- For more info on flatpickr plugin, please visit: https://flatpickr.js.org/
         $(datepicker).flatpickr({
             altInput: true,
@@ -229,7 +175,7 @@ var KTSubscriptionsExport = function () {
             form = document.querySelector('#kt_subscriptions_export_form');
             submitButton = form.querySelector('#kt_subscriptions_export_submit');
             cancelButton = form.querySelector('#kt_subscriptions_export_cancel');
-            closeButton = element.querySelector('#kt_subscriptions_export_close');
+			closeButton = element.querySelector('#kt_subscriptions_export_close');
 
             handleForm();
             initForm();

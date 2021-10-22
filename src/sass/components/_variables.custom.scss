@@ -6,21 +6,21 @@
 
 // Theme colors
 // Primary
-$primary:       									if(isDarkMode(), #0BB783, #04C8C8);
-$primary-active:    								if(isDarkMode(), #04AA77, #00AFAF);
-$primary-light:    									if(isDarkMode(), #1C3238, #DCFDFD);
+$primary:       									if(isDarkMode(), #8950FC, #7239EA);
+$primary-active:    								if(isDarkMode(), #7337EE, #5014D0);
+$primary-light:    									if(isDarkMode(), #2F264F, #F8F5FF);
 $primary-inverse:  									#FFFFFF;
 
 // Success
-$success:       									if(isDarkMode(), #3699FF, #009EF7);
-$success-active:    								if(isDarkMode(), #187DE4, #0095E8);
-$success-light:    								    if(isDarkMode(), #212E48, #F1FAFF);
+$success:       									if(isDarkMode(), #0BB783, #50CD89);
+$success-active:    								if(isDarkMode(), #04AA77, #47BE7D);
+$success-light:    									if(isDarkMode(), #1C3238, #E8FFF3);
 $success-inverse:  									#FFFFFF;
 
 // Info
-$info:       									    if(isDarkMode(), #8950FC, #7239EA);
-$info-active:    									if(isDarkMode(), #7337EE, #5014D0);
-$info-light:    									if(isDarkMode(), #2F264F, #F8F5FF);
+$info:       									    if(isDarkMode(), #3699FF, #009EF7);
+$info-active:    								    if(isDarkMode(), #187DE4, #0095E8);
+$info-light:    								    if(isDarkMode(), #212E48, #F1FAFF);
 $info-inverse:  									#FFFFFF;
 
 // Danger
@@ -36,9 +36,4 @@ $warning-light:    									if(isDarkMode(), #392F28, #FFF8DD);
 $warning-inverse:  									#FFFFFF;
 
 // Card Box Shadow                                  
-$card-box-shadow:                                   if(isDarkMode(), none, 0px 10px 35px 0px rgba(56,71,109,0.075));
 $card-border-radius:                                0.85rem;
-
-// Font family
-$font-family-sans-serif:                            'Roboto', sans-serif;
-

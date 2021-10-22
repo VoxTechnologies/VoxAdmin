@@ -173,7 +173,7 @@ var KTIntro = function () {
     // Public methods
     return {
         init: function () {
-            initIntro('metronic');
+            initIntro('seven');
         }   
     }
 }();

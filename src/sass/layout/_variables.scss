@@ -8,14 +8,13 @@ $root-font-size-lg:                             	13px; // Root font size for tab
 $root-font-size-md:                             	12px; // Root font size for mobile mode 
 
 // Page background Color
-$page-bg: 											if(isDarkMode(), #151521, #F3F6F9) !default;
+$page-bg: 											if(isDarkMode(), #151521, $gray-100) !default;
 
 // Content Spacing
 $content-spacing: (
 	desktop: 30px, // Padding for desktop mode
 	tablet-and-mobile: 15px // Padding for tablet and mobile modes
 ) !default;
-
 
 // Header
 $header-config: (
@@ -30,7 +29,7 @@ $header-config: (
 		fixed: (
 			height: 65px,
 			z-index: 97,
-			bg-color: $body-bg,
+			bg-color: if(isDarkMode(), lighten(#1e1e2d, 2%), $white),
 			box-shadow: if(isDarkMode(), none, 0px 10px 30px 0px rgba(82,63,105,0.08))
 		)
 	),
@@ -46,16 +45,18 @@ $header-config: (
 		fixed: (
 			z-index: 97,
 			height: 55px,
-			bg-color: $body-bg,
+			bg-color: if(isDarkMode(), lighten(#1e1e2d, 2%), $white),
 			box-shadow: if(isDarkMode(), none, 0px 10px 30px 0px rgba(82,63,105,0.08))
 		)
 	)
 ) !default;
 
-
 // Aside
 $aside-config: (
-	bg-color: $body-bg,
+	bg-color: (
+		primary: if(isDarkMode(), #1e1e2d, #192440),
+		secondary: if(isDarkMode(), lighten(#1e1e2d, 2%), $white)
+	),
 	width: (
 		desktop: 425px, 
 		tablet-and-mobile: 300px
@@ -64,7 +65,14 @@ $aside-config: (
 		desktop: 100px, 
 		tablet-and-mobile: 70px
 	),
+	scrollbar-color: if(isDarkMode(), $gray-200, #3b3b64),
+	scrollbar-hover-color: if(isDarkMode(), $gray-300, lighten(#3b3b64, 3%)),
 	z-index: 98, // Aside's z-index property
 	transition-speed: 0.3s, // transition speed
-	box-shadow: if(isDarkMode(), none, 0px 0px 80px 50px rgba(206, 213, 225, 0.12))
+	box-shadow: if(isDarkMode(), none, 0px 0px 80px 50px rgba(206, 213, 225, 0.12)) // Aside's box shadow	
+) !default;
+
+// Aside
+$footer-config: (	
+	bg-color: if(isDarkMode(), #1B1B28, $white),
 ) !default;

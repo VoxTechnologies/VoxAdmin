@@ -6,11 +6,18 @@
 .aside {
 	display: flex;
 	box-shadow: get($aside-config, box-shadow);
-	background-color: get($aside-config, bg-color);
+
+	// Buttons
+	.btn-custom {
+		$active-bg-color: if(isDarkMode(), lighten(get($aside-config, bg-color, primary), 2%), #0B1632);
+
+		@include button-custom-variant($color:null, $icon-color: #A2A7B4, $border-color:null, $bg-color:null, $color-active:$white, $icon-color-active:$white, $border-color-active: $active-bg-color, $bg-color-active: $active-bg-color);
+	}
 	
 	// Aside primary panel
 	.aside-primary {
 		flex-shrink: 0;
+		background-color: get($aside-config, bg-color, primary);
 
 		// Aside secondary enabled  mode
 		.aside-secondary-enabled & {
@@ -19,13 +26,16 @@
 
 		// Aside secondary enabled and aside minimized modes disabled mode
 		.aside-secondary-enabled:not([data-kt-aside-minimize="on"]) & {
-			border-right-color: $border-color;
+			@if (isDefaultMode()) {
+				border-right-color: $border-color;
+			}			
 		}
 	}
 
 	// Aside secondary panel
 	.aside-secondary {
 		overflow: hidden;
+		background-color: get($aside-config, bg-color, secondary);
 		
 		// Workspace
 		.aside-workspace {

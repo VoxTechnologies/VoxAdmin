@@ -35,7 +35,9 @@ var KTSigninGeneral = function() {
 				plugins: {
 					trigger: new FormValidation.plugins.Trigger(),
 					bootstrap: new FormValidation.plugins.Bootstrap5({
-                        rowSelector: '.fv-row'
+                        rowSelector: '.fv-row',
+                        //eleInvalidClass: '',  uncomment to disable icons in input
+                        //eleValidClass: '' uncomment to disable icons in input
                     })
 				}
 			}
@@ -54,7 +56,6 @@ var KTSigninGeneral = function() {
 
                     // Disable button to avoid multiple click 
                     submitButton.disabled = true;
-                    
 
                     // Simulate ajax request
                     setTimeout(function() {
@@ -77,7 +78,7 @@ var KTSigninGeneral = function() {
                             if (result.isConfirmed) { 
                                 form.querySelector('[name="email"]').value= "";
                                 form.querySelector('[name="password"]').value= "";                                
-                                //form.submit(); // submit form
+                                //form.submit();
                             }
                         });
                     }, 2000);   						
