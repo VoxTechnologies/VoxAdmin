@@ -4801,7 +4801,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #001D27;
+  background-color: #001F29;
   background-clip: border-box;
   border: 1px solid #0C2F3C;
   border-radius: 0.85rem;
@@ -31264,7 +31264,7 @@ textarea.form-control-lg {
 
 .bg-body {
   --bg-color: 30, 30, 45;
-  background-color: #001D27 !important;
+  background-color: #001F29 !important;
 }
 
 .bg-lighten {
