@@ -1,0 +1,193 @@
+/* #### Gotham #### */
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-Light.eot);
+  src: url(./fonts/GothamPro-Light.woff2) format("woff2"),url(./fonts/GothamPro-Light.woff) format("woff"),url(./fonts/GothamPro-Light.ttf) format("truetype"),url(./fonts/GothamPro-Light.svg#GothamPro-Light) format("svg"),url(./fonts/GothamPro-Light.eot?#iefix) format("embedded-opentype");
+  font-weight: 100;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-LightItalic.eot);
+  src: url(./fonts/GothamPro-LightItalic.woff2) format("woff2"),url(./fonts/GothamPro-LightItalic.woff) format("woff"),url(./fonts/GothamPro-LightItalic.ttf) format("truetype"),url(./fonts/GothamPro-LightItalic.svg#GothamPro-LightItalic) format("svg"),url(./fonts/GothamPro-LightItalic.eot?#iefix) format("embedded-opentype");
+  font-weight: 100;
+  font-style: italic
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro.eot);
+  src: url(./fonts/GothamPro.woff2) format("woff2"),url(./fonts/GothamPro.woff) format("woff"),url(./fonts/GothamPro.ttf) format("truetype"),url(./fonts/GothamPro.svg#GothamPro) format("svg"),url(./fonts/GothamPro.eot?#iefix) format("embedded-opentype");
+  font-weight: 200;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-Italic.eot);
+  src: url(./fonts/GothamPro-Italic.woff2) format("woff2"),url(./fonts/GothamPro-Italic.woff) format("woff"),url(./fonts/GothamPro-Italic.ttf) format("truetype"),url(./fonts/GothamPro-Italic.svg#GothamPro-Italic) format("svg"),url(./fonts/GothamPro-Italic.eot?#iefix) format("embedded-opentype");
+  font-weight: 200;
+  font-style: italic
+}
+
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-Medium.eot);
+  src: url(./fonts/GothamPro-Medium.woff2) format("woff2"),url(./fonts/GothamPro-Medium.woff) format("woff"),url(./fonts/GothamPro-Medium.ttf) format("truetype"),url(./fonts/GothamPro-Medium.svg#GothamPro-Medium) format("svg"),url(./fonts/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-MediumItalic.eot);
+  src: url(./fonts/GothamPro-MediumItalic.woff2) format("woff2"),url(./fonts/GothamPro-MediumItalic.woff) format("woff"),url(./fonts/GothamPro-MediumItalic.ttf) format("truetype"),url(./fonts/GothamPro-MediumItalic.svg#GothamPro-MediumItalic) format("svg"),url(./fonts/GothamPro-MediumItalic.eot?#iefix) format("embedded-opentype");
+  font-weight: 400;
+  font-style: italic
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-Bold.eot);
+  src: url(./fonts/GothamPro-Bold.woff2) format("woff2"),url(./fonts/GothamPro-Bold.woff) format("woff"),url(./fonts/GothamPro-Bold.ttf) format("truetype"),url(./fonts/GothamPro-Bold.svg#GothamPro-Bold) format("svg"),url(./fonts/GothamPro-Bold.eot?#iefix) format("embedded-opentype");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-BoldItalic.eot);
+  src: url(./fonts/GothamPro-BoldItalic.woff2) format("woff2"),url(./fonts/GothamPro-BoldItalic.woff) format("woff"),url(./fonts/GothamPro-BoldItalic.ttf) format("truetype"),url(./fonts/GothamPro-BoldItalic.svg#GothamPro-BoldItalic) format("svg"),url(./fonts/GothamPro-BoldItalic.eot?#iefix) format("embedded-opentype");
+  font-weight: 600;
+  font-style: italic
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-Black.eot);
+  src: url(./fonts/GothamPro-Black.woff2) format("woff2"),url(./fonts/GothamPro-Black.woff) format("woff"),url(./fonts/GothamPro-Black.ttf) format("truetype"),url(./fonts/GothamPro-Black.svg#GothamPro-Black) format("svg"),url(./fonts/GothamPro-Black.eot?#iefix) format("embedded-opentype");
+  font-weight: 800;
+  font-style: normal
+}
+
+@font-face {
+  font-family: GothamPro;
+  src: url(./fonts/GothamPro-BlackItalic.eot);
+  src: url(./fonts/GothamPro-BlackItalic.woff2) format("woff2"),url(./fonts/GothamPro-BlackItalic.woff) format("woff"),url(./fonts/GothamPro-BlackItalic.ttf) format("truetype"),url(./fonts/GothamPro-BlackItalic.svg#GothamPro-BlackItalic) format("svg"),url(./fonts/GothamPro-BlackItalic.eot?#iefix) format("embedded-opentype");
+  font-weight: 800;
+  font-style: italic
+}
+
+/* #### Tazugane　Gothic #### */
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNUltLt.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNUltLt.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNUltLt.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNUltLt.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNUltLt.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNUltLt.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNThin.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNThin.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNThin.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNThin.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNThin.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNThin.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNLight.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNLight.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNLight.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNLight.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNLight.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNLight.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNBook.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNBook.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNBook.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBook.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBook.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNBook.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNMedium.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNMedium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNMedium.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNMedium.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNMedium.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNMedium.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNBold.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNBold.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBold.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBold.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNBold.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNHeavy.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNHeavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNHeavy.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNHeavy.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNHeavy.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNHeavy.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNBlack.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNBlack.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNBlack.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBlack.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNBlack.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNBlack.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: TazuganeGothicStdN;
+  src: url("./fonts/Monotype-TazuganeGothicStdNXBlack.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Monotype-TazuganeGothicStdNXBlack.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Monotype-TazuganeGothicStdNXBlack.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNXBlack.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/Monotype-TazuganeGothicStdNXBlack.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/Monotype-TazuganeGothicStdNXBlack.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: 900;
+  font-style: normal;
+}        
+

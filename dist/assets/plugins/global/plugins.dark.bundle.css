@@ -28433,7 +28433,7 @@ readers do not read off random characters that represent icons */
 }
 .select2-container--bootstrap5 .select2-dropdown .select2-results__option.select2-results__option--group .select2-results__group {
   display: block;
-  color: #CDCDDE;
+  color: #C1E7F3;
   font-weight: 500;
   font-size: 1.15rem;
   padding: 0 1.25rem 0 1.25rem;
@@ -28482,7 +28482,7 @@ readers do not read off random characters that represent icons */
   width: auto;
   background-color: #00202B;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
-  font-family: Poppins, Helvetica, "sans-serif";
+  font-family: 'GothamPro',Poppins, Helvetica, "sans-serif";
   z-index: 1000;
   border-radius: 0.475rem;
 }
@@ -28544,40 +28544,40 @@ readers do not read off random characters that represent icons */
   padding: 0.5rem 1rem;
 }
 .daterangepicker .drp-buttons .cancelBtn {
-  color: #CDCDDE;
+  color: #C1E7F3;
   border-color: #001820;
   background-color: #001820;
 }
 .daterangepicker .drp-buttons .cancelBtn i {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .daterangepicker .drp-buttons .cancelBtn .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #CDCDDE;
+  fill: #C1E7F3;
 }
 .daterangepicker .drp-buttons .cancelBtn .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .daterangepicker .drp-buttons .cancelBtn.dropdown-toggle:after {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .btn-check:checked + .daterangepicker .drp-buttons .cancelBtn, .btn-check:active + .daterangepicker .drp-buttons .cancelBtn, .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active), .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active), .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active), .daterangepicker .drp-buttons .cancelBtn.active, .daterangepicker .drp-buttons .cancelBtn.show, .show > .daterangepicker .drp-buttons .cancelBtn {
-  color: #CDCDDE;
+  color: #C1E7F3;
   border-color: #0C2F3C;
   background-color: #0C2F3C !important;
 }
 .btn-check:checked + .daterangepicker .drp-buttons .cancelBtn i, .btn-check:active + .daterangepicker .drp-buttons .cancelBtn i, .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active) i, .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active) i, .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active) i, .daterangepicker .drp-buttons .cancelBtn.active i, .daterangepicker .drp-buttons .cancelBtn.show i, .show > .daterangepicker .drp-buttons .cancelBtn i {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .btn-check:checked + .daterangepicker .drp-buttons .cancelBtn .svg-icon svg [fill]:not(.permanent):not(g), .btn-check:active + .daterangepicker .drp-buttons .cancelBtn .svg-icon svg [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn.active .svg-icon svg [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn.show .svg-icon svg [fill]:not(.permanent):not(g), .show > .daterangepicker .drp-buttons .cancelBtn .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #CDCDDE;
+  fill: #C1E7F3;
 }
 .btn-check:checked + .daterangepicker .drp-buttons .cancelBtn .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn-check:active + .daterangepicker .drp-buttons .cancelBtn .svg-icon svg:hover [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn.active .svg-icon svg:hover [fill]:not(.permanent):not(g), .daterangepicker .drp-buttons .cancelBtn.show .svg-icon svg:hover [fill]:not(.permanent):not(g), .show > .daterangepicker .drp-buttons .cancelBtn .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn-check:checked + .daterangepicker .drp-buttons .cancelBtn.dropdown-toggle:after, .btn-check:active + .daterangepicker .drp-buttons .cancelBtn.dropdown-toggle:after, .daterangepicker .drp-buttons .cancelBtn:focus:not(.btn-active).dropdown-toggle:after, .daterangepicker .drp-buttons .cancelBtn:hover:not(.btn-active).dropdown-toggle:after, .daterangepicker .drp-buttons .cancelBtn:active:not(.btn-active).dropdown-toggle:after, .daterangepicker .drp-buttons .cancelBtn.active.dropdown-toggle:after, .daterangepicker .drp-buttons .cancelBtn.show.dropdown-toggle:after, .show > .daterangepicker .drp-buttons .cancelBtn.dropdown-toggle:after {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .daterangepicker .drp-selected {
   font-size: 0.9rem;
@@ -28603,11 +28603,11 @@ readers do not read off random characters that represent icons */
 }
 .daterangepicker .drp-calendar th {
   font-weight: 500;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .daterangepicker .drp-calendar th.month {
   font-weight: 500;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .daterangepicker .drp-calendar th.next span, .daterangepicker .drp-calendar th.prev span {
   border-width: 0 1px 1px 0;
@@ -28819,7 +28819,7 @@ readers do not read off random characters that represent icons */
 }
 
 span.flatpickr-weekday {
-  color: #CDCDDE;
+  color: #C1E7F3;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -29520,7 +29520,7 @@ div.dataTables_wrapper div.dataTables_processing {
 .noUi-tooltip {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
   background: #0C2F3C;
-  color: #CDCDDE;
+  color: #C1E7F3;
   font-size: 0.925rem;
   border: 0;
   padding: 0.5rem 0.75rem;
@@ -29528,7 +29528,7 @@ div.dataTables_wrapper div.dataTables_processing {
 }
 
 .ql-toolbar {
-  font-family: Poppins, Helvetica, "sans-serif";
+  font-family: 'GothamPro',Poppins, Helvetica, "sans-serif";
 }
 .ql-toolbar.ql-snow {
   border: 1px solid #0C2F3C;
@@ -29720,7 +29720,7 @@ body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown):not(.modal-open
   font-weight: normal;
   font-size: 1.1rem;
   margin-top: 1.5rem;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .swal2-popup .btn {
   margin: 15px 5px 0;
@@ -29889,7 +29889,7 @@ body.swal2-height-auto {
 .apexcharts-text,
 .apexcharts-title-text,
 .apexcharts-legend-text {
-  font-family: Poppins, Helvetica, "sans-serif" !important;
+  font-family: 'GothamPro',Poppins, Helvetica, "sans-serif" !important;
 }
 
 .apexcharts-title-text {
@@ -29927,11 +29927,11 @@ body.swal2-height-auto {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
   border: 0 !important;
   background: #00202B !important;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
   background: #001820 !important;
-  color: #CDCDDE;
+  color: #C1E7F3;
   border: 0 !important;
 }
 .apexcharts-tooltip .apexcharts-tooltip-title {
@@ -29942,7 +29942,7 @@ body.swal2-height-auto {
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3) !important;
   border: 0 !important;
   background: #00202B !important;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .apexcharts-xaxistooltip.apexcharts-theme-light:before {
   border-bottom: 0 !important;
@@ -30041,7 +30041,7 @@ body.swal2-height-auto {
 }
 
 .apexcharts-bar-hover-gray-800 .apexcharts-bar-area:hover {
-  fill: #CDCDDE !important;
+  fill: #C1E7F3 !important;
 }
 
 .apexcharts-bar-hover-gray-900 .apexcharts-bar-area:hover {
@@ -30060,7 +30060,7 @@ body.swal2-height-auto {
   box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075) !important;
 }
 .leaflet-container .leaflet-popup-content-wrapper .leaflet-popup-content {
-  font-family: Poppins, Helvetica, "sans-serif";
+  font-family: 'GothamPro',Poppins, Helvetica, "sans-serif";
   font-size: 1rem;
 }
 
@@ -30204,7 +30204,7 @@ body {
 .fc .fc-toolbar-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .fc .fc-col-header-cell {
   padding: 0.75rem 0.5rem;
@@ -30212,7 +30212,7 @@ body {
 .fc .fc-col-header-cell .fc-col-header-cell-cushion {
   font-size: 1.1rem;
   font-weight: 500;
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .fc .fc-scrollgrid {
   border-radius: 0.475rem;
@@ -30239,7 +30239,7 @@ body {
   padding: 0.25rem 0.25rem;
 }
 .fc .fc-daygrid-day-number {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .fc .fc-daygrid-dot-event {
   background-color: #001820;
@@ -30269,7 +30269,7 @@ body {
   background-color: #0C2F3C;
 }
 .fc .fc-popover .fc-popover-header .fc-popover-title {
-  color: #CDCDDE;
+  color: #C1E7F3;
   font-size: 1rem;
   font-weight: 500;
 }
@@ -30382,7 +30382,7 @@ body {
   box-shadow: none;
 }
 .kanban-container .kanban-board .kanban-board-header.light .kanban-title-board {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .kanban-container .kanban-board .kanban-board-header.light-light {
   background-color: rgba(27, 27, 41, 0.1);
@@ -30410,7 +30410,7 @@ body {
   box-shadow: none;
 }
 .kanban-container .kanban-board .kanban-board-header.secondary .kanban-title-board {
-  color: #CDCDDE;
+  color: #C1E7F3;
 }
 .kanban-container .kanban-board .kanban-board-header.light-secondary {
   background-color: rgba(50, 50, 72, 0.1);
@@ -30506,7 +30506,7 @@ body {
 }
 .kanban-container .kanban-board .kanban-drag .kanban-item[data-class=light] {
   background-color: #001820;
-  color: #CDCDDE;
+  color: #C1E7F3;
   box-shadow: none;
 }
 .kanban-container .kanban-board .kanban-drag .kanban-item[data-class=light-light] {
@@ -30526,7 +30526,7 @@ body {
 }
 .kanban-container .kanban-board .kanban-drag .kanban-item[data-class=secondary] {
   background-color: #0C2F3C;
-  color: #CDCDDE;
+  color: #C1E7F3;
   box-shadow: none;
 }
 .kanban-container .kanban-board .kanban-drag .kanban-item[data-class=light-secondary] {
