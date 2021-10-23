@@ -30675,7 +30675,7 @@ textarea.form-control-lg {
   --bs-active-primary:#2189AD;
   --bs-light-success:#1C3238;
   --bs-active-success:#04AA77;
-  --bs-light-info:#212E48;
+  --bs-light-info:#004057;
   --bs-active-info:#259CC5;
   --bs-light-warning:#392F28;
   --bs-active-warning:#EE9D01;
@@ -30883,7 +30883,7 @@ textarea.form-control-lg {
 }
 
 .bg-light-info {
-  background-color: #212E48 !important;
+  background-color: #004057 !important;
 }
 .bg-light-info.hoverable:hover {
   background-color: #172133 !important;
@@ -30900,14 +30900,14 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 .bg-hover-light-info:hover {
-  background-color: #212E48 !important;
+  background-color: #004057 !important;
 }
 
 .bg-state-light-info {
   cursor: pointer;
 }
 .bg-state-light-info.active, .bg-state-light-info:hover {
-  background-color: #212E48 !important;
+  background-color: #004057 !important;
 }
 
 .bg-hover-info {
@@ -32350,7 +32350,7 @@ textarea.form-control-lg {
 }
 
 .text-light-info {
-  color: #212E48 !important;
+  color: #004057 !important;
 }
 
 .text-hover-info {
@@ -37934,8 +37934,8 @@ a:hover {
 
 .btn.btn-light-info {
   color: #51BADE;
-  border-color: #212E48;
-  background-color: #212E48;
+  border-color: #004057;
+  background-color: #004057;
 }
 .btn.btn-light-info i {
   color: #51BADE;
@@ -37994,8 +37994,8 @@ a:hover {
 
 .btn-check:checked + .btn.btn-active-light-info, .btn-check:active + .btn.btn-active-light-info, .btn.btn-active-light-info:focus:not(.btn-active), .btn.btn-active-light-info:hover:not(.btn-active), .btn.btn-active-light-info:active:not(.btn-active), .btn.btn-active-light-info.active, .btn.btn-active-light-info.show, .show > .btn.btn-active-light-info {
   color: #51BADE;
-  border-color: #212E48;
-  background-color: #212E48 !important;
+  border-color: #004057;
+  background-color: #004057 !important;
 }
 .btn-check:checked + .btn.btn-active-light-info i, .btn-check:active + .btn.btn-active-light-info i, .btn.btn-active-light-info:focus:not(.btn-active) i, .btn.btn-active-light-info:hover:not(.btn-active) i, .btn.btn-active-light-info:active:not(.btn-active) i, .btn.btn-active-light-info.active i, .btn.btn-active-light-info.show i, .show > .btn.btn-active-light-info i {
   color: #51BADE;
@@ -46181,7 +46181,7 @@ code:not([class*=language-]) {
 
 .badge-light-info {
   color: #51BADE;
-  background-color: #212E48;
+  background-color: #004057;
 }
 
 .badge-warning {
