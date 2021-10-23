@@ -34444,6 +34444,17 @@ a:hover {
   .menu-md-down-rounded-0 .menu-link {
     border-radius: 0 !important;
   }
+
+  .toolbar {
+    display: none !important;
+  }
+  .logo {
+    align-items: center;
+    -webkit-box-align: center;
+    display: flex;
+  }
+  
+
 }
 @media (max-width: 991.98px) {
   .menu-item.menu-lg-down-accordion.showing:not(.menu-dropdown) > .menu-link .menu-arrow:after, .menu-item.menu-lg-down-accordion.show:not(.hiding):not(.menu-dropdown) > .menu-link .menu-arrow:after {
@@ -34520,6 +34531,10 @@ a:hover {
 
   .menu-lg-down-rounded-0 .menu-link {
     border-radius: 0 !important;
+  }
+
+  .toolbar {
+    display: none !important;
   }
 }
 @media (max-width: 1199.98px) {
@@ -47386,8 +47401,8 @@ body {
     right: 0;
     left: 0;
     z-index: 97;
-    height: 55px;
-    min-height: 55px;
+    height: 65px;
+    min-height: 65px;
     background-color: #00232F;
     box-shadow: none;
   }
