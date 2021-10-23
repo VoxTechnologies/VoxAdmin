@@ -47237,6 +47237,7 @@ body {
   font-family: 'GothamPro',Poppins, Helvetica, "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.02em;
 }
 @media (max-width: 991.98px) {
   html,
