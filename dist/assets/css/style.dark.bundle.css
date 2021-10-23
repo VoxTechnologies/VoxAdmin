@@ -45073,7 +45073,7 @@ code:not([class*=language-]) {
   width: 36px;
   height: 36px;
   position: fixed;
-  bottom: 40px;
+  bottom: 20px;
   right: 20px;
   cursor: pointer;
   z-index: 100;
