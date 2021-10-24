@@ -2434,7 +2434,7 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 500;
   color: #9CB5C7;
 }
@@ -32659,7 +32659,7 @@ textarea.form-control-lg {
 }
 
 .text-dark {
-  color: #E3F4F9 !important;
+  color: #DCF1F8!important;
 }
 
 .text-inverse-dark {
