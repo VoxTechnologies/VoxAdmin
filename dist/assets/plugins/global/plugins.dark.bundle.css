@@ -28211,7 +28211,7 @@ readers do not read off random characters that represent icons */
   outline: none !important;
 }
 .select2-container--bootstrap5.select2-container--focus .form-select-solid, .select2-container--bootstrap5.select2-container--open .form-select-solid {
-  background-color: #00141B;
+  background-color: #001D27;
 }
 .select2-container--bootstrap5.select2-container--focus .form-select:not(.form-select-solid):not(.form-select-white), .select2-container--bootstrap5.select2-container--open .form-select:not(.form-select-solid):not(.form-select-white) {
   border-color: #114557;
