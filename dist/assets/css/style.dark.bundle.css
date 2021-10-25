@@ -45189,7 +45189,7 @@ code:not([class*=language-]) {
 }
 .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #32748A;
 }
 .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
