@@ -31,7 +31,7 @@
   --bs-danger: #FF647C;
   --bs-dark: #DCF1F8;
   --bs-white-rgb: 255, 255, 255;
-  --bs-light-rgb: 0, 26, 35;
+  --bs-light-rgb: 0, 29, 39;
   --bs-primary-rgb: 0, 189, 226;
   --bs-secondary-rgb: 0, 47, 63;
   --bs-thirdry-rgb: 0, 145, 182;
@@ -36062,15 +36062,15 @@ a:hover {
 .menu-state-bg .menu-item.hover > .menu-link:not(.disabled):not(.active),
 .menu-state-bg .menu-item .menu-link:hover:not(.disabled):not(.active) {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: rgba(0, 24, 32, 0.8);
+  background-color: rgba(0, 31, 41, 0.8);
 }
 .menu-state-bg .menu-item.here > .menu-link, .menu-state-bg .menu-item.show > .menu-link {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: rgba(0, 24, 32, 0.8);
+  background-color: rgba(0, 31, 41, 0.8);
 }
 .menu-state-bg .menu-item .menu-link.active {
   transition: color 0.2s ease, background-color 0.2s ease;
-  background-color: rgba(0, 24, 32, 0.8);
+  background-color: rgba(0, 31, 41, 0.8);
 }
 
 .menu-hover-primary .menu-item.hover > .menu-link:not(.disabled):not(.active),
