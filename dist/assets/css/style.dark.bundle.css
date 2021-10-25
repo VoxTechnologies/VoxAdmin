@@ -44,7 +44,7 @@
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 255, 255, 255;
   --bs-body-bg-rgb: 30, 30, 45;
-  --bs-font-sans-serif: 'GothamSSm',Poppins, Helvetica, "sans-serif";
+  --bs-font-sans-serif: 'Gilroy',Poppins, Helvetica, "sans-serif";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -92,7 +92,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   font-weight: 500;
   line-height: 1.2;
   color: #DCF1F8;
-  letter-spacing: -0.02em;
+  
 }
 
 h1, .h1 {
@@ -3203,7 +3203,7 @@ textarea.form-control-lg {
   font-weight: 500;
   line-height: 1.5;
   color: #DCF1F8;
-  letter-spacing: -0.02em;
+  
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
@@ -10371,28 +10371,28 @@ textarea.form-control-lg {
 }
 
 .fw-light {
-  font-weight: 300 !important;
-  letter-spacing: -0.02em;
+  font-weight: 200 !important;
+  
 }
 
 .fw-lighter {
-  font-weight: lighter !important;
-  letter-spacing: -0.02em;
+  font-weight: 100 !important;
+  
 }
 
 .fw-normal {
-  font-weight: 400 !important;
-  letter-spacing: -0.02em;
+  font-weight: 300 !important;
+  
 }
 
 .fw-bold {
-  font-weight: 500 !important;
-  letter-spacing: -0.02em;
+  font-weight: 400 !important;
+  
 }
 
 .fw-bolder {
-  font-weight: 600 !important;
-  letter-spacing: -0.02em;
+  font-weight: 500 !important;
+  
 }
 
 .lh-0 {
@@ -35812,6 +35812,7 @@ a:hover {
 }
 .menu-title-gray-600 .menu-item .menu-link .menu-title {
   color: #476880;
+  padding-top: 0.1em;
 }
 
 .menu-icon-gray-600 .menu-item .menu-link .menu-icon i {
@@ -36999,6 +37000,7 @@ a:hover {
 
 .custom-list-title{
   color: #84A3B9;
+  padding-top: 0.1em;
 }
 .custom-list-title.active{
   color: #51BADE;
@@ -47274,10 +47276,10 @@ body {
   padding: 0px;
   font-size: 13px !important;
   font-weight: 400;
-  font-family: 'GothamSSm',Poppins, Helvetica, "sans-serif";
+  font-family: 'Gilroy',Poppins, Helvetica, "sans-serif";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  letter-spacing: -0.02em;
+  
 }
 @media (max-width: 991.98px) {
   html,
