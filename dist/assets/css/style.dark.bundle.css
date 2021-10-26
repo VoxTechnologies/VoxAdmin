@@ -36998,8 +36998,8 @@ a:hover {
 }
 
 .custom-list-title{
-  color: #92D4EA;
-  fill: #92D4EA;
+  color: #A4DCEE;
+  fill: #A4DCEE;
   font-size: 1.15rem;
 }
 .custom-list-title.active{
@@ -37013,7 +37013,7 @@ a:hover {
   font-size: 1.15rem;
 }
 .custom-symbol .svg-icon svg [fill]:not(.permanent):not(g) {
-  fill: #92D4EA;
+  fill: #A4DCEE;
 }
 .custom-symbol.active .svg-icon svg [fill]:not(.permanent):not(g) {
   fill: #51BADE;
@@ -37022,8 +37022,8 @@ a:hover {
   fill: #51BADE;
 }
 .custom-list a {
-  fill: #92D4EA;
-  color: #92D4EA;
+  fill: #A4DCEE;
+  color: #A4DCEE;
 }
 .custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
@@ -37487,8 +37487,8 @@ a:hover {
   align-items: center;
   justify-content: center;
   padding: 0;
-  height: calc(1.5em + 1.5rem + 2px);
-  width: calc(1.5em + 1.5rem + 2px);
+  height: calc(1.5em + 1.5rem + 4px);
+  width: calc(1.5em + 1.5rem + 4px);
 }
 .btn.btn-icon:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush) {
   border: 0;

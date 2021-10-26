@@ -5795,7 +5795,7 @@ button.toastr-close-button {
 }
 
 .apexcharts-text tspan {
-  font-family: inherit;
+  font-family: "Gilroy", Helvetica, "sans-serif";
 }
 
 .legend-mouseover-inactive {
@@ -29889,7 +29889,7 @@ body.swal2-height-auto {
 .apexcharts-text,
 .apexcharts-title-text,
 .apexcharts-legend-text {
-  font-family: Poppins, Helvetica, "sans-serif" !important;
+  font-family: "Gilroy", Helvetica, "sans-serif" !important;
 }
 
 .apexcharts-title-text {
