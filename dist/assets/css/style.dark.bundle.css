@@ -36998,31 +36998,36 @@ a:hover {
 }
 
 .custom-list-title{
-  color: #84A3B9;
+  color: #5B84A2;
+  fill: #5B84A2;
+  font-size: 1.15rem;
 }
 .custom-list-title.active{
   color: #51BADE;
+  fill: #51BADE;
+  font-size: 1.15rem;
 }
 .custom-list-title:hover{
   color: #51BADE;
+  fill: #51BADE;
+  font-size: 1.15rem;
 }
 .custom-symbol .svg-icon svg [fill]:not(.permanent):not(g) {
-  fill: #84A3B9;
+  fill: #476880;
 }
 .custom-symbol.active .svg-icon svg [fill]:not(.permanent):not(g) {
   fill: #51BADE;
 }
 .custom-symbol .svg-icon:hover svg [fill]:not(.permanent):not(g) {
   fill: #51BADE;
+}
+.custom-list a {
+  fill: #5B84A2;
+  color: #5B84A2;
+}
+.custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
-}
-.custom-list{
-  fill: #000;
-  color: #000;
-}
-.custom-list:hover{
   fill: #51BADE;
-  color: #51BADE;
 }
 
 .anchor {
