@@ -40140,8 +40140,8 @@ code:not([class*=language-]) {
   background-color: #001D27;
 }
 .form-control.form-control-solid {
-  background-color: #001D27;
-  border-color: #001D27;
+  background-color: #001B23;
+  border-color: #001B23;
   color: #84A3B9;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -47351,7 +47351,7 @@ canvas {
   }
 }
 body {
-  background-color: #001720;
+  background-color: #001820;
 }
 
 .text-page-bg {
