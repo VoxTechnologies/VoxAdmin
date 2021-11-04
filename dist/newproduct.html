@@ -871,14 +871,23 @@
 							<!--end::Wrapper-->
 							<!--begin::Toolbar wrapper-->
 							<div class="d-flex flex-shrink-0">
-								<!--begin::Cancel-->
+								<!--begin::Discard-->
 								<div class="d-flex ms-3">
-									<a href="../dist/products.html" class="btn bg-body btn-color-gray-600 btn-active-info" tooltip="Cancel">Cancel</a>
+									<a href="../dist/products.html" class="btn bg-body btn-color-gray-600 btn-active-info" tooltip="Discard">Discard</a>
 								</div>
-								<!--end::Cancel-->
+								<!--end::Discard-->
 								<!--begin::Save-->
 								<div class="d-flex ms-3">
-									<a href="../dist/product_detail.html" class="btn btn-info" tooltip="Save">Save</a>
+									<a href="../dist/product_edit.html" class="btn btn-info" tooltip="Save"><!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+									<span class="svg-icon svg-icon-2 me-1">
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path d="M10 18C9.7 18 9.5 17.9 9.3 17.7L2.3 10.7C1.9 10.3 1.9 9.7 2.3 9.3C2.7 8.9 3.29999 8.9 3.69999 9.3L10.7 16.3C11.1 16.7 11.1 17.3 10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="black"/>
+												<path d="M10 18C9.7 18 9.5 17.9 9.3 17.7C8.9 17.3 8.9 16.7 9.3 16.3L20.3 5.3C20.7 4.9 21.3 4.9 21.7 5.3C22.1 5.7 22.1 6.30002 21.7 6.70002L10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="black"/>
+										</svg>
+									</span>
+									<!--end::Svg Icon-->
+									Save
+									</a>
 								</div>
 								<!--end::Save-->
 							</div>
@@ -913,7 +922,7 @@
 												<!--begin::Details-->
 												<div class="d-flex flex-wrap py-1">
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-300px fv-row">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3 required">Product Name</label>
 														<!--end::Label-->
@@ -923,7 +932,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal min-w-125px fv-row">
+													<div class="flex-equal min-w-300px fv-row">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Size, Volume, Weight, Qty, Color</label>
 														<!--end::Label-->
@@ -945,9 +954,9 @@
 												</div>
 												<!--end::Details-->
 												<!--begin::Details-->
-												<div class="d-flex flex-wrap py-1">
+												<div class="d-flex flex-wrap">
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-300px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Ingredients</label>
 														<!--end::Label-->
@@ -957,7 +966,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal min-w-125px fv-row">
+													<div class="flex-equal min-w-300px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Warnings</label>
 														<!--end::Label-->
@@ -976,9 +985,9 @@
 												<h5 class="mb-6">Specifications:</h5>
 												<!--end::Title-->
 												<!--begin::Details-->
-												<div class="d-flex flex-wrap py-1">
+												<div class="d-flex flex-wrap">
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Brand</label>
 														<!--end::Label-->
@@ -994,7 +1003,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">SKU#</label>
 														<!--end::Label-->
@@ -1004,7 +1013,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal min-w-125px">
+													<div class="flex-equal min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">GTIN, UPC, EAN, JAN</label>
 														<!--end::Label-->
@@ -1024,7 +1033,7 @@
 														<!--end::Label-->
 														<!--begin::Input-->
 														<div class="input-group input-group-solid mb-5">
-															<input type="text" pattern="^[0-9]+$" class="form-control form-control-lg form-control-solid" value="0"/>
+															<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 															<span class="input-group-text">g</span>
 														</div>
 														<!--end::Input-->
@@ -1037,7 +1046,7 @@
 														<!--end::Label-->
 														<!--begin::Input-->
 														<div class="input-group input-group-solid mb-5">
-															<input type="text" pattern="^[0-9]+$" class="form-control form-control-lg form-control-solid" value="0"/>
+															<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 															<span class="input-group-text">mm</span>
 														</div>
 														<!--end::Input-->
@@ -1050,7 +1059,7 @@
 														<!--end::Label-->
 														<!--begin::Input-->
 														<div class="input-group input-group-solid mb-5">
-															<input type="text" pattern="^[0-9]+$" class="form-control form-control-lg form-control-solid" value="0"/>
+															<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 															<span class="input-group-text">mm</span>
 														</div>
 														<!--end::Input-->
@@ -1063,7 +1072,7 @@
 														<!--end::Label-->
 														<!--begin::Input-->
 														<div class="input-group input-group-solid mb-5">
-															<input type="text" pattern="^[0-9]+$" class="form-control form-control-lg form-control-solid" value="0"/>
+															<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 															<span class="input-group-text">mm</span>
 														</div>
 														<!--end::Input-->
@@ -1079,9 +1088,9 @@
 												<h5 class="mb-6">Categorization:</h5>
 												<!--end::Title-->
 												<!--begin::Details-->
-												<div class="d-flex flex-wrap py-1">
+												<div class="d-flex flex-wrap">
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Subcategory</label>
 														<!--end::Label-->
@@ -1108,7 +1117,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal me-5 min-w-125px fv-row">
+													<div class="flex-equal me-5 min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Tag</label>
 														<!--end::Label-->
@@ -1124,7 +1133,7 @@
 													</div>
 													<!--end::Row-->
 													<!--begin::Row-->
-													<div class="flex-equal min-w-125px fv-row">
+													<div class="flex-equal min-w-200px fv-row py-1">
 														<!--begin::Label-->
 														<label class="form-label fs-6 mb-3">Collection</label>
 														<!--end::Label-->
@@ -1176,7 +1185,7 @@
 																<!--begin::Info-->
 																<div class="ms-4">
 																	<h3 class="fs-5 fw-bold text-gray-800 mt-1 mb-1">Drop files here or click to upload.</h3>
-																	<span class="fs-7 fw-bold text-gray-500">Upload up to 10 files</span>
+																	<span class="fs-7 fw-bold text-gray-700">Upload up to 10 files</span>
 																</div>
 																<!--end::Info-->
 															</div>
@@ -1223,7 +1232,7 @@
 												<!--begin::Price-->
 												<div class="input-group input-group-solid mb-5">
 													<span class="input-group-text">$</span>
-													<input type="text" class="form-control"/>
+													<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 													<span class="input-group-text">USD</span>
 												</div>
 												<!--end::Price-->
@@ -1240,7 +1249,7 @@
 												<!--begin::New Available-->
 												<div class="input-group input-group-solid mb-5">
 													<span class="input-group-text">QTY</span>
-													<input type="text" class="form-control"/>
+													<input class="form-control form-control-lg form-control-solid" value="0" id="kt_inputmask_5" inputmode="decimal" style="text-align: right;"/>
 												</div>
 												<!--end::New Available-->
 											</div>
