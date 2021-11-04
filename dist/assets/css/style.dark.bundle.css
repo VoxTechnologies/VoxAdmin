@@ -2436,7 +2436,7 @@ progress {
 .form-label {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
-  font-weight: 500;
+  font-weight: 400;
   color: #9CB5C7;
 }
 
@@ -2594,7 +2594,7 @@ progress {
 .form-control-lg {
   min-height: calc(1.5em + 1.65rem + 2px);
   padding: 0.825rem 1.5rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   border-radius: 0.475rem;
 }
 .form-control-lg::file-selector-button {
@@ -2638,13 +2638,13 @@ textarea.form-control-lg {
 .form-select {
   display: block;
   width: 100%;
-  padding: 0.75rem 3rem 0.75rem 1rem;
+  padding: 0.75rem 3rem 0.75rem 1.5rem;
   -moz-padding-start: calc(1rem - 3px);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   color: #DCF1F8;
-  background-color: #001D27;
+  background-color: #001B23;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba(71, 104, 128, 1.0)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 1rem center;
@@ -2689,7 +2689,7 @@ textarea.form-control-lg {
   padding-top: 0.825rem;
   padding-bottom: 0.825rem;
   padding-left: 1.5rem;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   border-radius: 0.475rem;
 }
 
@@ -2973,7 +2973,7 @@ textarea.form-control-lg {
   font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.5;
-  color: #DCF1F8;
+  color: #476880;
   text-align: center;
   white-space: nowrap;
   background-color: #001D27;
@@ -40142,7 +40142,7 @@ code:not([class*=language-]) {
 .form-control.form-control-solid {
   background-color: #001B23;
   border-color: #001B23;
-  color: #84A3B9;
+  color: #BCE5F2;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .form-control.form-control-solid::placeholder {
@@ -40155,7 +40155,7 @@ code:not([class*=language-]) {
 .dropdown.show > .form-control.form-control-solid, .form-control.form-control-solid:active, .form-control.form-control-solid.active, .form-control.form-control-solid:focus, .form-control.form-control-solid.focus {
   background-color: #001A23;
   border-color: #001A23;
-  color: #84A3B9;
+  color: #D9F0F8;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .form-control.form-control-white {
@@ -40198,8 +40198,8 @@ code:not([class*=language-]) {
   box-shadow: none !important;
 }
 .form-select.form-select-solid {
-  background-color: #001D27;
-  border-color: #001D27;
+  background-color: #001B23;
+  border-color: #001B23;
   color: #6E93AD;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -40309,8 +40309,8 @@ code:not([class*=language-]) {
 }
 
 .input-group.input-group-solid {
-  background-color: #001D27;
-  border-color: #001D27;
+  background-color: #001B23;
+  border-color: #001B23;
   border-radius: 0.475rem;
 }
 .input-group.input-group-solid.input-group-sm {

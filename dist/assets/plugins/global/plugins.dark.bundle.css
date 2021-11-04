@@ -66,9 +66,8 @@
   padding: 0;
   max-width: 100%;
   resize: none;
-  height: 18px;
+  height: 21px;
   vertical-align: bottom;
-  font-family: sans-serif;
   overflow: hidden;
   word-break: keep-all;
 }
@@ -183,7 +182,7 @@
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
-  line-height: 28px;
+  line-height: 21px;
 }
 
 .select2-container--default .select2-selection--single .select2-selection__clear {
@@ -454,7 +453,7 @@
 
 .select2-container--classic .select2-selection--single .select2-selection__rendered {
   color: #444;
-  line-height: 28px;
+  line-height: 21px;
 }
 
 .select2-container--classic .select2-selection--single .select2-selection__clear {
@@ -28211,14 +28210,14 @@ readers do not read off random characters that represent icons */
   outline: none !important;
 }
 .select2-container--bootstrap5.select2-container--focus .form-select-solid, .select2-container--bootstrap5.select2-container--open .form-select-solid {
-  background-color: #001D27;
+  background-color: #001B23;
 }
 .select2-container--bootstrap5.select2-container--focus .form-select:not(.form-select-solid):not(.form-select-white), .select2-container--bootstrap5.select2-container--open .form-select:not(.form-select-solid):not(.form-select-white) {
   border-color: #114557;
 }
 .select2-container--bootstrap5 .select2-search.select2-search--inline .select2-search__field {
   color: #E3F4F9;
-  font-weight: 500;
+  font-weight: 400;
   background-color: transparent;
   border: 0;
   box-shadow: none;
@@ -28227,20 +28226,20 @@ readers do not read off random characters that represent icons */
   padding: 0;
 }
 .select2-container--bootstrap5 .select2-search.select2-search--inline .select2-search__field::placeholder {
-  color: #145369;
+  color: #476880;
 }
 .select2-container--bootstrap5 .select2-search.select2-search--inline .select2-search__field::-moz-placeholder {
-  color: #145369;
+  color: #476880;
   opacity: 1;
 }
 .select2-container--bootstrap5 .form-select-solid .select2-search.select2-search--inline .select2-search__field {
   color: #6E93AD;
 }
 .select2-container--bootstrap5 .form-select-solid .select2-search.select2-search--inline .select2-search__field::placeholder {
-  color: #145369;
+  color: #476880;
 }
 .select2-container--bootstrap5 .form-select-solid .select2-search.select2-search--inline .select2-search__field::-moz-placeholder {
-  color: #145369;
+  color: #476880;
   opacity: 1;
 }
 .select2-container--bootstrap5 .select2-selection--single {
@@ -28260,7 +28259,7 @@ readers do not read off random characters that represent icons */
   color: #145369;
 }
 .select2-container--bootstrap5 .select2-selection--single.form-select-solid .select2-selection__rendered {
-  color: #6E93AD;
+  color: #BCE5F2;
 }
 .select2-container--bootstrap5 .select2-selection--single.form-select-solid .select2-selection__placeholder {
   color: #476880;
@@ -28278,16 +28277,17 @@ readers do not read off random characters that represent icons */
   align-items: center;
   position: relative;
   background-color: #0C2F3C;
+  color: #51BADE;
 }
 .select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove {
   display: block;
   position: absolute;
   transform: translateY(-50%);
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2392929F'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(192, 231, 244, 1.0)'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center;
   background-color: transparent;
-  opacity: 0.5;
+  opacity: 0.7;
   border: 0;
   transition: color 0.2s ease, background-color 0.2s ease;
   top: 50%;
@@ -28297,7 +28297,7 @@ readers do not read off random characters that represent icons */
 }
 .select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__remove:hover {
   opacity: 1;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%238950FC'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(233, 233, 233, 1.0)'%3e%3cpath d='M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z'/%3e%3c/svg%3e");
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .select2-container--bootstrap5 .select2-selection--multiple .select2-selection__rendered .select2-selection__choice .select2-selection__choice__display {
@@ -28328,8 +28328,11 @@ readers do not read off random characters that represent icons */
   margin-bottom: calc(0.75rem - (1.5rem + 2px - 0.8rem) / 2);
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-lg {
-  padding-top: calc((1.65rem + 2px - 0.8rem) / 2);
-  padding-bottom: calc((1.65rem + 2px - 0.8rem) / 2);
+  padding-top: 0.825rem;
+  padding-bottom: 0.825rem;
+  padding-left: 1.5rem;
+  font-size: 1.15rem;
+  border-radius: 0.475rem;
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-lg .select2-selection__choice {
   border-radius: 0.4rem;
@@ -28343,13 +28346,12 @@ readers do not read off random characters that represent icons */
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-lg .select2-selection__choice .select2-selection__choice__display {
   margin-left: 1.2rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
+  margin-right: 0.2rem;
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-lg .select2-search.select2-search--inline .select2-search__field {
   padding-top: 0;
   padding-bottom: 0;
-  margin-top: calc(0.825rem - (1.65rem + 2px - 0.8rem) / 2);
-  margin-bottom: calc(0.825rem - (1.65rem + 2px - 0.8rem) / 2);
 }
 .select2-container--bootstrap5 .select2-selection--multiple.form-select-sm {
   padding-top: calc((1.1rem + 2px - 0.6rem) / 2);
