@@ -2437,7 +2437,7 @@ progress {
   margin-bottom: 0.5rem;
   font-size: 0.95rem;
   font-weight: 400;
-  color: #9CB5C7;
+  color: #3C5D74;
 }
 
 .col-form-label {
@@ -45026,7 +45026,7 @@ code:not([class*=language-]) {
   position: relative;
   z-index: 0;
   margin-left: -10px;
-  border: 2px solid #001D27;
+  border: 2px solid #001F2A;
   transition: all 0.3s ease;
 }
 .symbol-group .symbol:hover {

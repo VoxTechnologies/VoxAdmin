@@ -73779,3 +73779,25 @@ Inputmask({
 		}
 	}
 }).mask("#kt_inputmask_8");
+
+
+//SweetAlert
+const button = document.getElementById('kt_docs_sweetalert_html');
+
+button.addEventListener('click', e =>{
+	e.preventDefault();
+
+	Swal.fire({
+		html: `A SweetAlert content with <strong>bold text</strong>, <a href="#">links</a>
+			 or any of our available <span class="badge badge-primary">components</span>`,
+		icon: "info",
+		buttonsStyling: false,
+		showCancelButton: true,
+		confirmButtonText: "Ok, got it!",
+		cancelButtonText: 'Nope, cancel it',
+		customClass: {
+			confirmButton: "btn btn-primary",
+			cancelButton: 'btn btn-danger'
+		}
+	});
+});
