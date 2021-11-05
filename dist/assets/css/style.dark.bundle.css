@@ -42075,6 +42075,7 @@ code:not([class*=language-]) {
   border-radius: 0.475rem;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 100%;
 }
 .image-input [data-kt-image-input-action=change] {
   cursor: pointer;
@@ -42092,7 +42093,7 @@ code:not([class*=language-]) {
 .image-input [data-kt-image-input-action=remove] {
   position: absolute;
   right: -10px;
-  bottom: -5px;
+  bottom: -8px;
 }
 .image-input [data-kt-image-input-action=cancel] {
   display: none;
@@ -42123,8 +42124,9 @@ code:not([class*=language-]) {
   bottom: 5px;
 }
 .image-input.image-input-outline .image-input-wrapper {
-  border: 3px solid #DCF1F8;
   box-shadow: 0 0.5rem 1.5rem 0.5rem rgba(0, 0, 0, 0.075);
+  padding-top: 100%;
+  box-sizing: content-box;
 }
 
 .symbol {
