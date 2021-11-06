@@ -5837,7 +5837,7 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #00222E;
+  background-color: #03242f;
   background-clip: padding-box;
   border: 0 solid rgba(0, 0, 0, 0.2);
   border-radius: 0.475rem;
@@ -37022,8 +37022,8 @@ a:hover {
   fill: #51BADE;
 }
 .custom-list a {
-  fill: #92D4EA;
-  color: #92D4EA;
+  fill: #4d8194;
+  color: #4d8194;
 }
 .custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
