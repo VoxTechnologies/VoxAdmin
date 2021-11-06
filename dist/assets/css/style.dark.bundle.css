@@ -4804,9 +4804,9 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #001F29;
+  background-color: #03212b;
   background-clip: border-box;
-  border: 1px solid #0C2F3C;
+  border: 1px solid #03212b;
   border-radius: 0.85rem;
   box-shadow: none;
 }
@@ -47422,7 +47422,7 @@ body {
     right: 0;
     left: 0;
     z-index: 97;
-    background-color: #00232F;
+    background-color: #02232e;
     box-shadow: none;
     height: 65px;
     padding: 0;
@@ -47483,8 +47483,8 @@ body {
 }
 .btn-check:checked + .aside .btn-custom, .btn-check:active + .aside .btn-custom, .aside .btn-custom:focus:not(.btn-active), .aside .btn-custom:hover:not(.btn-active), .aside .btn-custom:active:not(.btn-active), .aside .btn-custom.active, .aside .btn-custom.show, .show > .aside .btn-custom {
   color: #DCF1F8;
-  border-color: #00232F;
-  background-color: #00232F !important;
+  border-color: #012532;
+  background-color: #012532 !important;
 }
 .btn-check:checked + .aside .btn-custom i, .btn-check:active + .aside .btn-custom i, .aside .btn-custom:focus:not(.btn-active) i, .aside .btn-custom:hover:not(.btn-active) i, .aside .btn-custom:active:not(.btn-active) i, .aside .btn-custom.active i, .aside .btn-custom.show i, .show > .aside .btn-custom i {
   color: #DCF1F8;
@@ -47501,14 +47501,14 @@ body {
 }
 .aside .aside-primary {
   flex-shrink: 0;
-  background-color: #001D27;
+  background-color: #001f29;
 }
 .aside-secondary-enabled .aside .aside-primary {
   border-right: 1px solid transparent;
 }
 .aside .aside-secondary {
   overflow: hidden;
-  background-color: #00232F;
+  background-color: #02232e;
 }
 .aside .aside-secondary .aside-workspace {
   width: 325px;
