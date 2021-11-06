@@ -37003,27 +37003,27 @@ a:hover {
   font-size: 1.15rem;
 }
 .custom-list-title.active{
-  color: #51BADE;
-  fill: #51BADE;
+  color: #75C8E5;
+  fill: #75C8E5;
   font-size: 1.15rem;
 }
 .custom-list-title:hover{
-  color: #51BADE;
-  fill: #51BADE;
+  color: #75C8E5;
+  fill: #75C8E5;
   font-size: 1.15rem;
 }
 .custom-symbol .svg-icon svg [fill]:not(.permanent):not(g) {
   fill: #92D4EA;
 }
 .custom-symbol.active .svg-icon svg [fill]:not(.permanent):not(g) {
-  fill: #51BADE;
+  fill: #75C8E5;
 }
 .custom-symbol .svg-icon:hover svg [fill]:not(.permanent):not(g) {
-  fill: #51BADE;
+  fill: #75C8E5;
 }
 .custom-list a {
-  fill: #4d8194;
-  color: #4d8194;
+  fill: #5b9db5;
+  color: #5b9db5;
 }
 .custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
