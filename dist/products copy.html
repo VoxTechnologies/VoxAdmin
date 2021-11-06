@@ -956,42 +956,11 @@
 													<!--begin::Input group-->
 													<div class="mb-6">
 														<label class="form-label fs-6 fw-bold">Subcategory:</label>
-														<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Subcategory" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
 															<option></option>
-															<optgroup label="Category A">
-																<option value="Subcategory A">Subcategory A</option>
-																<option value="Subcategory B">Subcategory B</option>
-															</optgroup>
-															<optgroup label="Category B">
-																<option value="Subcategory C">Subcategory C</option> 
-																<option value="Subcategory D">Subcategory D</option>
-															</optgroup>
-															<optgroup label="Category C">
-																<option value="Subcategory E">Subcategory E</option>
-																<option value="Subcategory F">Subcategory F</option>
-																<option value="Subcategory G">Subcategory G</option>
-															</optgroup>
-														</select>
-													</div>
-													<!--end::Input group-->
-													<!--begin::Input group-->
-													<div class="mb-6">
-														<label class="form-label fs-6 fw-bold">Group:</label>
-														<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Subcategory" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
-															<option></option>
-															<optgroup label="Subcategory A">
-																<option value="Group A">Group A</option>
-																<option value="Group B">Group B</option>
-															</optgroup>
-															<optgroup label="Subcategory B">
-																<option value="Group C">Group C</option> 
-																<option value="Group D">Group D</option>
-															</optgroup>
-															<optgroup label="Subcategory C">
-																<option value="Group E">Group E</option>
-																<option value="Group F">Group F</option>
-																<option value="Group G">Group G</option>
-															</optgroup>
+															<option value="Subcategory a">Subcategory A</option>
+															<option value="Subcategory B">Subcategory B</option>
+															<option value="Subcategory C">Subcategory C</option>
 														</select>
 													</div>
 													<!--end::Input group-->
@@ -1066,12 +1035,11 @@
 													</div>
 												</th>
 												<th class="min-w-300px">Product</th>
-												<th class="min-w-40px">Category</th>
-												<th class="min-w-40px">Subcategory</th>
-												<th class="min-w-40px">Group</th>
-												<th class="min-w-40px">Collection</th>
-												<th class="min-w-40px">Status</th>
-												<th class="text-end min-w-80px sorting_disabled">Actions</th>
+												<th class="min-w-100px">Category</th>
+												<th class="min-w-125px">Subcategory</th>
+												<th class="min-w-125px">Collection</th>
+												<th class="min-w-60px">Status</th>
+												<th class="text-end min-w-100px sorting_disabled">Actions</th>
 											</tr>
 											<!--end::Table row-->
 										</thead>
@@ -1116,11 +1084,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Chips</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Organics</div>
@@ -1198,11 +1161,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Sauce</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Hot Sauce</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Pantry Essentials</div>
@@ -1280,11 +1238,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Sparkling Water</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Sugar-conscious</div>
@@ -1362,11 +1315,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks, Chips, Salsas & Dips</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Macadamia Nuts</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1"></div>
@@ -1444,11 +1392,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Coffee</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Grind Coffee</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Wake You Up</div>
@@ -1524,13 +1467,9 @@
 												<!--begin::Subcategory=-->
 												<td>
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Wine</div>
-												</td>
-												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Red Wine</div>
 												</td>
-												<!--end::Group=-->
+												<!--end::Subcategory=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1"></div>
@@ -1605,14 +1544,9 @@
 												<!--end::Category=-->
 												<!--begin::Subcategory=-->
 												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks</div>
+													<div class="badge badge-light-info fw-bolder my-1 me-1">Breads</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Cookies</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1"></div>
@@ -1687,14 +1621,9 @@
 												<!--end::Category=-->
 												<!--begin::Subcategory=-->
 												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Milk</div>
+													<div class="badge badge-light-info fw-bolder my-1 me-1">Almond</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Almond Milk</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Dairy Alternatives</div>
@@ -1772,11 +1701,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Pork</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Salami</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Dairy Alternatives</div>
@@ -1854,11 +1778,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Home & Kitchen</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Air Freshener</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1"></div>
@@ -1936,11 +1855,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Oil</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Avocado Oil</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1">Vegan</div>
@@ -2018,11 +1932,6 @@
 													<div class="badge badge-light-info fw-bolder my-1 me-1">Ice Cream & Frozen Desserts</div>
 												</td>
 												<!--end::Subcategory=-->
-												<!--begin::Group=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Gelato</div>
-												</td>
-												<!--end::Group=-->
 												<!--begin::Collection=-->
 												<td>
 													<div class="badge badge-light-primary fw-bolder my-1 me-1"></div>
