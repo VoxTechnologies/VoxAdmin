@@ -37013,7 +37013,7 @@ a:hover {
   font-size: 1.15rem;
 }
 .custom-symbol .svg-icon svg [fill]:not(.permanent):not(g) {
-  fill: #92D4EA;
+  fill: #5691a7;
 }
 .custom-symbol.active .svg-icon svg [fill]:not(.permanent):not(g) {
   fill: #75C8E5;
@@ -37022,8 +37022,8 @@ a:hover {
   fill: #75C8E5;
 }
 .custom-list a {
-  fill: #5b9db5;
-  color: #5b9db5;
+  fill: #5691a7;
+  color: #5691a7;
 }
 .custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
