@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Collections - Manage - VoxStore</title>
+		<title>Categories - Manage - VoxStore</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
@@ -648,7 +648,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a href="../dist/categories.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2">
+														<a href="../dist/categories.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2 active">
 															<!--begin::Symbol-->
 															<span class="symbol symbol-40px me-5">
 																<span class="symbol-label svg-icon svg-icon-2">
@@ -665,7 +665,7 @@
 														</a>
 														<!--end::Item-->
 														<!--begin::Item-->
-														<a href="../dist/collections.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2 active">
+														<a href="../dist/collections.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2">
 															<!--begin::Symbol-->
 															<span class="symbol symbol-40px me-5">
 																<span class="symbol-label svg-icon svg-icon-2">
@@ -846,7 +846,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-5 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="text-dark fw-bold my-0 fs-2 mb-2">Collections</h1>
+								<h1 class="text-dark fw-bold my-0 fs-2 mb-2">Categories</h1>
 								<!--end::Heading-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb text-muted fw-bold fs-base">
@@ -854,7 +854,7 @@
 										<span class="text-gray-600">Manage</span>
 									</li>
 									<li class="breadcrumb-item">
-										<span class="text-gray-800">Collections</span>
+										<span class="text-gray-800">Categories</span>
 									</li>
 								</ul>
 								<!--end::Breadcrumb-->
@@ -872,7 +872,7 @@
 							</div>
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
-									Collections
+									Categories
 								</div>
 							<!--end::Mobile Title-->
 							<!--begin::Aside mobile toggle-->
@@ -912,7 +912,7 @@
 												</svg>
 											</span>
 											<!--end::Svg Icon-->
-											<input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Collections" />
+											<input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Categories" />
 										</div>
 										<!--end::Search-->
 									</div>
@@ -931,7 +931,7 @@
 												</svg>
 											</span>
 											<!--end::Svg Icon-->
-											<span class="h-100">Add Collection</span></a>
+											<span class="h-100">Add Category</span></a>
 											<!--end::Add category-->
 										</div>
 										<!--begin::Modal Add Category-->
@@ -939,7 +939,7 @@
 											<div class="modal-dialog">
 												<div class="modal-content text-start">
 													<div class="modal-header">
-														<h2 class="modal-title">Add Collection</h2>
+														<h2 class="modal-title">Add Category</h2>
 														<!--begin::Close-->
 														<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 															<span class="svg-icon svg-icon-2x">
@@ -955,7 +955,7 @@
 														<!--begin::Input group-->
 														<div class="fv-row mb-9">
 															<!--begin::Label-->
-															<label class="form-label fs-6 fw-bold required mb-3">Collection Name</label>
+															<label class="form-label fs-6 fw-bold required mb-3">Category Name</label>
 															<!--end::Label-->
 															<!--begin::Input-->
 															<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="" />
@@ -965,7 +965,7 @@
 														<!--begin::Input group-->
 														<div class="fv-row mb-9">
 															<!--begin::Label-->
-															<label class="form-label fs-6 fw-bold required mb-4">Collection Image</label>
+															<label class="form-label fs-6 fw-bold required mb-4">Category Image</label>
 															<!--end::Label-->
 															<!--begin::Form-->
 															<form class="form" action="#" method="post">
@@ -1027,10 +1027,9 @@
 														<input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#kt_table_users .form-check-input" value="1" />
 													</div>
 												</th>
-												<th class="min-w-40px">Image</th>
-												<th class="min-w-150px">Collection</th>
-												<th class="min-w-400px">Product</th>
-												<th class="text-end min-w-40px sorting_disabled">Actions</th>
+												<th class="min-w-200px">Category</th>
+												<th class="min-w-650px">Subcategory</th>
+												<th class="text-end min-w-100px sorting_disabled">Actions</th>
 											</tr>
 											<!--end::Table row-->
 										</thead>
@@ -1046,56 +1045,35 @@
 													</div>
 												</td>
 												<!--end::Checkbox-->
-												<!--begin::Image=-->
-												<td class="align-items-center">
+												<!--begin::Product=-->
+												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
-													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-2 my-5">
-														<a href="../dist/collection_products.html">
+													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-5">
+														<a href="../dist/subcategories.html">
 															<div class="symbol-label">
-																<img src="https://images.unsplash.com/photo-1543364195-bfe6e4932397?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b3JnYW5pY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
+																<img src="https://images.unsplash.com/photo-1595016111459-799a195e7452?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c25hY2tzJTJDJTIwY2hpcHMlMkMlMjBzYWxzYXMlMjAlMjYlMjBkaXBzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
 															</div>
 														</a>
 													</div>
 													<!--end::Image-->
-												</td>
-												<!--end::Image=-->
-												<!--begin::Collection=-->
-												<td class="align-items-center">
 													<!--begin::Variation-->
-													<a href="../dist/collection_products.html" class="text-gray-900 text-hover-primary">Organics</a>
-													<!--begin::Variation-->
-												</td>
-												<!--end::Collection=-->
-												<!--begin::Product=-->
-												<td>
-													<div class="symbol-group symbol-hover">
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f49b510c663f1bae100140f_00748252206039-glamor-frontpackageglamor-2020-08-26t15-17-36-iphone-x-quality-90-1-21-1-user-5984ad42a967f880524de2c4-a9jl-272435._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5eda609f7eccc1580693d435_00853665005091-glamor-frontpackageglamor-2020-05-21t16-22-03-pixel-3a-quality-90-1-21-1-user-5984ad42a967f880524de2c4-v43x-705886._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/6026b52a0eef392efd48beaa_853555006542-fronttm._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f7d05467db6427b84f03785_00874492001544-glamor-frontpackageglamor-2020-09-16t16-12-57-iphone-x-quality-90-1-21-1-user-5984ad42a967f880524de2c4-pgl3-671499._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/603fcd522cf8043850697e21_851093004419-c1c0._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5d19abf32e1036904fd0db5e_upc-00858847000239-glamor-frontpackageglamor-2019-03-26t19-04-11-22188e33-7620-444a-a573-f638d47b056e._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5ef1ffc8532150382c5f2e0d_edited-606541698005._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e6bc0d36cb85d79379aab72_00813377024285-glamor-frontpackageglamor-2020-03-09t21-35-35-pixel-3a-quality-90-1-21-1-user-5984ad42a967f880524de2c4-84si-473303._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
+													<div class="d-flex flex-column">
+														<a href="../dist/subcategories.html" class="text-gray-900 text-hover-primary">Snacks, Chips, Salsas & Dips</a>
 													</div>
+													<!--begin::Variation-->
 												</td>
 												<!--end::Product=-->
+												<!--begin::Subcategory=-->
+												<td>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Candy & Chocolate</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Cookies & Crackers</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Jerky</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Snack Bars</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Nuts & Dried Fruit</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Popcorn & Pretzels</a>
+												</td>
+												<!--end::Subcategory=-->
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
@@ -1133,7 +1111,7 @@
 																			<label class="form-label fs-6 fw-bold required mb-2">Category Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Organics" />
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Snacks, Chips, Salsas & Dips" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1148,7 +1126,7 @@
 																					<!--begin::Image input-->
 																					 <div class="image-input image-input-outline h-100 py-4" data-kt-image-input="true" style="background-image: url(assets/media/products/blank.png)">
 																						 <!--begin::Image preview wrapper-->
-																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1543364195-bfe6e4932397?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8b3JnYW5pY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
+																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1595016111459-799a195e7452?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c25hY2tzJTJDJTIwY2hpcHMlMkMlMjBzYWxzYXMlMjAlMjYlMjBkaXBzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
 																						 <!--end::Image preview wrapper-->
 																						 <!--begin::Edit button-->
 																						 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
@@ -1222,62 +1200,35 @@
 													</div>
 												</td>
 												<!--end::Checkbox-->
-												<!--begin::Image=-->
-												<td class="align-items-center">
+												<!--begin::Product=-->
+												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
-													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-2 my-5">
-														<a href="../dist/collection_products.html">
+													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-5">
+														<a href="../dist/subcategories.html">
 															<div class="symbol-label">
-																<img src="https://images.unsplash.com/photo-1517920451045-89de176c08f0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN1Z2FyJTIwY29uc2Npb3VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
+																<img src="https://images.unsplash.com/photo-1625865019554-220ea80ea813?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmV2ZXJhZ2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
 															</div>
 														</a>
 													</div>
 													<!--end::Image-->
-												</td>
-												<!--end::Image=-->
-												<!--begin::Collection=-->
-												<td class="align-items-center">
 													<!--begin::Variation-->
-													<a href="../dist/collection_products.html" class="text-gray-900 text-hover-primary">Sugar-Conscious</a>
-													<!--begin::Variation-->
-												</td>
-												<!--end::Collection=-->
-												<!--begin::Product=-->
-												<td>
-													<div class="symbol-group symbol-hover">
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5c12f36f3d4daf04b26552e6_productdataa00099482436285-c1n1._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/61390c2133ec27498b3febd1_0865336000021-glamor-front-2021-08-19t15-44-35-iphone-x-quality-90-1-25-4-user-5984ad42a967f880524de2c4-bu9i-181879._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e78ddc249a7e339040d97c5_upc-00014113912549-glamor-frontpackageglamor-2019-11-01t18-29-04-d55096d3-a0b7-417c-bc4a-851a4edd9d15._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f6d2df98810a4b4cd57f9e0_099482416393-front._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e87bc05a57c2d1377389841_upc-00856617004623-glamor-frontpackageglamor-2019-10-14t21-28-59-c82653cb-8012-4201-b503-4cf1afb8e1ef._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f49b872e7edeebabbd1873b_00851769007003-glamor-frontpackageglamor-2020-08-26t17-36-43-iphone-x-quality-90-1-21-1-user-5984ad42a967f880524de2c4-xrgd-663776._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5fbd94e3fbbe3865abc62ced_00099482452704-c1c1._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/601f3c7a6b33fde1e8f8fe7b_00073472001202-glamor-frontpackageglamor-2021-01-21t21-50-19-iphone-x-quality-90-1-21-8-user-5984ad42a967f880524de2c4-wjq0-896144._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f49acde168eaebab4db7736_00856069005131-glamor-frontpackageglamor-2020-08-24t18-24-35-iphone-x-quality-90-1-21-1-user-5984ad42a967f880524de2c4-1dll-397573._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e3460420e0090d386295fc1_dld-00295763000002-glamor-nutritionglamor-2019-12-12t17-06-43-iphone-7-quality-90-1-20-0-user-5c4f16e4fc9c91accd101ce4-i9vv-499313-1580490817980._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
+													<div class="d-flex flex-column">
+														<a href="../dist/subcategories.html" class="text-gray-900 text-hover-primary">Beverages</a>
 													</div>
+													<!--begin::Variation-->
 												</td>
 												<!--end::Product=-->
+												<!--begin::Subcategory=-->
+												<td>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Coffee</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Juice</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Kombucha & Tea</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Soft Drinks</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Sports, Energy & Nutritional Drinks</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Tea</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</a>
+												</td>
+												<!--end::Subcategory=-->
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
@@ -1315,7 +1266,7 @@
 																			<label class="form-label fs-6 fw-bold required mb-2">Category Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Sugar-Conscious" />
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Beverages" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1330,7 +1281,7 @@
 																					<!--begin::Image input-->
 																					 <div class="image-input image-input-outline h-100 py-4" data-kt-image-input="true" style="background-image: url(assets/media/products/blank.png)">
 																						 <!--begin::Image preview wrapper-->
-																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1517920451045-89de176c08f0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN1Z2FyJTIwY29uc2Npb3VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
+																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1625865019554-220ea80ea813?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YmV2ZXJhZ2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
 																						 <!--end::Image preview wrapper-->
 																						 <!--begin::Edit button-->
 																						 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
@@ -1404,53 +1355,39 @@
 													</div>
 												</td>
 												<!--end::Checkbox-->
-												<!--begin::Image=-->
-												<td class="align-items-center">
+												<!--begin::Product=-->
+												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
-													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-2 my-5">
-														<a href="../dist/collection_products.html">
+													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-5">
+														<a href="../dist/subcategories.html">
 															<div class="symbol-label">
-																<img src="https://images.unsplash.com/photo-1616607238884-197998dbcecc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHZlZ2V0YXJpYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
+																<img src="https://images.unsplash.com/photo-1542990253-a781e04c0082?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFudHJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
 															</div>
 														</a>
 													</div>
 													<!--end::Image-->
-												</td>
-												<!--end::Image=-->
-												<!--begin::Collection=-->
-												<td class="align-items-center">
 													<!--begin::Variation-->
-													<a href="../dist/collection_products.html" class="text-gray-900 text-hover-primary">Vegetarian</a>
-													<!--begin::Variation-->
-												</td>
-												<!--end::Collection=-->
-												<!--begin::Product=-->
-												<td>
-													<div class="symbol-group symbol-hover">
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5eb425bd9e5a1bfa463a5185_edited-jared-labounty-85262900458-front._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f22e485bb4f12c905bfe135_00099482412487-00099482412487-c1c1._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/61390c2133ec27498b3febd1_0865336000021-glamor-front-2021-08-19t15-44-35-iphone-x-quality-90-1-25-4-user-5984ad42a967f880524de2c4-bu9i-181879._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/601f3bf96b33fde1e8f8fbdb_00013764027138-glamor-frontpackageglamor-2021-01-21t21-33-21-iphone-x-quality-90-1-21-8-user-5984ad42a967f880524de2c4-wu5i-181139._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5eb4385c4dc5f3fa7357c498_edited-jared-labounty-85000420709-front._TTD_._SR300,300_.jpg" alt=""/>
-														</a>	
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/613f9d63c4348041b9e4bf0f_dld-0747479000079-glamor-front-2021-08-03t15-31-17-iphone-x-quality-90-1-25-4-user-5984ad42a967f880524de2c4-yc53-767927-1631559008894._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
-														<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
-															<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/613f8b5fe11bfde360160252_dld-0890444000298-glamor-front-2021-08-06t20-25-22-iphone-x-quality-90-1-25-4-user-5984ad42a967f880524de2c4-4l2c-230583-1631554398007._TTD_._SR300,300_.jpg" alt=""/>
-														</a>
+													<div class="d-flex flex-column">
+														<a href="../dist/subcategories.html" class="text-gray-900 text-hover-primary">Pantry Essentials</a>
 													</div>
+													<!--begin::Variation-->
 												</td>
 												<!--end::Product=-->
+												<!--begin::Subcategory=-->
+												<td>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Baking</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Canned Goods</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Cereal</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Condiments & Dressings</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Hot Cereal & Pancake Mixes</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Jam, Jellies & Nut Butters</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Pasta & Noodles</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Rice & Grains</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Sauces</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Soups & Broths</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Spices & Seasonings</a>
+												</td>
+												<!--end::Subcategory=-->
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
@@ -1488,7 +1425,7 @@
 																			<label class="form-label fs-6 fw-bold required mb-2">Category Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Vegetarian" />
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Pantry Essentials" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1503,7 +1440,7 @@
 																					<!--begin::Image input-->
 																					 <div class="image-input image-input-outline h-100 py-4" data-kt-image-input="true" style="background-image: url(assets/media/products/blank.png)">
 																						 <!--begin::Image preview wrapper-->
-																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1616607238884-197998dbcecc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHZlZ2V0YXJpYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
+																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1542990253-a781e04c0082?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGFudHJ5fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
 																						 <!--end::Image preview wrapper-->
 																						 <!--begin::Edit button-->
 																						 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
@@ -1568,8 +1505,309 @@
 												<!--end::Action=-->
 											</tr>
 											<!--end::Table row-->
-											
-											
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Checkbox-->
+												<td>
+													<div class="form-check form-check-sm form-check-custom form-check-solid">
+														<input class="form-check-input" type="checkbox" value="1" />
+													</div>
+												</td>
+												<!--end::Checkbox-->
+												<!--begin::Product=-->
+												<td class="d-flex align-items-center">
+													<!--begin:: Image -->
+													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-5">
+														<a href="../dist/subcategories.html">
+															<div class="symbol-label">
+																<img src="https://media.istockphoto.com/photos/bottles-and-glasses-of-assorted-alcoholic-beverages-picture-id475273684?b=1&k=20&m=475273684&s=170667a&w=0&h=1JWgqT2SgJhrPfh1oU29FiQXwm3SRomw0437vf0rTeM=" class="w-100" />
+															</div>
+														</a>
+													</div>
+													<!--end::Image-->
+													<!--begin::Variation-->
+													<div class="d-flex flex-column">
+														<a href="../dist/subcategories.html" class="text-gray-900 text-hover-primary">Wine, Beer & Spirits</a>
+													</div>
+													<!--begin::Variation-->
+												</td>
+												<!--end::Product=-->
+												<!--begin::Subcategory=-->
+												<td>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Beer</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Spirits</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Wine</a>
+												</td>
+												<!--end::Subcategory=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_4">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_4">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Category</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-2">Category Name</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Wine, Beer & Spirits" />
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-1">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-2">Category Image</label>
+																			<!--end::Label-->
+																			<!--begin::Form-->
+																			<div class="rounded border pt-7 pb-6 px-10"">
+																				<div class="row">
+																					<!--begin::Image input-->
+																					 <div class="image-input image-input-outline h-100 py-4" data-kt-image-input="true" style="background-image: url(assets/media/products/blank.png)">
+																						 <!--begin::Image preview wrapper-->
+																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://media.istockphoto.com/photos/bottles-and-glasses-of-assorted-alcoholic-beverages-picture-id475273684?b=1&k=20&m=475273684&s=170667a&w=0&h=1JWgqT2SgJhrPfh1oU29FiQXwm3SRomw0437vf0rTeM=)"></div>
+																						 <!--end::Image preview wrapper-->
+																						 <!--begin::Edit button-->
+																						 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="change"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Change Image">
+																							 <i class="bi bi-pencil-fill fs-7"></i>
+																							 <!--begin::Inputs-->
+																							 <input type="file" name="product" accept=".png, .jpg, .jpeg" />
+																							 <input type="hidden" name="category_remove" />
+																							 <!--end::Inputs-->
+																						 </label>
+																						 <!--end::Edit button-->
+																						 <!--begin::Cancel button-->
+																						 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="cancel"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Cancel Image">
+																							 <i class="bi bi-x fs-2"></i>
+																						 </span>
+																						 <!--end::Cancel button-->
+																						 <!--begin::Remove button-->
+																						 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="remove"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Remove Image">
+																							 <i class="bi bi-x fs-2"></i>
+																						 </span>
+																						 <!--end::Remove button-->
+																					 </div>
+																					 <!--end::Image input-->
+																				</div>
+																			</div>
+																			<!--end::Form-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
+															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
+																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
+																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Checkbox-->
+												<td>
+													<div class="form-check form-check-sm form-check-custom form-check-solid">
+														<input class="form-check-input" type="checkbox" value="1" />
+													</div>
+												</td>
+												<!--end::Checkbox-->
+												<!--begin::Product=-->
+												<td class="d-flex align-items-center">
+													<!--begin:: Image -->
+													<div class="symbol symbol-60px symbol-2by3 overflow-hidden me-5">
+														<a href="../dist/subcategories.html">
+															<div class="symbol-label">
+																<img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9keSUyMGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60" class="w-100" />
+															</div>
+														</a>
+													</div>
+													<!--end::Image-->
+													<!--begin::Variation-->
+													<div class="d-flex flex-column">
+														<a href="../dist/subcategories.html" class="text-gray-900 text-hover-primary">Body Care</a>
+													</div>
+													<!--begin::Variation-->
+												</td>
+												<!--end::Product=-->
+												<!--begin::Subcategory=-->
+												<td>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Aromatherapy</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Baby & Child</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Bath & Body</a>
+													<a href="../dist/tags.html" class="badge badge-light-info fw-bolder my-1 me-1">Personal Care</a>
+												</td>
+												<!--end::Subcategory=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_5">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_5">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Category</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-2">Category Name</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="category_name" value="Body Care" />
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-1">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-2">Category Image</label>
+																			<!--end::Label-->
+																			<!--begin::Form-->
+																			<div class="rounded border pt-7 pb-6 px-10"">
+																				<div class="row">
+																					<!--begin::Image input-->
+																					 <div class="image-input image-input-outline h-100 py-4" data-kt-image-input="true" style="background-image: url(assets/media/products/blank.png)">
+																						 <!--begin::Image preview wrapper-->
+																						 <div class="image-input-wrapper w-100 h-100 symbol-2by3" style="background-image: url(https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9keSUyMGNhcmV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60)"></div>
+																						 <!--end::Image preview wrapper-->
+																						 <!--begin::Edit button-->
+																						 <label class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="change"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Change Image">
+																							 <i class="bi bi-pencil-fill fs-7"></i>
+																							 <!--begin::Inputs-->
+																							 <input type="file" name="product" accept=".png, .jpg, .jpeg" />
+																							 <input type="hidden" name="category_remove" />
+																							 <!--end::Inputs-->
+																						 </label>
+																						 <!--end::Edit button-->
+																						 <!--begin::Cancel button-->
+																						 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="cancel"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Cancel Image">
+																							 <i class="bi bi-x fs-2"></i>
+																						 </span>
+																						 <!--end::Cancel button-->
+																						 <!--begin::Remove button-->
+																						 <span class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-white shadow"
+																							data-kt-image-input-action="remove"
+																							data-bs-toggle="tooltip"
+																							data-bs-dismiss="click"
+																							title="Remove Image">
+																							 <i class="bi bi-x fs-2"></i>
+																						 </span>
+																						 <!--end::Remove button-->
+																					 </div>
+																					 <!--end::Image input-->
+																				</div>
+																			</div>
+																			<!--end::Form-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
+															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
+																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
+																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
 										</tbody>
 										<!--end::Table body-->
 									</table>
