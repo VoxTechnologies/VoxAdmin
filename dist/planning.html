@@ -990,12 +990,12 @@
 										<thead>
 											<!--begin::Table row-->
 											<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">											
-												<th class="min-w-300px">Product</th>
-												<th class="min-w-40px">Category</th>
-												<th class="min-w-40px">Subcategory</th>
-												<th class="min-w-40px">Tag</th>
-												<th class="min-w-40px">Collection</th>
+												<th class="min-w-80px ps-2">Store#</th>
+												<th class="min-w-40px">User</th>
 												<th class="min-w-40px">Status</th>
+												<th class="min-w-40px">Planning Due</th>
+												<th class="min-w-40px">Shipping Due</th>
+												<th class="min-w-40px">Planned Date</th>
 												<th class="text-end min-w-80px sorting_disabled">Actions</th>
 											</tr>
 											<!--end::Table row-->
@@ -1005,54 +1005,40 @@
 										<tbody class="text-gray-600 fw-bold">
 											<!--begin::Table row-->
 											<tr>
-												<!--begin::Product=-->
-												<td class="d-flex align-items-center">
-													<!--begin:: Image -->
-													<div class="symbol symbol-50px overflow-hidden me-5">
-														<a href="../dist/product_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/products/32.jpg" class="w-100" />
-															</div>
-														</a>
-													</div>
-													<!--end::Image-->
-													<!--begin::Variation-->
-													<div class="d-flex flex-column">
-														<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Jalapeno Lime Tortilla Chips</a>
-														<span class="fs-7">5.5 oz</span>
-													</div>
-													<!--begin::Variation-->
-												</td>
-												<!--end::Product=-->
-												<!--begin::Category-->
+												<!--begin::Store#=-->
 												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks</div>
+													<a href="../dist/planning_detail.html" class="text-gray-900 text-hover-primary me-1 ms-2">#14BEE240</a>
 												</td>
-												<!--end::Category=-->
-												<!--begin::Subcategory=-->
+												<!--end::Store#=-->
+												<!--begin::User Name=-->
 												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Chips</div>
+													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Tilda Morrison</a>
 												</td>
-												<!--end::Subcategory=-->
-												<!--begin::Tag=-->
-												<td>
-													<div class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</div>
-												</td>
-												<!--end::Tag=-->
-												<!--begin::Collection=-->
-												<td>
-													<div class="badge badge-light-primary fw-bolder my-1 me-1">Organics</div>
-												</td>
-												<!--end::Collection=-->
+												<!--end::User Name=-->
 												<!--begin::Status-->
 												<td>
-													<div class="badge badge-light-success fw-bolder my-1 me-1">On Sale</div>
+													<div class="badge badge-light-warning fw-bolder my-1 me-1">Need Planning</div>
 												</td>
 												<!--end::Status=-->
+												<!--begin::Planning Due=-->
+												<td>
+													<div class="me-1">Dec 22 2021</a>
+												</td>
+												<!--end::Planning Due=-->
+												<!--begin::Shipping Due=-->
+												<td>
+													<div class="me-1">Dec 24 2021</a>
+												</td>
+												<!--end::Shipping Due=-->
+												<!--begin::Planned Date=-->
+												<td>
+													<div class="me-1">Dec 24 2021</a>
+												</td>
+												<!--end::Planned Date=-->
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
-														<a href="../dist/product_edit.html" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+														<a href="../dist/planning_edit.html" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
 															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
 															<span class="svg-icon svg-icon-3">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
