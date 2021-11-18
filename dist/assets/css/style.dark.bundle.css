@@ -32360,7 +32360,7 @@ textarea.form-control-lg {
 }
 
 .text-info {
-  color: #51BADE !important;
+  color: #88D0E8 !important;
 }
 
 .text-inverse-info {
@@ -37480,7 +37480,6 @@ a:hover {
 .btn .svg-icon {
   flex-shrink: 0;
   line-height: 0;
-  margin-right: 0.5rem;
 }
 .btn.btn-icon {
   display: inline-flex;
@@ -37962,16 +37961,16 @@ a:hover {
 }
 
 .btn.btn-info {
-  color: #DCF1F8;
-  border-color: #259CC5;
-  background-color: #259CC5;
+  color: #51BADE;
+  border-color: #0C2F3C;
+  background-color: #0C2F3C;
 }
 .btn.btn-info i {
-  color: #DCF1F8;
+  color: #51BADE;
 }
 .btn.btn-info .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #DCF1F8;
+  fill: #88D0E8;
 }
 .btn.btn-info .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -46214,8 +46213,8 @@ code:not([class*=language-]) {
 }
 
 .badge-primary {
-  color: #DCF1F8;
-  background-color: #51BADE;
+  color: #F9FBFC;
+  background-color: #33AFD8;
 }
 
 .badge-light-primary {
@@ -46243,8 +46242,8 @@ code:not([class*=language-]) {
 }
 
 .badge-info {
-  color: #DCF1F8;
-  background-color: #51BADE;
+  color: #F9FBFC;
+  background-color: #218CAF;
 }
 
 .badge-light-info {
