@@ -864,15 +864,6 @@
 							</div>
 							<!--end::Page title=-->
 							<!--begin::Wrapper-->
-							<div class="d-flex d-lg-none align-items-center ms-n2 me-2">
-								<!--begin::Aside mobile toggle-->
-									<!--begin::Logo-->
-										<a href="../dist/index.html" class="logo d-flex align-items-center ms-2">
-											<img alt="Logo" src="assets/media/logos/logo-default.svg" class="h-35px" />
-										</a>
-									<!--end::Logo-->
-								<!--end::Aside mobile toggle-->
-							</div>
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
 									Store #2DB652AD
@@ -882,12 +873,12 @@
 							<div class="d-flex flex-shrink-0">
 								<!--begin::Discard-->
 								<div class="d-flex ms-3">
-									<a href="../dist/planning_detail.html" class="btn bg-body btn-color-info btn-active-info" tooltip="Discard">Discard</a>
+									<a href="../dist/planning_detail.html" class="btn btn-light btn-text-info btn-active-info" tooltip="Discard">Discard</a>
 								</div>
 								<!--end::Discard-->
 								<!--begin::Save-->
 								<div class="d-flex ms-3">
-									<a href="../dist/planning_detail.html" class="btn btn-info" tooltip="Save"><!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+									<a href="../dist/planning_detail.html" class="btn btn-primary btn-active-white" tooltip="Save"><!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
 									<span class="svg-icon svg-icon-2 me-1">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 											<path d="M10 18C9.7 18 9.5 17.9 9.3 17.7L2.3 10.7C1.9 10.3 1.9 9.7 2.3 9.3C2.7 8.9 3.29999 8.9 3.69999 9.3L10.7 16.3C11.1 16.7 11.1 17.3 10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="black"/>
@@ -895,24 +886,13 @@
 										</svg>
 									</span>
 									<!--end::Svg Icon-->
-									Save
+									<span class="align-center align-middle">Save</span>
 									</a>
 								</div>
 								<!--end::Save-->
 							</div>
 							<!--end::Toolbar wrapper-->
-							<!--begin::Aside mobile toggle-->
-								<div class="btn btn-icon btn-active-icon-primary d-lg-none" id="kt_aside_toggle">
-									<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
-									<span class="svg-icon svg-icon-2x">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M21 6H3C3 6 3 6 3 6C3 6 2 6 2 5C2 4.00005 2.9999 4 3 4C3 4 3 4 3 4H21C22 4 22 5 22 5V5C22 5 22 6 21 6Z" fill="black" />
-											<path d="M21 13H3C3 13 2 13 2 12C2 11 3 11 3 11L21 11C21 11 22 11 22 12C22 13 21 13 21 13ZM22 19C22 18 21 18 21 18H3C3 18 2 18 2 19C2 20 3 20 3 20H21C21 20 22 20 22 19Z" fill="black" />
-										</svg>
-									</span>
-									<!--end::Svg Icon-->
-								</div>
-							<!--end::Aside mobile toggle-->
+							
 							<!--end::Wrapper-->
 						</div>
 						<!--end::Container-->
@@ -940,13 +920,13 @@
 												<!--begin::Tab nav-->
 												<ul class="nav nav-stretch fs-5 fw-bold nav-line-tabs nav-line-tabs-2x border-transparent" role="tablist">
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_this_tab" class="nav-link text-active-primary active" data-bs-toggle="tab" role="tab" href="#kt_planning_this">This Selection</a>
+														<a id="kt_referrals_this_tab" class="nav-link text-active-primary active" data-bs-toggle="tab" role="tab" href="#kt_planning_this">This Time</a>
 													</li>
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_last_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_last">Last Selection</a>
+														<a id="kt_referrals_last_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_last">Last Time</a>
 													</li>
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_lastlast">Last Last Selection</a>
+														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_lastlast">Last Last Time</a>
 													</li>
 												</ul>
 												<a href="#" class="btn btn-primary ms-8">Add Item</a>
@@ -957,7 +937,6 @@
 										<!--end::Card header-->
 										<!--begin::Card body-->
 										<div class="card-body pt-0">
-											
 											<!--begin::Tab Content-->
 											<div id="kt_referred_users_tab_content" class="tab-content">
 												<!--begin::Tab panel-->
@@ -970,12 +949,11 @@
 															<thead>
 																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
 																	<th class="min-w-200px">Product</th>
-																	<th class="min-w-150px">Qty</th>														
-																	<th class="min-w-100px">Unit Price</th>
+																	<th class="min-w-40px">Qty</th>														
+																	<th class="min-w-40px">Price</th>
 																	<th class="min-w-40px">%Filling</th>
 																	<th class="min-w-40px">Weight</th>
-																	<th class="min-w-40px">#Delivered</th>
-																	<th class="min-w-40px">#Purchased</th>
+																	<th class="min-w-40px">PUR/DELIV</th>
 																	<th class="min-w-40px">Preference</th>
 																	<th class="text-end min-w-40px sorting_disabled">Action</th>	
 																</tr>
@@ -1047,16 +1025,11 @@
 																		<div class="me-1">156g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">5/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">5</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
@@ -1145,16 +1118,11 @@
 																		<div class="me-1">83g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">10</div>
+																		<div class="me-1">7/10</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">7</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
@@ -1243,16 +1211,11 @@
 																		<div class="me-1">320g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">0</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
@@ -1341,16 +1304,11 @@
 																		<div class="me-1">78g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">3/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">3</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
@@ -1439,16 +1397,11 @@
 																		<div class="me-1">200g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">2/2</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">2</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
@@ -1537,16 +1490,11 @@
 																		<div class="me-1">210g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">4/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">4</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
@@ -1635,16 +1583,11 @@
 																		<div class="me-1">230g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">0</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																	</td>
@@ -1732,16 +1675,11 @@
 																		<div class="me-1">400g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">2/3</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">2</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
@@ -1830,16 +1768,11 @@
 																		<div class="me-1">130g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">4/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">4</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
@@ -1928,16 +1861,11 @@
 																		<div class="me-1">300g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">9</div>
+																		<div class="me-1">7/9</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">7</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
@@ -2026,16 +1954,11 @@
 																		<div class="me-1">180g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">3/4</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">3</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
@@ -2124,16 +2047,11 @@
 																		<div class="me-1">400g</div>
 																	</td>
 																	<!--end::Weight=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#Purchase/Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
-																	<td>
-																		<div class="me-1">0</div>
-																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchase/Delivered=-->
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
@@ -2175,15 +2093,12 @@
 															<!--begin::Thead-->
 															<thead>
 																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
-																	<th class="min-w-200px">Product</th>
-																	<th class="min-w-150px">Qty</th>														
-																	<th class="min-w-100px">Unit Price</th>
-																	<th class="min-w-40px">%Filling</th>
-																	<th class="min-w-40px">Weight</th>
+																	<th class="min-w-300px">Product</th>
+																	<th class="min-w-40px">Price</th>
 																	<th class="min-w-40px">#Delivered</th>
 																	<th class="min-w-40px">#Purchased</th>
 																	<th class="min-w-40px">Preference</th>
-																	<th class="text-end min-w-40px sorting_disabled">Action</th>	
+																	<th class="text-end min-w-100px sorting_disabled">Action</th>	
 																</tr>
 															</thead>
 															<!--end::Thead-->
@@ -2210,81 +2125,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="2" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$9.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.7%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">156g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->															
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2308,81 +2181,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$7.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">83g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">10</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">0</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2406,81 +2237,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$12.20</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">320g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2504,81 +2293,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$6.29</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">1.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">78g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2602,81 +2349,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.79</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">200g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2700,81 +2405,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$4.69</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">210g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">0</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2798,80 +2461,38 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$11.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">6.9%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">230g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2895,81 +2516,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$15.89</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">7.1%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -2993,81 +2572,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$10.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">130g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3091,81 +2628,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$20.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">5.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">300g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">9</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3189,81 +2684,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">180g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">0	</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3287,81 +2740,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$22.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">8.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 															</tbody>
@@ -3381,15 +2792,12 @@
 															<!--begin::Thead-->
 															<thead>
 																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
-																	<th class="min-w-200px">Product</th>
-																	<th class="min-w-150px">Qty</th>														
-																	<th class="min-w-100px">Unit Price</th>
-																	<th class="min-w-40px">%Filling</th>
-																	<th class="min-w-40px">Weight</th>
+																	<th class="min-w-300px">Product</th>
+																	<th class="min-w-40px">Price</th>
 																	<th class="min-w-40px">#Delivered</th>
 																	<th class="min-w-40px">#Purchased</th>
 																	<th class="min-w-40px">Preference</th>
-																	<th class="text-end min-w-40px sorting_disabled">Action</th>	
+																	<th class="text-end min-w-100px sorting_disabled">Action</th>	
 																</tr>
 															</thead>
 															<!--end::Thead-->
@@ -3416,81 +2824,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="2" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$9.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.7%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">156g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->															
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3514,81 +2880,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$7.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">83g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">10</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">0</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3612,81 +2936,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$12.20</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">320g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3710,81 +2992,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$6.29</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">1.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">78g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3808,81 +3048,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.79</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">200g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -3906,81 +3104,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$4.69</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">210g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">0</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4004,80 +3160,38 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$11.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">6.9%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">230g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4101,81 +3215,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$15.89</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">7.1%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4199,81 +3271,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$10.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">130g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">5</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4297,81 +3327,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$20.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">5.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">300g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">9</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">7</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4395,81 +3383,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">180g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">4</div>
+																		<div class="me-1">1</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">3</div>
+																		<div class="me-1">0	</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 ms-1">Essentials</div>
+																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -4493,81 +3439,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$22.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">8.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
 																	<!--begin::#Delivered=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">2</div>
 																	</td>
 																	<!--end::#Delivered=-->
 																	<!--begin::#Purchased=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="me-1">1</div>
 																	</td>
-																	<!--end::#Purchased=-->
+																	<!--end::#Purchased=-->	
 																	<!--begin::Preference=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 ms-1">Favorites</div>
+																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
 																	</td>
-																	<!--end::Preference=-->
+																	<!--end::Preference=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-1">
+																				<svg>
+																					<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
+																						<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>	
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 															</tbody>
@@ -4642,8 +3546,8 @@
 												<h5 class="mb-5">Status:</h5>
 												<!--end::Title-->
 												<select class="form-select form-select-solid" name="status" data-control="select2" data-hide-search="true">
-													<option value="draft">Draft</option>
-													<option value="confirmed" selected="selected">Plan Confirmed</option>
+													<option value="draft" selected="selected">Draft</option>
+													<option value="confirmed">Plan Confirmed</option>
 												</select>
 											</div>
 											<!--end::Section-->
@@ -4703,7 +3607,7 @@
 													<!--begin::Row-->
 													<tr class="">
 														<td class="text-gray-400">Planned:</td>
-														<td class="text-gray-800 text-end">Dec 19 2021</td>
+														<td class="text-gray-800 text-end">-</td>
 													</tr>
 													<!--end::Row-->
 												</table>
