@@ -37961,12 +37961,12 @@ a:hover {
 }
 
 .btn.btn-info {
-  color: #51BADE;
+  color: #88D0E8;
   border-color: #0C2F3C;
   background-color: #0C2F3C;
 }
 .btn.btn-info i {
-  color: #51BADE;
+  color: #88D0E8;
 }
 .btn.btn-info .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
