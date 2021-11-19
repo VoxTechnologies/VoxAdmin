@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Planning Edit - Planning - Manage - VoxStore</title>
+		<title>Planning: Add Items - Planning - Manage - VoxStore</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
@@ -857,7 +857,10 @@
 										<a href="../dist/planning.html" class="text-thirdry">Planning</a>
 									</li>
 									<li class="breadcrumb-item">
-										<span class="text-gray-800">#2DB652AD</span>
+										<a href="../dist/planning_edit.html" class="text-thirdry">#2DB652AD</a>
+									</li>
+									<li class="breadcrumb-item">
+										<span class="text-gray-800">Add Items</span>
 									</li>
 								</ul>
 								<!--end::Breadcrumb-->
@@ -871,11 +874,19 @@
 							<!--end::Mobile Title-->
 							<!--begin::Toolbar wrapper-->
 							<div class="d-flex flex-shrink-0">
-								<!--begin::Discard-->
+								<!--begin::Back-->
 								<div class="d-flex ms-3">
-									<a href="../dist/planning_detail.html" class="btn btn-light btn-text-info btn-active-info" tooltip="Discard">Discard</a>
+									<a href="../dist/planning_detail.html" class="btn btn-light btn-info btn-active-info">
+										<span class="svg-icon svg-icon-2">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<rect x="6" y="11" width="13" height="2" rx="1" fill="black"/>
+											<path d="M8.56569 11.4343L12.75 7.25C13.1642 6.83579 13.1642 6.16421 12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75L5.70711 11.2929C5.31658 11.6834 5.31658 12.3166 5.70711 12.7071L11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25C13.1642 17.8358 13.1642 17.1642 12.75 16.75L8.56569 12.5657C8.25327 12.2533 8.25327 11.7467 8.56569 11.4343Z" fill="black"/>
+											</svg>
+										</span>
+									<span class="align-center align-middle">Back to Store</span>
+									</a>
 								</div>
-								<!--end::Discard-->
+								<!--end::Back-->
 								<!--begin::Save-->
 								<div class="d-flex ms-3">
 									<a href="../dist/planning_detail.html" class="btn btn-primary btn-active-white" tooltip="Save"><!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
@@ -886,7 +897,7 @@
 										</svg>
 									</span>
 									<!--end::Svg Icon-->
-									<span class="align-center align-middle">Save</span>
+									<span class="align-center align-middle">Selection Items</span>
 									</a>
 								</div>
 								<!--end::Save-->
