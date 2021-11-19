@@ -846,7 +846,7 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-5 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="text-dark fw-bold my-0 fs-2 mb-2">Store #2DB652AD</h1>
+								<h1 class="text-dark fw-bold my-0 fs-2 mb-1">Store #2DB652AD: Add Items</h1>
 								<!--end::Heading-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb text-muted fw-bold fs-base">
@@ -869,14 +869,14 @@
 							<!--begin::Wrapper-->
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
-									Store #2DB652AD
+									Store #2DB652AD: Add Items
 								</div>
 							<!--end::Mobile Title-->
 							<!--begin::Toolbar wrapper-->
 							<div class="d-flex flex-shrink-0">
 								<!--begin::Back-->
 								<div class="d-flex ms-3">
-									<a href="../dist/planning_detail.html" class="btn btn-light btn-info btn-active-info">
+									<a href="../dist/planning_detail.html" class="btn btn-color-gray-600 btn-active-secondary">
 										<span class="svg-icon svg-icon-2">
 											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 											<rect x="6" y="11" width="13" height="2" rx="1" fill="black"/>
@@ -887,20 +887,26 @@
 									</a>
 								</div>
 								<!--end::Back-->
-								<!--begin::Save-->
+								<!--begin::Trigger store drawer-->
 								<div class="d-flex ms-3">
-									<a href="../dist/planning_detail.html" class="btn btn-primary btn-active-white" tooltip="Save"><!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
-									<span class="svg-icon svg-icon-3 me-1">
-										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M10 18C9.7 18 9.5 17.9 9.3 17.7L2.3 10.7C1.9 10.3 1.9 9.7 2.3 9.3C2.7 8.9 3.29999 8.9 3.69999 9.3L10.7 16.3C11.1 16.7 11.1 17.3 10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="black"/>
-												<path d="M10 18C9.7 18 9.5 17.9 9.3 17.7C8.9 17.3 8.9 16.7 9.3 16.3L20.3 5.3C20.7 4.9 21.3 4.9 21.7 5.3C22.1 5.7 22.1 6.30002 21.7 6.70002L10.7 17.7C10.5 17.9 10.3 18 10 18Z" fill="black"/>
-										</svg>
-									</span>
-									<!--end::Svg Icon-->
-									<span class="align-center align-middle">Selection Items</span>
-									</a>
+									<!--begin::List Icon-->
+									<button class="btn btn-info" id="kt_activities_toggle" data-kt-menu-overflow="true" data-kt-menu-placement="top-start" data-bs-dismiss="click" data-kt-menu-trigger="click">
+										<span class="svg-icon svg-icon-1 svg-icon-primary">
+											<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+											<path opacity="0.3" d="M18 10V20C18 20.6 18.4 21 19 21C19.6 21 20 20.6 20 20V10H18Z" fill="black"/>
+											<path opacity="0.3" d="M11 10V17H6V10H4V20C4 20.6 4.4 21 5 21H12C12.6 21 13 20.6 13 20V10H11Z" fill="black"/>
+											<path opacity="0.3" d="M10 10C10 11.1 9.1 12 8 12C6.9 12 6 11.1 6 10H10Z" fill="black"/>
+											<path opacity="0.3" d="M18 10C18 11.1 17.1 12 16 12C14.9 12 14 11.1 14 10H18Z" fill="black"/>
+											<path opacity="0.3" d="M14 4H10V10H14V4Z" fill="black"/>
+											<path opacity="0.3" d="M17 4H20L22 10H18L17 4Z" fill="black"/>
+											<path opacity="0.3" d="M7 4H4L2 10H6L7 4Z" fill="black"/>
+											<path d="M6 10C6 11.1 5.1 12 4 12C2.9 12 2 11.1 2 10H6ZM10 10C10 11.1 10.9 12 12 12C13.1 12 14 11.1 14 10H10ZM18 10C18 11.1 18.9 12 20 12C21.1 12 22 11.1 22 10H18ZM19 2H5C4.4 2 4 2.4 4 3V4H20V3C20 2.4 19.6 2 19 2ZM12 17C12 16.4 11.6 16 11 16H6C5.4 16 5 16.4 5 17C5 17.6 5.4 18 6 18H11C11.6 18 12 17.6 12 17Z" fill="black"/>
+											</svg>
+										</span>
+									</button>
 								</div>
-								<!--end::Save-->
+								<!--end::Trigger store drawer-->
+								
 							</div>
 							<!--end::Toolbar wrapper-->
 							
@@ -921,37 +927,140 @@
 									<div class="card pt-3 card-flush mb-5 mb-xl-10">
 										<!--begin::Card header-->
 										<div class="card-header">
-											<!--begin::Card title-->
-											<div class="card-title">
-												<h2 class="fw-bolder">Store Selection</h2>
-											</div>
-											<!--begin::Card title-->
 											<!--begin::Card Toolbar-->
 											<div class="card-toolbar">
 												<!--begin::Tab nav-->
-												<ul class="nav nav-stretch fs-5 fw-bold nav-line-tabs nav-line-tabs-2x border-transparent me-8 my-2" role="tablist">
+												<ul class="nav fs-5 fw-bold nav-line-tabs border-transparent me-4 my-2" role="tablist">
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_this_tab" class="nav-link text-active-primary active" data-bs-toggle="tab" role="tab" href="#kt_planning_this">This Time</a>
+														<a id="kt_referrals_this_tab" class="nav-link text-active-primary active" data-bs-toggle="tab" role="tab" href="#kt_items_essentials">Essentials</a>
 													</li>
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_last_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_last">Last Time</a>
+														<a id="kt_referrals_last_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_items_favorites">Favorites</a>
 													</li>
 													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_lastlast">Last Last Time</a>
+														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_items_nopref">No Preference</a>
 													</li>
 												</ul>
-												<a href="../dist/planning_add.html" class="btn btn-primary my-2">
-													<span class="svg-icon svg-icon-4 me-1">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-														<path d="M21 13H3C2.4 13 2 12.6 2 12C2 11.4 2.4 11 3 11H21C21.6 11 22 11.4 22 12C22 12.6 21.6 13 21 13Z" fill="black"/>
-														<path d="M12 22C11.4 22 11 21.6 11 21V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V21C13 21.6 12.6 22 12 22Z" fill="black"/>
-														</svg>
-													</span>
-													<span class="align-middle align-center">Add Item</span>
-												</a>
 												<!--end::Tab nav-->
 											</div>
 											<!--end::Card Toolbar-->
+											<!--begin::Card title-->
+											<div class="card-title" style="margin-right:0rem">
+												<!--begin::Card title-->
+													<!--begin::Search-->
+													<div class="d-flex align-items-center position-relative my-1">
+														<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+														<span class="svg-icon svg-icon-1 position-absolute ms-6">
+															<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgba(71, 104, 129, 1.0)">
+																<rect opacity="0.5" x="17.0365" y="15.1223" width="8.15546" height="2" rx="1" transform="rotate(45 17.0365 15.1223)" fill="black" />
+																<path d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z" fill="black" />
+															</svg>
+														</span>
+														<!--end::Svg Icon-->
+														<input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Products" />
+													</div>
+													<!--end::Search-->												
+												<!--begin::Filter-->
+												<button type="button" class="btn btn-light-primary btn-active-info ms-4" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
+												<!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
+												<span class="svg-icon svg-icon-3">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<path d="M19.0759 3H4.72777C3.95892 3 3.47768 3.83148 3.86067 4.49814L8.56967 12.6949C9.17923 13.7559 9.5 14.9582 9.5 16.1819V19.5072C9.5 20.2189 10.2223 20.7028 10.8805 20.432L13.8805 19.1977C14.2553 19.0435 14.5 18.6783 14.5 18.273V13.8372C14.5 12.8089 14.8171 11.8056 15.408 10.964L19.8943 4.57465C20.3596 3.912 19.8856 3 19.0759 3Z" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<span class="align-center align-middle">Filter</span>
+												</button>
+												<!--begin::Menu 1-->
+												<div class="menu menu-sub menu-sub-dropdown w-300px w-md-325px" data-kt-menu="true">
+													<!--begin::Header-->
+													<div class="px-7 py-5">
+														<div class="fs-5 text-dark fw-bolder">Filter Options</div>
+													</div>
+													<!--end::Header-->
+													<!--begin::Separator-->
+													<div class="separator border-gray-200"></div>
+													<!--end::Separator-->
+													<!--begin::Content-->
+													<div class="px-7 py-5" data-kt-user-table-filter="form">
+														<!--begin::Input group-->
+														<div class="mb-6">
+															<label class="form-label fs-6 fw-bold">Category:</label>
+															<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+																<option></option>
+																<option value="Category A">Category A</option>
+																<option value="Category B">Category B</option>
+																<option value="Category C">Category C</option>
+															</select>
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="mb-6">
+															<label class="form-label fs-6 fw-bold">Subcategory:</label>
+															<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Subcategory" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
+																<option></option>
+																<optgroup label="Category A">
+																	<option value="Subcategory A">Subcategory A</option>
+																	<option value="Subcategory B">Subcategory B</option>
+																</optgroup>
+																<optgroup label="Category B">
+																	<option value="Subcategory C">Subcategory C</option> 
+																	<option value="Subcategory D">Subcategory D</option>
+																</optgroup>
+																<optgroup label="Category C">
+																	<option value="Subcategory E">Subcategory E</option>
+																	<option value="Subcategory F">Subcategory F</option>
+																	<option value="Subcategory G">Subcategory G</option>
+																</optgroup>
+															</select>
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="mb-6">
+															<label class="form-label fs-6 fw-bold">Tag:</label>
+															<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Subcategory" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
+																<option></option>
+																<optgroup label="Subcategory A">
+																	<option value="Tag A">Tag A</option>
+																	<option value="Tag B">Tag B</option>
+																</optgroup>
+																<optgroup label="Subcategory B">
+																	<option value="Tag C">Tag C</option> 
+																	<option value="Tag D">Tag D</option>
+																</optgroup>
+																<optgroup label="Subcategory C">
+																	<option value="Tag E">Tag E</option>
+																	<option value="Tag F">Tag F</option>
+																	<option value="Tag G">Tag G</option>
+																</optgroup>
+															</select>
+														</div>
+														<!--end::Input group-->
+														<!--begin::Input group-->
+														<div class="mb-6">
+															<label class="form-label fs-6 fw-bold">Collection:</label>
+															<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="billing" data-hide-search="true">
+																<option></option>
+																<option value="Collection A">Collection A</option>
+																<option value="Collection B">Collection B</option>
+																<option value="Collection C">Collection C</option>
+															</select>
+														</div>
+														<!--end::Input group-->
+														<!--begin::Actions-->
+														<div class="d-flex justify-content-end">
+															<button type="reset" class="btn btn-light btn-active-light-primary fw-bold me-2 px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="reset">Reset</button>
+															<button type="submit" class="btn btn-primary fw-bold px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="filter">Apply</button>
+														</div>
+														<!--end::Actions-->
+													</div>
+													<!--end::Content-->
+												</div>
+												<!--end::Menu 1-->
+												
+												<!--begin::Card title-->
+											</div>
+											<!--begin::Card title-->
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
@@ -959,21 +1068,20 @@
 											<!--begin::Tab Content-->
 											<div id="kt_referred_users_tab_content" class="tab-content">
 												<!--begin::Tab panel-->
-												<div id="kt_planning_this" class="tab-pane fade show active" role="tabpanel">
+												<div id="kt_items_essentials" class="tab-pane fade show active" role="tabpanel">
 													<!--begin::Table wrapper-->
 													<div class="table-responsive">
 														<!--begin::Table-->
 														<table id="kt_planning_this_table" class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5">
 															<!--begin::Thead-->
 															<thead>
-																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
-																	<th class="min-w-300px">Product</th>
-																	<th class="min-w-150px">Qty</th>														
-																	<th class="min-w-80px">Price</th>
-																	<th class="min-w-80px">%Filling</th>
-																	<th class="min-w-80px">Weight</th>
-																	<th class="min-w-80px">PUR/DELIV</th>
-																	<th class="text-end min-w-40px sorting_disabled">Action</th>	
+																<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+																	<th class="min-w-200px">Product</th>
+																	<th class="min-w-40px">Price</th>
+																	<th class="min-w-40px">PUR/DELIV</th>
+																	<th class="min-w-40px">Subcategory</th>
+																	<th class="min-w-40px">Tag</th>
+																	<th class="text-end min-w-125px sorting_disabled">Action</th>	
 																</tr>
 															</thead>
 															<!--end::Thead-->
@@ -1000,71 +1108,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="2" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$9.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.7%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">156g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">5/7</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->															
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1088,71 +1164,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$7.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">83g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">7/10</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sauce</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Hot Sauce</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1176,71 +1220,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$12.20</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">320g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sparkling Water</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1264,70 +1276,38 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$6.29</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">1.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">78g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">3/5</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip & Dip</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Macadamia Nuts</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Added</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1351,71 +1331,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.79</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">200g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">2/2</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Coffee</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Grind Coffee</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1439,70 +1387,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$4.69</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">2.3%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">210g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">4/7</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Wine</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Red Wine</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1526,70 +1443,38 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$11.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">6.9%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">230g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">0/0</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Cookies</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Added</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1613,70 +1498,39 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$15.89</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">7.1%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">2/3</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Milk</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Almond Milk</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1700,70 +1554,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$10.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">3.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">130g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">4/5</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Pork</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Salami</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1787,70 +1610,38 @@
 																			<!--begin::Variation-->
 																		</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$20.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">5.4%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">300g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">7/9</div>
 																	</td>
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Home & Kitchen</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Air Freshener</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
-																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
+																				</svg>
+																			</span>
+																			<span class="align-middle align-center">Added</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1874,71 +1665,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$18.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">4.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">180g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">3/4</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->															
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Oil</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Avocado Oil</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 																<!--begin::Table row-->
@@ -1962,71 +1721,39 @@
 																		<!--begin::Variation-->
 																	</td>
 																	<!--end::Product=-->
-																	<!--begin::Quantity=-->
-																	<td>															<!--begin::Dialer-->
-																		<div class="input-group w-sm-auto"
-																			data-kt-dialer="true"
-																			data-kt-dialer-min="1"
-																			data-kt-dialer-max="100"
-																			data-kt-dialer-step="1"
-																			data-kt-dialer-prefix="">
-																		
-																			<!--begin::Decrease control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
-																				<i class="bi bi-dash fs-1"></i>
-																			</button>
-																			<!--end::Decrease control-->
-																		
-																			<!--begin::Input control-->
-																			<input type="text" class="form-control" style="text-align:center;" readonly placeholder="Amount" value="1" data-kt-dialer-control="input"/>
-																			<!--end::Input control-->
-																		
-																			<!--begin::Increase control-->
-																			<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
-																				<i class="bi bi-plus fs-1"></i>
-																			</button>
-																			<!--end::Increase control-->
-																		</div>
-																		<!--end::Dialer-->
-																	</td>
-																	<!--end::Quantity=-->
 																	<!--begin::Price-->
 																	<td>
 																		<div class="me-1">$22.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::%Filling=-->
-																	<td>
-																		<div class="me-1">8.2%</div>
-																	</td>
-																	<!--end::%Filling=-->
-																	<!--begin::Weight=-->
-																	<td>
-																		<div class="me-1">400g</div>
-																	</td>
-																	<!--end::Weight=-->
-																	<!--begin::#Purchase/Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
 																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Purchase/Delivered=-->	
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Ice Cream & Frozen Desserts</div>
+																	</td>
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Gelato</div>
+																	</td>
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<div class="d-flex justify-content-end flex-shrink-0">
-																			<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
-																				<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
-																				<span class="svg-icon svg-icon-3">
-																					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																						<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
-																						<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
-																						<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-5">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 																					</svg>
-																				</span>
-																				<!--end::Svg Icon-->
-																			</a>
-																		</div>
+																			</span>
+																			<span class="align-middle align-center">Add</span>
+																		</a>
 																	</td>
-																	<!--end::Action=-->
+																	<!--end::Action=-->		
 																</tr>
 																<!--end::Table row-->
 															</tbody>
@@ -2038,20 +1765,20 @@
 												</div>
 												<!--end::Tab panel-->
 												<!--begin::Tab panel-->
-												<div id="kt_planning_last" class="tab-pane fade" role="tabpanel">
+												<div id="kt_items_favorites" class="tab-pane fade" role="tabpanel">
 													<!--begin::Table wrapper-->
 													<div class="table-responsive">
 														<!--begin::Table-->
 														<table id="kt_planning_this_table" class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5">
 															<!--begin::Thead-->
 															<thead>
-																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
-																	<th class="min-w-300px">Product</th>
-																	<th class="min-w-80px">Price</th>
-																	<th class="min-w-80px">#Delivered</th>
-																	<th class="min-w-80px">#Purchased</th>
-																	<th class="min-w-48px">Preference</th>
-																	<th class="text-end min-w-100px sorting_disabled">Action</th>	
+																<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+																	<th class="min-w-200px">Product</th>
+																	<th class="min-w-40px">Price</th>
+																	<th class="min-w-40px">PUR/DELIV</th>
+																	<th class="min-w-40px">Subcategory</th>
+																	<th class="min-w-40px">Tag</th>
+																	<th class="text-end min-w-125px sorting_disabled">Action</th>	
 																</tr>
 															</thead>
 															<!--end::Thead-->
@@ -2083,29 +1810,29 @@
 																		<div class="me-1">$9.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">5/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2139,29 +1866,29 @@
 																		<div class="me-1">$7.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">7/10</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sauce</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Hot Sauce</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2195,29 +1922,29 @@
 																		<div class="me-1">$12.20</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sparkling Water</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2251,31 +1978,30 @@
 																		<div class="me-1">$6.29</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">3/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip & Dip</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Macadamia Nuts</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -2307,29 +2033,29 @@
 																		<div class="me-1">$18.79</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">2/2</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Coffee</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Grind Coffee</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2363,29 +2089,29 @@
 																		<div class="me-1">$4.69</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">4/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Wine</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Red Wine</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2419,30 +2145,30 @@
 																		<div class="me-1">$11.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Cookies</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -2474,29 +2200,29 @@
 																		<div class="me-1">$15.89</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">2/3</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Milk</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Almond Milk</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2530,29 +2256,29 @@
 																		<div class="me-1">$10.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">4/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Pork</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Salami</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2586,31 +2312,30 @@
 																		<div class="me-1">$20.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">7/9</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Home & Kitchen</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Air Freshener</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -2642,29 +2367,29 @@
 																		<div class="me-1">$18.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">3/4</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0	</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Oil</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Avocado Oil</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2698,29 +2423,29 @@
 																		<div class="me-1">$22.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Ice Cream & Frozen Desserts</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Gelato</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2737,20 +2462,20 @@
 												</div>
 												<!--end::Tab panel-->
 												<!--begin::Tab panel-->
-												<div id="kt_planning_lastlast" class="tab-pane fade" role="tabpanel">
+												<div id="kt_items_nopref" class="tab-pane fade" role="tabpanel">
 													<!--begin::Table wrapper-->
 													<div class="table-responsive">
 														<!--begin::Table-->
 														<table id="kt_planning_this_table" class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5">
 															<!--begin::Thead-->
 															<thead>
-																<tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0 ls-1">
-																	<th class="min-w-300px">Product</th>
-																	<th class="min-w-80px">Price</th>
-																	<th class="min-w-80px">#Delivered</th>
-																	<th class="min-w-80px">#Purchased</th>
-																	<th class="min-w-80px">Preference</th>
-																	<th class="text-end min-w-100px sorting_disabled">Action</th>	
+																<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+																	<th class="min-w-200px">Product</th>
+																	<th class="min-w-40px">Price</th>
+																	<th class="min-w-40px">PUR/DELIV</th>
+																	<th class="min-w-40px">Subcategory</th>
+																	<th class="min-w-40px">Tag</th>
+																	<th class="text-end min-w-125px sorting_disabled">Action</th>	
 																</tr>
 															</thead>
 															<!--end::Thead-->
@@ -2782,29 +2507,29 @@
 																		<div class="me-1">$9.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">5/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2838,29 +2563,29 @@
 																		<div class="me-1">$7.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">7/10</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sauce</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Hot Sauce</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2894,29 +2619,29 @@
 																		<div class="me-1">$12.20</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Sparkling Water</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -2950,31 +2675,30 @@
 																		<div class="me-1">$6.29</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">3/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip & Dip</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Macadamia Nuts</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -3006,29 +2730,29 @@
 																		<div class="me-1">$18.79</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">2/2</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Coffee</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Grind Coffee</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3062,29 +2786,29 @@
 																		<div class="me-1">$4.69</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">4/7</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Wine</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Red Wine</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3118,30 +2842,30 @@
 																		<div class="me-1">$11.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Snacks</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Cookies</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -3173,29 +2897,29 @@
 																		<div class="me-1">$15.89</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">2/3</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Milk</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Almond Milk</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3229,29 +2953,29 @@
 																		<div class="me-1">$10.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">4/5</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Pork</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Salami</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3285,31 +3009,30 @@
 																		<div class="me-1">$20.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">7/9</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Home & Kitchen</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Air Freshener</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
-																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																		<a href="#" class="btn btn-sm btn-light-success btn-active-primary fs-7 fw-bolder">
+																			<span class="svg-icon svg-icon-4">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
+																				<path d="M9.89557 13.4982L7.79487 11.2651C7.26967 10.7068 6.38251 10.7068 5.85731 11.2651C5.37559 11.7772 5.37559 12.5757 5.85731 13.0878L9.74989 17.2257C10.1448 17.6455 10.8118 17.6455 11.2066 17.2257L18.1427 9.85252C18.6244 9.34044 18.6244 8.54191 18.1427 8.02984C17.6175 7.47154 16.7303 7.47154 16.2051 8.02984L11.061 13.4982C10.7451 13.834 10.2115 13.834 9.89557 13.4982Z" fill="black"/>
 																				</svg>
 																			</span>
-																			<span class="align-middle align-center">Add</span>
+																			<span class="align-middle align-center">Added</span>
 																		</a>
 																	</td>
 																	<!--end::Action=-->		
@@ -3341,29 +3064,29 @@
 																		<div class="me-1">$18.99</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="me-1">3/4</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">0	</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Oil</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-primary fw-bolder my-1 me-1">Essentials</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Avocado Oil</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3397,29 +3120,29 @@
 																		<div class="me-1">$22.49</div>
 																	</td>
 																	<!--end::Price=-->
-																	<!--begin::#Delivered=-->
+																	<!--begin::#PUR/DELIV=-->
 																	<td>
-																		<div class="me-1">2</div>
+																		<div class="me-1">0/0</div>
 																	</td>
-																	<!--end::#Delivered=-->
-																	<!--begin::#Purchased=-->
+																	<!--end::#PUR/DELIV=-->
+																	<!--begin::#Subcategory=-->
 																	<td>
-																		<div class="me-1">1</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Ice Cream & Frozen Desserts</div>
 																	</td>
-																	<!--end::#Purchased=-->	
-																	<!--begin::Preference=-->
+																	<!--end::#Subcategory=-->
+																	<!--begin::Tag=-->
 																	<td>
-																		<div class="badge badge-info fw-bolder my-1 me-1">Favorites</div>
+																		<div class="badge badge-light-info fw-bolder my-1 me-1">Gelato</div>
 																	</td>
-																	<!--end::Preference=-->	
+																	<!--end::Tag=-->	
 																	<!--begin::Action=-->
 																	<td class="text-end">
 																		<a href="#" class="btn btn-sm btn-info btn-active-primary fs-7 fw-bolder">
-																			<span class="svg-icon svg-icon-1">
+																			<span class="svg-icon svg-icon-5">
 																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-																				<rect x="11" y="18" width="12" height="2" rx="1" transform="rotate(-90 11 18)" fill="black"/>
-																				<rect x="6" y="11" width="12" height="2" rx="1" fill="black"/>
-																				</svg>
+																					<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
+																					<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
+																					</svg>
 																			</span>
 																			<span class="align-middle align-center">Add</span>
 																		</a>
@@ -3448,123 +3171,90 @@
 									<!--begin::Card-->
 									<div class="card card-flush mb-0" data-kt-sticky="true" data-kt-sticky-name="subscription-summary" data-kt-sticky-offset="{default: false, lg: '200px'}" data-kt-sticky-width="{lg: '250px', xl: '300px'}" data-kt-sticky-left="auto" data-kt-sticky-top="100px" data-kt-sticky-animation="false" data-kt-sticky-zindex="95">
 										<!--begin::Card header-->
-										<div class="card-header pt-2">
-											<!--begin::Card title-->
-											<div class="card-title">
-												<h2>Planning</h2>
+										<div class="card-header pt-8 pb-4">
+											<!--begin::Details-->
+											<div class="d-flex align-items-center ms-n2">
+												<!--begin::User icon-->
+												<span class="svg-icon svg-icon-5hx me-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM12 7C10.3 7 9 8.3 9 10C9 11.7 10.3 13 12 13C13.7 13 15 11.7 15 10C15 8.3 13.7 7 12 7Z" fill="black"/>
+													<path d="M12 22C14.6 22 17 21 18.7 19.4C17.9 16.9 15.2 15 12 15C8.8 15 6.09999 16.9 5.29999 19.4C6.99999 21 9.4 22 12 22Z" fill="black"/>
+													</svg></span>
+												<!--end::User icon-->
+												<!--begin::Info-->
+												<div class="flex-column">
+													<!--begin::Name-->
+													<div class="fs-4 fw-bolder text-gray-900 me-2 mb-3"><a href="#" class="text-dark text-hover-info">Elise Dolton</a></div>
+													<!--end::Name-->
+													<!--begin::Variation-->
+													<span class="badge badge-light-primary fw-bolder">Subscriber</span>
+													<!--end::Variation-->
+												</div>
+												<!--end::Info-->
 											</div>
-											<!--end::Card title-->
+											<!--end::Details-->											
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
 										<div class="card-body pt-0 fs-6">
 											<!--begin::Section-->
-											<div class="mb-7">
-												<!--begin::Details-->
-												<div class="d-flex align-items-center">
-													<!--begin::Store Icon-->
-													<div class="btn btn-info me-5 py-4" style="pointer-events: none;">
-														<span class="svg-icon svg-icon-2x svg-icon-primary"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<path opacity="0.3" d="M18 10V20C18 20.6 18.4 21 19 21C19.6 21 20 20.6 20 20V10H18Z" fill="black"/>
-															<path opacity="0.3" d="M11 10V17H6V10H4V20C4 20.6 4.4 21 5 21H12C12.6 21 13 20.6 13 20V10H11Z" fill="black"/>
-															<path opacity="0.3" d="M10 10C10 11.1 9.1 12 8 12C6.9 12 6 11.1 6 10H10Z" fill="black"/>
-															<path opacity="0.3" d="M18 10C18 11.1 17.1 12 16 12C14.9 12 14 11.1 14 10H18Z" fill="black"/>
-															<path opacity="0.3" d="M14 4H10V10H14V4Z" fill="black"/>
-															<path opacity="0.3" d="M17 4H20L22 10H18L17 4Z" fill="black"/>
-															<path opacity="0.3" d="M7 4H4L2 10H6L7 4Z" fill="black"/>
-															<path d="M6 10C6 11.1 5.1 12 4 12C2.9 12 2 11.1 2 10H6ZM10 10C10 11.1 10.9 12 12 12C13.1 12 14 11.1 14 10H10ZM18 10C18 11.1 18.9 12 20 12C21.1 12 22 11.1 22 10H18ZM19 2H5C4.4 2 4 2.4 4 3V4H20V3C20 2.4 19.6 2 19 2ZM12 17C12 16.4 11.6 16 11 16H6C5.4 16 5 16.4 5 17C5 17.6 5.4 18 6 18H11C11.6 18 12 17.6 12 17Z" fill="black"/>
-															</svg></span>
-													</div>
-													<!--end::Store Icon-->
-													<!--begin::Info-->
-													<div class="d-flex flex-column">
-														<!--begin::Name-->
-														<div class="fs-4 fw-bolder text-gray-900 me-2 mb-2">#2DB652AD</div>
-														<!--end::Name-->
-														<!--begin::Variation-->
-														<div class="fw-bold text-info"><a href="#" class="text-info text-hover-info">Elise Dolton</a></div>
-														<!--end::Variation-->
-													</div>
-													<!--end::Info-->
-												</div>
-												<!--end::Details-->
-											</div>
+											<table class="table fs-6 fw-bold gs-0 gy-1 gx-2">
+													<!--begin::Row-->
+													<tr class="">
+														<td class="text-gray-400">Store Delivered:</td>
+														<td class="text-gray-800 text-end">32</td>
+													</tr>
+													<!--end::Row-->
+													<!--begin::Row-->
+													<tr class="">
+														<td class="text-gray-400">Avg. Sales/Store:</td>
+														<td class="text-gray-800 text-end">$48.20</td>
+													</tr>
+													<!--end::Row-->
+													<!--begin::Row-->
+													<tr class="">
+														<td class="text-gray-400">%Avg. Unsold:</td>
+														<td class="text-gray-800 text-end">12.2%</td>
+													</tr>
+													<!--end::Row-->
+												</tbody></table>											
 											<!--end::Section-->
 											<!--begin::Seperator-->
-											<div class="separator mb-7"></div>
-											<!--end::Seperator-->
-											<!--begin::Section-->
-											<div class="mb-7">
-												<!--begin::Title-->
-												<h5 class="mb-5">Status:</h5>
-												<!--end::Title-->
-												<select class="form-select form-select-solid" name="status" data-control="select2" data-hide-search="true">
-													<option value="draft" selected="selected">Draft</option>
-													<option value="confirmed">Plan Confirmed</option>
-												</select>
-											</div>
-											<!--end::Section-->
-											<!--begin::Seperator-->
-											<div class="separator mb-7"></div>
+											<div class="separator mb-7 mt-5"></div>
 											<!--end::Seperator-->
 											<!--begin::Section-->
 											<div class="mb-5">
 												<!--begin::Title-->
-												<h5 class="mb-4">Package</h5>
+												<h5 class="mb-4">Subcategory:</h5>
 												<!--end::Title-->
-												<!--begin::Details-->
-												<table class="table fs-6 fw-bold gs-0 gy-1 gx-2">
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Item Qty:</td>
-														<td class="text-gray-800 text-end">15</td>
-													</tr>
-													<!--end::Row-->
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">% Container Filling:</td>
-														<td class="text-gray-800 text-end">78%</td>
-													</tr>
-													<!--end::Row-->
-													<tr class="">
-														<td class="text-gray-400">Total Weight:</td>
-														<td class="text-gray-800 text-end">5.2kg</td>
-													</tr>
-													<!--end::Row-->
-												</table>
-												<!--end::Details-->
+												<div class="mb-0">
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Chips & Dip</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Coffee</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Water, Seltzer & Sparkling Water</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Sauces</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Wine</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Aromatherapy</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Personal Care</span>
+												</div>
 											</div>
 											<!--end::Section-->
-											<!--begin::Seperator-->
-											<div class="separator mb-7"></div>
-											<!--end::Seperator-->
 											<!--begin::Section-->
-											<div class="mb-0">
+											<div class="mb-4">
 												<!--begin::Title-->
-												<h5 class="mb-4">Timeline</h5>
+												<h5 class="mb-4">Tags:</h5>
 												<!--end::Title-->
-												<!--begin::Details-->
-												<table class="table fs-6 fw-bold gs-0 gy-1 gx-2">
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Planning Due:</td>
-														<td class="text-gray-800 text-end">Dec 20 2021</td>
-													</tr>
-													<!--end::Row-->
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Shipping Due:</td>
-														<td class="text-gray-800 text-end">Dec 21 2021</td>
-													</tr>
-													<!--end::Row-->
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Planned:</td>
-														<td class="text-gray-800 text-end">-</td>
-													</tr>
-													<!--end::Row-->
-												</table>
-												<!--end::Details-->
+												<div class="mb-0">
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Tortilla Chips</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Hot Sauce</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Sparkling Water</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Macadamia Nuts</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Grind Coffee</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Red Wine</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Almond Milk</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Salami</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Air Freshener</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Avocado Oil</span>
+													<span class="badge badge-light-info fw-bolder my-1 me-1">Gelato</span>
+												</div>
 											</div>
 											<!--end::Section-->
 										</div>
@@ -3589,6 +3279,624 @@
 			<!--end::Page-->
 		</div>
 		<!--end::Root-->
+		<!--begin::Store drawer-->
+		<div id="kt_activities" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'md': '600px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_activities_toggle" data-kt-drawer-close="#kt_activities_close">
+				<div class="card shadow-none rounded-0">
+					<!--begin::Header-->
+					<div class="card-header" id="kt_activities_header">
+						<h3 class="card-title fw-bolder text-dark">Store Selection</h3>
+						<div class="card-toolbar">
+							<button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5" id="kt_activities_close">
+								<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+								<span class="svg-icon svg-icon-1">
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+										<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+										<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+									</svg>
+								</span>
+								<!--end::Svg Icon-->
+							</button>
+						</div>
+					</div>
+					<!--end::Header-->
+					<!--begin::Body-->
+					<div class="card-body position-relative" id="kt_activities_body">
+						<!--begin::Content-->
+						<div id="kt_activities_scroll" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_activities_body" data-kt-scroll-dependencies="#kt_activities_header, #kt_activities_footer" data-kt-scroll-offset="5px">
+							<!--begin::Timeline items-->
+							<div class="timeline">
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px me-4">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/communication/com003.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M2 4V16C2 16.6 2.4 17 3 17H13L16.6 20.6C17.1 21.1 18 20.8 18 20V17H21C21.6 17 22 16.6 22 16V4C22 3.4 21.6 3 21 3H3C2.4 3 2 3.4 2 4Z" fill="black" />
+													<path d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">There are 2 new tasks for you in “AirPlus Mobile APp” project:</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Added at 4:23 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+													<img src="assets/media/avatars/150-11.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+										<!--begin::Timeline details-->
+										<div class="overflow-auto pb-5">
+											<!--begin::Record-->
+											<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-5">
+												<!--begin::Title-->
+												<a href="#" class="fs-5 text-dark text-hover-primary fw-bold w-375px min-w-200px">Meeting with customer</a>
+												<!--end::Title-->
+												<!--begin::Label-->
+												<div class="min-w-175px pe-2">
+													<span class="badge badge-light text-muted">Application Design</span>
+												</div>
+												<!--end::Label-->
+												<!--begin::Users-->
+												<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px pe-2">
+													<!--begin::User-->
+													<div class="symbol symbol-circle symbol-25px">
+														<img src="assets/media/avatars/150-3.jpg" alt="img" />
+													</div>
+													<!--end::User-->
+													<!--begin::User-->
+													<div class="symbol symbol-circle symbol-25px">
+														<img src="assets/media/avatars/150-11.jpg" alt="img" />
+													</div>
+													<!--end::User-->
+													<!--begin::User-->
+													<div class="symbol symbol-circle symbol-25px">
+														<div class="symbol-label fs-8 fw-bold bg-primary text-inverse-primary">A</div>
+													</div>
+													<!--end::User-->
+												</div>
+												<!--end::Users-->
+												<!--begin::Progress-->
+												<div class="min-w-125px pe-2">
+													<span class="badge badge-light-primary">In Progress</span>
+												</div>
+												<!--end::Progress-->
+												<!--begin::Action-->
+												<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+												<!--end::Action-->
+											</div>
+											<!--end::Record-->
+											<!--begin::Record-->
+											<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-750px px-7 py-3 mb-0">
+												<!--begin::Title-->
+												<a href="#" class="fs-5 text-dark text-hover-primary fw-bold w-375px min-w-200px">Project Delivery Preparation</a>
+												<!--end::Title-->
+												<!--begin::Label-->
+												<div class="min-w-175px">
+													<span class="badge badge-light text-muted">CRM System Development</span>
+												</div>
+												<!--end::Label-->
+												<!--begin::Users-->
+												<div class="symbol-group symbol-hover flex-nowrap flex-grow-1 min-w-100px">
+													<!--begin::User-->
+													<div class="symbol symbol-circle symbol-25px">
+														<img src="assets/media/avatars/150-5.jpg" alt="img" />
+													</div>
+													<!--end::User-->
+													<!--begin::User-->
+													<div class="symbol symbol-circle symbol-25px">
+														<div class="symbol-label fs-8 fw-bold bg-success text-inverse-primary">B</div>
+													</div>
+													<!--end::User-->
+												</div>
+												<!--end::Users-->
+												<!--begin::Progress-->
+												<div class="min-w-125px">
+													<span class="badge badge-light-success">Completed</span>
+												</div>
+												<!--end::Progress-->
+												<!--begin::Action-->
+												<a href="#" class="btn btn-sm btn-light btn-active-light-primary">View</a>
+												<!--end::Action-->
+											</div>
+											<!--end::Record-->
+										</div>
+										<!--end::Timeline details-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/communication/com009.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M5.78001 21.115L3.28001 21.949C3.10897 22.0059 2.92548 22.0141 2.75004 21.9727C2.57461 21.9312 2.41416 21.8418 2.28669 21.7144C2.15923 21.5869 2.06975 21.4264 2.0283 21.251C1.98685 21.0755 1.99507 20.892 2.05201 20.7209L2.886 18.2209L7.22801 13.879L10.128 16.774L5.78001 21.115Z" fill="black" />
+													<path d="M21.7 8.08899L15.911 2.30005C15.8161 2.2049 15.7033 2.12939 15.5792 2.07788C15.455 2.02637 15.3219 1.99988 15.1875 1.99988C15.0531 1.99988 14.92 2.02637 14.7958 2.07788C14.6717 2.12939 14.5589 2.2049 14.464 2.30005L13.74 3.02295C13.548 3.21498 13.4402 3.4754 13.4402 3.74695C13.4402 4.01849 13.548 4.27892 13.74 4.47095L14.464 5.19397L11.303 8.35498C10.1615 7.80702 8.87825 7.62639 7.62985 7.83789C6.38145 8.04939 5.2293 8.64265 4.332 9.53601C4.14026 9.72817 4.03256 9.98855 4.03256 10.26C4.03256 10.5315 4.14026 10.7918 4.332 10.984L13.016 19.667C13.208 19.859 13.4684 19.9668 13.74 19.9668C14.0115 19.9668 14.272 19.859 14.464 19.667C15.3575 18.77 15.9509 17.618 16.1624 16.3698C16.374 15.1215 16.1932 13.8383 15.645 12.697L18.806 9.53601L19.529 10.26C19.721 10.452 19.9814 10.5598 20.253 10.5598C20.5245 10.5598 20.785 10.452 20.977 10.26L21.7 9.53601C21.7952 9.44108 21.8706 9.32825 21.9221 9.2041C21.9737 9.07995 22.0002 8.94691 22.0002 8.8125C22.0002 8.67809 21.9737 8.54505 21.9221 8.4209C21.8706 8.29675 21.7952 8.18392 21.7 8.08899Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n2">
+										<!--begin::Timeline heading-->
+										<div class="overflow-auto pe-3">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">Invitation for crafting engaging designs that speak human workshop</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Sent at 4:23 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Alan Nilson">
+													<img src="assets/media/avatars/150-2.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/coding/cod008.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z" fill="black" />
+													<path opacity="0.3" d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="mb-5 pe-3">
+											<!--begin::Title-->
+											<a href="#" class="fs-5 fw-bold text-gray-800 text-hover-primary mb-2">3 New Incoming Project Files:</a>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Sent at 10:30 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Jan Hummer">
+													<img src="assets/media/avatars/150-6.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+										<!--begin::Timeline details-->
+										<div class="overflow-auto pb-5">
+											<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-5">
+												<!--begin::Item-->
+												<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+													<!--begin::Icon-->
+													<img alt="" class="w-30px me-3" src="assets/media/svg/files/pdf.svg" />
+													<!--end::Icon-->
+													<!--begin::Info-->
+													<div class="ms-1 fw-bold">
+														<!--begin::Desc-->
+														<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance KPI App Guidelines</a>
+														<!--end::Desc-->
+														<!--begin::Number-->
+														<div class="text-gray-400">1.9mb</div>
+														<!--end::Number-->
+													</div>
+													<!--begin::Info-->
+												</div>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<div class="d-flex flex-aligns-center pe-10 pe-lg-20">
+													<!--begin::Icon-->
+													<img alt="" class="w-30px me-3" src="assets/media/svg/files/doc.svg" />
+													<!--end::Icon-->
+													<!--begin::Info-->
+													<div class="ms-1 fw-bold">
+														<!--begin::Desc-->
+														<a href="#" class="fs-6 text-hover-primary fw-bolder">Client UAT Testing Results</a>
+														<!--end::Desc-->
+														<!--begin::Number-->
+														<div class="text-gray-400">18kb</div>
+														<!--end::Number-->
+													</div>
+													<!--end::Info-->
+												</div>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<div class="d-flex flex-aligns-center">
+													<!--begin::Icon-->
+													<img alt="" class="w-30px me-3" src="assets/media/svg/files/css.svg" />
+													<!--end::Icon-->
+													<!--begin::Info-->
+													<div class="ms-1 fw-bold">
+														<!--begin::Desc-->
+														<a href="#" class="fs-6 text-hover-primary fw-bolder">Finance Reports</a>
+														<!--end::Desc-->
+														<!--begin::Number-->
+														<div class="text-gray-400">20mb</div>
+														<!--end::Number-->
+													</div>
+													<!--end::Icon-->
+												</div>
+												<!--end::Item-->
+											</div>
+										</div>
+										<!--end::Timeline details-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z" fill="black" />
+													<path d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">Task
+											<a href="#" class="text-primary fw-bolder me-1">#45890</a>merged with
+											<a href="#" class="text-primary fw-bolder me-1">#45890</a>in “Ads Pro Admin Dashboard project:</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Initiated at 4:23 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Nina Nilson">
+													<img src="assets/media/avatars/150-11.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black" />
+													<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">3 new application design concepts added:</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Created at 4:23 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Marcus Dotson">
+													<img src="assets/media/avatars/150-3.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+										<!--begin::Timeline details-->
+										<div class="overflow-auto pb-5">
+											<div class="d-flex align-items-center border border-dashed border-gray-300 rounded min-w-700px p-7">
+												<!--begin::Item-->
+												<div class="overlay me-10">
+													<!--begin::Image-->
+													<div class="overlay-wrapper">
+														<img alt="img" class="rounded w-100px" src="assets/media/stock/300x270/1.jpg" />
+													</div>
+													<!--end::Image-->
+													<!--begin::Link-->
+													<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+														<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+													</div>
+													<!--end::Link-->
+												</div>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<div class="overlay me-10">
+													<!--begin::Image-->
+													<div class="overlay-wrapper">
+														<img alt="img" class="rounded w-100px" src="assets/media/stock/300x270/2.jpg" />
+													</div>
+													<!--end::Image-->
+													<!--begin::Link-->
+													<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+														<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+													</div>
+													<!--end::Link-->
+												</div>
+												<!--end::Item-->
+												<!--begin::Item-->
+												<div class="overlay">
+													<!--begin::Image-->
+													<div class="overlay-wrapper">
+														<img alt="img" class="rounded w-100px" src="assets/media/stock/300x270/3.jpg" />
+													</div>
+													<!--end::Image-->
+													<!--begin::Link-->
+													<div class="overlay-layer bg-dark bg-opacity-10 rounded">
+														<a href="#" class="btn btn-sm btn-primary btn-shadow">Explore</a>
+													</div>
+													<!--end::Link-->
+												</div>
+												<!--end::Item-->
+											</div>
+										</div>
+										<!--end::Timeline details-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/communication/com010.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M6 8.725C6 8.125 6.4 7.725 7 7.725H14L18 11.725V12.925L22 9.725L12.6 2.225C12.2 1.925 11.7 1.925 11.4 2.225L2 9.725L6 12.925V8.725Z" fill="black" />
+													<path opacity="0.3" d="M22 9.72498V20.725C22 21.325 21.6 21.725 21 21.725H3C2.4 21.725 2 21.325 2 20.725V9.72498L11.4 17.225C11.8 17.525 12.3 17.525 12.6 17.225L22 9.72498ZM15 11.725H18L14 7.72498V10.725C14 11.325 14.4 11.725 15 11.725Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">New case
+											<a href="#" class="text-primary fw-bolder me-1">#67890</a>is assigned to you in Multi-platform Database Design project</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="overflow-auto pb-5">
+												<!--begin::Wrapper-->
+												<div class="d-flex align-items-center mt-1 fs-6">
+													<!--begin::Info-->
+													<div class="text-muted me-2 fs-7">Added at 4:23 PM by</div>
+													<!--end::Info-->
+													<!--begin::User-->
+													<a href="#" class="text-primary fw-bolder me-1">Alice Tan</a>
+													<!--end::User-->
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black" />
+													<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mb-10 mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">You have received a new order:</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Placed at 5:05 AM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<div class="symbol symbol-circle symbol-25px" data-bs-toggle="tooltip" data-bs-boundary="window" data-bs-placement="top" title="Robert Rich">
+													<img src="assets/media/avatars/150-14.jpg" alt="img" />
+												</div>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+										<!--begin::Timeline details-->
+										<div class="overflow-auto pb-5">
+											<!--begin::Notice-->
+											<div class="notice d-flex bg-light-primary rounded border-primary border border-dashed min-w-lg-600px flex-shrink-0 p-6">
+												<!--begin::Icon-->
+												<!--begin::Svg Icon | path: icons/duotune/coding/cod004.svg-->
+												<span class="svg-icon svg-icon-2tx svg-icon-primary me-4">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<path opacity="0.3" d="M19.0687 17.9688H11.0687C10.4687 17.9688 10.0687 18.3687 10.0687 18.9688V19.9688C10.0687 20.5687 10.4687 20.9688 11.0687 20.9688H19.0687C19.6687 20.9688 20.0687 20.5687 20.0687 19.9688V18.9688C20.0687 18.3687 19.6687 17.9688 19.0687 17.9688Z" fill="black" />
+														<path d="M4.06875 17.9688C3.86875 17.9688 3.66874 17.8688 3.46874 17.7688C2.96874 17.4688 2.86875 16.8688 3.16875 16.3688L6.76874 10.9688L3.16875 5.56876C2.86875 5.06876 2.96874 4.46873 3.46874 4.16873C3.96874 3.86873 4.56875 3.96878 4.86875 4.46878L8.86875 10.4688C9.06875 10.7688 9.06875 11.2688 8.86875 11.5688L4.86875 17.5688C4.66875 17.7688 4.36875 17.9688 4.06875 17.9688Z" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+												<!--end::Icon-->
+												<!--begin::Wrapper-->
+												<div class="d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap">
+													<!--begin::Content-->
+													<div class="mb-3 mb-md-0 fw-bold">
+														<h4 class="text-gray-900 fw-bolder">Database Backup Process Completed!</h4>
+														<div class="fs-6 text-gray-700 pe-7">Login into Jet Admin Dashboard to make sure the data integrity is OK</div>
+													</div>
+													<!--end::Content-->
+													<!--begin::Action-->
+													<a href="#" class="btn btn-primary px-6 align-self-center text-nowrap">Proceed</a>
+													<!--end::Action-->
+												</div>
+												<!--end::Wrapper-->
+											</div>
+											<!--end::Notice-->
+										</div>
+										<!--end::Timeline details-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+								<!--begin::Timeline item-->
+								<div class="timeline-item">
+									<!--begin::Timeline line-->
+									<div class="timeline-line w-40px"></div>
+									<!--end::Timeline line-->
+									<!--begin::Timeline icon-->
+									<div class="timeline-icon symbol symbol-circle symbol-40px">
+										<div class="symbol-label bg-light">
+											<!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm002.svg-->
+											<span class="svg-icon svg-icon-2 svg-icon-gray-500">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<path d="M21 10H13V11C13 11.6 12.6 12 12 12C11.4 12 11 11.6 11 11V10H3C2.4 10 2 10.4 2 11V13H22V11C22 10.4 21.6 10 21 10Z" fill="black" />
+													<path opacity="0.3" d="M12 12C11.4 12 11 11.6 11 11V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V11C13 11.6 12.6 12 12 12Z" fill="black" />
+													<path opacity="0.3" d="M18.1 21H5.9C5.4 21 4.9 20.6 4.8 20.1L3 13H21L19.2 20.1C19.1 20.6 18.6 21 18.1 21ZM13 18V15C13 14.4 12.6 14 12 14C11.4 14 11 14.4 11 15V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18ZM17 18V15C17 14.4 16.6 14 16 14C15.4 14 15 14.4 15 15V18C15 18.6 15.4 19 16 19C16.6 19 17 18.6 17 18ZM9 18V15C9 14.4 8.6 14 8 14C7.4 14 7 14.4 7 15V18C7 18.6 7.4 19 8 19C8.6 19 9 18.6 9 18Z" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+									</div>
+									<!--end::Timeline icon-->
+									<!--begin::Timeline content-->
+									<div class="timeline-content mt-n1">
+										<!--begin::Timeline heading-->
+										<div class="pe-3 mb-5">
+											<!--begin::Title-->
+											<div class="fs-5 fw-bold mb-2">New order
+											<a href="#" class="text-primary fw-bolder me-1">#67890</a>is placed for Workshow Planning &amp; Budget Estimation</div>
+											<!--end::Title-->
+											<!--begin::Description-->
+											<div class="d-flex align-items-center mt-1 fs-6">
+												<!--begin::Info-->
+												<div class="text-muted me-2 fs-7">Placed at 4:23 PM by</div>
+												<!--end::Info-->
+												<!--begin::User-->
+												<a href="#" class="text-primary fw-bolder me-1">Jimmy Bold</a>
+												<!--end::User-->
+											</div>
+											<!--end::Description-->
+										</div>
+										<!--end::Timeline heading-->
+									</div>
+									<!--end::Timeline content-->
+								</div>
+								<!--end::Timeline item-->
+							</div>
+							<!--end::Timeline items-->
+						</div>
+						<!--end::Content-->
+					</div>
+					<!--end::Body-->
+					<!--begin::Footer-->
+					<div class="card-footer py-5 text-center" id="kt_activities_footer">
+						<a href="../dist/pages/profile/activity.html" class="btn btn-bg-body text-primary">Store Planning
+						<!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+						<span class="svg-icon svg-icon-3 svg-icon-primary">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<rect x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black" />
+								<path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black" />
+							</svg>
+						</span>
+						<!--end::Svg Icon--></a>
+					</div>
+					<!--end::Footer-->
+				</div>
+			</div>
+		<!--end::Store drawer-->
 		<!--begin::Scrolltop-->
 		<div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
 			<!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->

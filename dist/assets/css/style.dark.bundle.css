@@ -6886,6 +6886,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
+  margin-bottom: -1px;
 }
 
 .d-inline-flex {
@@ -40468,7 +40469,6 @@ code:not([class*=language-]) {
   border-bottom-color: #0C2F3C;
 }
 .table.table-row-bordered tfoot th, .table.table-row-bordered tfoot td {
-  border-top-width: 1px !important;
 }
 .table.table-row-dashed tr {
   border-bottom-width: 1px;
