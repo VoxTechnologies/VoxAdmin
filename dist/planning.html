@@ -955,6 +955,28 @@
 														</select>
 													</div>
 													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="mb-6">
+														<label class="form-label fs-6 fw-bold">Type:</label>
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+															<option></option>
+															<option value="Private">Private</option>
+															<option value="Shared">Shared</option>
+															<option value="Public">Public</option>
+														</select>
+													</div>
+													<!--end::Input group-->
+													<!--begin::Input group-->
+													<div class="mb-6">
+														<label class="form-label fs-6 fw-bold">Plan:</label>
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+															<option></option>
+															<option value="Weekly">Weekly</option>
+															<option value="Bi-weekly">Bi-weekly</option>
+															<option value="Monthly">Monthly</option>
+														</select>
+													</div>
+													<!--end::Input group-->
 													<!--begin::Actions-->
 													<div class="d-flex justify-content-end">
 														<button type="reset" class="btn btn-light btn-active-light-primary fw-bold me-2 px-6" data-kt-menu-dismiss="true" data-kt-user-table-filter="reset">Reset</button>
@@ -992,9 +1014,10 @@
 											<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">											
 												<th class="min-w-80px">Store#</th>
 												<th class="min-w-100px">User</th>
+												<th class="min-w-60px">Type</th>
+												<th class="min-w-60px">Plan</th>
 												<th class="min-w-40px">Planning Due</th>
 												<th class="min-w-40px">Shipping Due</th>
-												<th class="min-w-80px">Planned</th>
 												<th class="text-end min-w-80px sorting_disabled">Status</th>
 											</tr>
 											<!--end::Table row-->
@@ -1014,6 +1037,16 @@
 													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Tamara Conner</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Private</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 22 2021</a>
@@ -1024,10 +1057,6 @@
 													<div class="me-1">Dec 24 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-danger fw-bolder my-1">Over Due</div>
@@ -1044,9 +1073,19 @@
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
 												<td>
-													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Charlie Wright</a>
+													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Rearden Metal</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Shared</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Bi-weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 22 2021</a>
@@ -1057,10 +1096,6 @@
 													<div class="me-1">Dec 24 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-danger fw-bolder my-1">Over Due</div>
@@ -1080,6 +1115,16 @@
 													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Avery Walsh</a>
 												</td>
 												<!--end::User Name=-->	
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Private</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 24 2021</a>
@@ -1090,10 +1135,6 @@
 													<div class="me-1">Dec 26 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-warning fw-bolder my-1">Need Planning</div>
@@ -1110,9 +1151,19 @@
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
 												<td>
-													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Gaylord Harding</a>
+													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Wyatt Hotel</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Public</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Monthly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 25 2021</a>
@@ -1123,10 +1174,6 @@
 													<div class="me-1">Dec 28 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-warning fw-bolder my-1">Need Planning</div>
@@ -1146,6 +1193,16 @@
 													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Rosalind Romero</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Private</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 26 2021</a>
@@ -1156,10 +1213,6 @@
 													<div class="me-1">Dec 29 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-warning fw-bolder my-1">Need Planning</div>
@@ -1176,9 +1229,19 @@
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
 												<td>
-													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Dennis Bradley</a>
+													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">WeWalk Manhattan</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Shared</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 21 2021</a>
@@ -1189,11 +1252,6 @@
 													<div class="me-1">Dec 23 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-													<div class="me-1">Dec 20 2021</a>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-success fw-bolder my-1">Planned</div>
@@ -1210,9 +1268,19 @@
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
 												<td>
-													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+													<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Cleverland Clinic</a>
 												</td>
 												<!--end::User Name=-->
+												<!--begin::Type-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Public</div>
+												</td>
+												<!--end::Type=-->
+												<!--begin::Plan-->
+												<td>
+													<div class="badge badge-light-dark fw-bolder my-1">Bi-weekly</div>
+												</td>
+												<!--end::Plan=-->
 												<!--begin::Planning Due=-->
 												<td>
 													<div class="me-1">Dec 20 2021</a>
@@ -1223,11 +1291,6 @@
 													<div class="me-1">Dec 21 2021</a>
 												</td>
 												<!--end::Shipping Due=-->
-												<!--begin::Planned Date=-->
-												<td>
-													<div class="me-1">Dec 19 2021</a>
-												</td>
-												<!--end::Planned Date=-->
 												<!--begin::Status-->
 												<td class="text-end">
 													<div class="badge badge-light-success fw-bolder my-1">Planned</div>
