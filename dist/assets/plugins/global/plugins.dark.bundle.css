@@ -29225,7 +29225,7 @@ div.dataTables_wrapper div.dataTables_paginate .pagination {
 
 table.dataTable > thead > tr > td:not(.sorting_disabled),
 table.dataTable > thead > tr > th:not(.sorting_disabled) {
-  padding-right: 30px;
+  padding-right: 20px;
 }
 
 table.dataTable > thead .sorting,
