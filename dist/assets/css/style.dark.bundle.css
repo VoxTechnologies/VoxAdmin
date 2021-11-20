@@ -46765,10 +46765,10 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   font-size: 1.35rem;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-label .stepper-title {
-  color: #476880;
+  color: #DCF1F8;
 }
 .stepper.stepper-pills .stepper-item.current .stepper-label .stepper-desc {
-  color: #476880;
+  color: #9CB5C7;
 }
 .stepper.stepper-pills .stepper-item.current:last-child .stepper-icon, .stepper.stepper-pills .stepper-item.completed .stepper-icon {
   transition: color 0.2s ease, background-color 0.2s ease;
