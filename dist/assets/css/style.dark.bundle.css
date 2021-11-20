@@ -46811,7 +46811,7 @@ label.rating-label:hover ~ .rating-label > .svg-icon svg:hover [fill]:not(.perma
   width: 40px;
   transform: translate(50%);
   border-left-width: 1px;
-  border-left-style: dashed;
+  border-left-style: solid;
   border-left-color: #0C2F3C;
 }
 .stepper.stepper-pills.stepper-column .stepper-item:first-child .stepper-line {

@@ -158,7 +158,7 @@ var KTCreateApp = function () {
 					category: {
 						validators: {
 							notEmpty: {
-								message: 'Category is required'
+								message: 'Selecting is required'
 							}
 						}
 					}
