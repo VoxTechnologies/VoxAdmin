@@ -907,29 +907,29 @@
 								<!--begin::Content-->
 								<div class="flex-lg-row-fluid me-lg-15 order-2 order-lg-1 mb-10 mb-lg-0">
 									<!--begin::Card-->
-									<div class="card pt-3 card-flush mb-5 mb-xl-10">
+									<div class="card pt-5 card-flush mb-5 mb-xl-10">
 										<!--begin::Card header-->
 										<div class="card-header">
 											<!--begin::Card title-->
 											<div class="card-title">
-												<h2 class="fw-bolder">Store Selection</h2>
+												<ul class="nav nav-stretch fs-5 fw-bold nav-line-tabs nav-line-tabs-2x border-transparent me-8 my-2" role="tablist">
+													<li class="nav-item" role="presentation">
+														<a id="kt_referrals_this_tab" class="nav-link text-active-primary text-gray-400 active" data-bs-toggle="tab" role="tab" href="#kt_planning_this">This Time</a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a id="kt_referrals_last_tab" class="nav-link text-active-primary text-gray-400 ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_last">Last Time</a>
+													</li>
+													<li class="nav-item" role="presentation">
+														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary text-gray-400 ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_lastlast">Last Last Time</a>
+													</li>
+												</ul>
 											</div>
 											<!--begin::Card title-->
 											<!--begin::Card Toolbar-->
 											<div class="card-toolbar">
 												<!--begin::Tab nav-->
-												<ul class="nav nav-stretch fs-6 fw-bold nav-line-tabs nav-line-tabs-2x border-transparent me-8 my-2" role="tablist">
-													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_this_tab" class="nav-link text-active-primary active" data-bs-toggle="tab" role="tab" href="#kt_planning_this">This Time</a>
-													</li>
-													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_last_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_last">Last Time</a>
-													</li>
-													<li class="nav-item" role="presentation">
-														<a id="kt_referrals_lastlast_tab" class="nav-link text-active-primary ms-3" data-bs-toggle="tab" role="tab" href="#kt_planning_lastlast">Last Last Time</a>
-													</li>
-												</ul>
-												<a href="../dist/planning_add.html" class="btn btn-primary my-2">
+												
+												<a href="../dist/planning_add_private.html" class="btn btn-primary">
 													<span class="svg-icon svg-icon-3">
 														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 														<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
@@ -944,7 +944,7 @@
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
-										<div class="card-body pt-0">
+										<div class="card-body pt-1">
 											<!--begin::Tab Content-->
 											<div id="kt_referred_users_tab_content" class="tab-content">
 												<!--begin::Tab panel-->
@@ -3437,7 +3437,7 @@
 									<!--begin::Card-->
 									<div class="card card-flush mb-0" data-kt-sticky="true" data-kt-sticky-name="subscription-summary" data-kt-sticky-offset="{default: false, lg: '200px'}" data-kt-sticky-width="{lg: '250px', xl: '300px'}" data-kt-sticky-left="auto" data-kt-sticky-top="100px" data-kt-sticky-animation="false" data-kt-sticky-zindex="95">
 										<!--begin::Card header-->
-										<div class="card-header pt-2">
+										<div class="card-header pt-4">
 											<!--begin::Card title-->
 											<div class="card-title">
 												<h2>Planning</h2>
@@ -3446,9 +3446,9 @@
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
-										<div class="card-body pt-0 fs-6">
+										<div class="card-body pt-1 fs-6">
 											<!--begin::Section-->
-											<div class="mb-7">
+											<div class="mb-5">
 												<!--begin::Details-->
 												<div class="d-flex align-items-center">
 													<!--begin::Store Icon-->
@@ -3476,6 +3476,26 @@
 													</div>
 													<!--end::Info-->
 												</div>
+												<!--end::Details-->
+											</div>
+											<!--end::Section-->
+											<!--begin::Section-->
+											<div class="mb-4">												
+												<!--begin::Details-->
+												<table class="table fs-6 fw-bold gs-0 gy-1 gx-2">
+													<!--begin::Row-->
+													<tr class="">
+														<td class="text-gray-400">Type:</td>
+														<td class="text-gray-800 text-end">Private</td>
+													</tr>
+													<!--end::Row-->
+													<!--begin::Row-->
+													<tr class="">
+														<td class="text-gray-400">Plan:</td>
+														<td class="text-gray-800 text-end">Weekly</td>
+													</tr>
+													<!--end::Row-->
+												</table>
 												<!--end::Details-->
 											</div>
 											<!--end::Section-->
