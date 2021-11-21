@@ -946,23 +946,21 @@
 												<div class="px-7 py-5" data-kt-user-table-filter="form">
 													<!--begin::Input group-->
 													<div class="mb-6">
-														<label class="form-label fs-6 fw-bold">Shipping Status:</label>
-														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+														<label class="form-label fs-6 fw-bold">Returning Status:</label>
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Status" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
 															<option></option>
-															<option value="Not Started">Not Started</option>
-															<option value="On Picking">On Picking</option>
-															<option value="Picking Completed">Picking Completed</option>
-															<option value="Shipped">Shipped</option>
-															<option value="Shipped">Over Due</option>
-															<option value="Delivered">Delivered</option>
-															<option value="Received">Received</option>
+															<option value="Wait for Collectiond">Wait for Collection</option>
+															<option value="Collected">Collected</option>
+															<option value="Returned">Returned</option>
+															<option value="On Reshelvin">On Reshelving</option>
+															<option value="Reshelved">Reshelved</option>
 														</select>
 													</div>
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="mb-6">
 														<label class="form-label fs-6 fw-bold">Type:</label>
-														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Type" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
 															<option></option>
 															<option value="Private">Private</option>
 															<option value="Shared">Shared</option>
@@ -973,7 +971,7 @@
 													<!--begin::Input group-->
 													<div class="mb-6">
 														<label class="form-label fs-6 fw-bold">Plan:</label>
-														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select option" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Plan" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
 															<option></option>
 															<option value="Weekly">Weekly</option>
 															<option value="Bi-weekly">Bi-weekly</option>
@@ -1010,9 +1008,9 @@
 												<th class="min-w-100px">User</th>
 												<th class="min-w-60px">Type</th>
 												<th class="min-w-60px">Plan</th>
-												<th class="min-w-40px">Shipping Due</th>
-												<th class="min-w-40px">Delivery Date</th>
-												<th class="text-end min-w-80px sorting_disabled">Status</th>
+												<th class="min-w-40px">Collection Date</th>
+												<th class="min-w-40px">Returned Date</th>
+												<th class="text-end min-w-80px sorting_disabled">Returning Status</th>
 											</tr>
 											<!--end::Table row-->
 										</thead>
@@ -1023,7 +1021,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#97AE709C</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#97AE709C</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1053,7 +1051,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-danger fw-bolder my-1">Over Due</div>
+													<div class="badge badge-light-warning fw-bolder my-1">Wait for Collection</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1062,7 +1060,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#DED77782</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#DED77782</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1092,7 +1090,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-warning fw-bolder my-1">Not Started</div>
+													<div class="badge badge-light-dark fw-bolder my-1">Collected</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1101,7 +1099,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#76E56A3C</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#76E56A3C</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1131,7 +1129,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light fw-bolder my-1">On Picking</div>
+													<div class="badge badge-light-primary fw-bolder my-1">Returned</div>
 												</td>
 												<!--end::Status=-->												
 											</tr>
@@ -1140,7 +1138,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#4446AD6</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#4446AD6</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1170,7 +1168,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-dark fw-bolder my-1">Picking Completed</div>
+													<div class="badge badge-light-primary fw-bolder my-1">Returned</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1179,7 +1177,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#9ECF18EE</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#9ECF18EE</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1209,7 +1207,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-primary fw-bolder my-1">Shipped</div>
+													<div class="badge badge-light-info fw-bolder my-1">On Reshelving</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1218,7 +1216,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#B79CC0C9</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#B79CC0C9</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1248,7 +1246,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-info fw-bolder my-1">Delivered</div>
+													<div class="badge badge-light-info fw-bolder my-1">On Reshelving</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1257,7 +1255,7 @@
 											<tr>
 												<!--begin::Store#=-->
 												<td>
-													<a href="../dist/shipping_detail.html" class="text-gray-900 text-hover-primary me-1">#2DB652AD</a>
+													<a href="../dist/returning_detail.html" class="text-gray-900 text-hover-primary me-1">#2DB652AD</a>
 												</td>
 												<!--end::Store#=-->
 												<!--begin::User Name=-->
@@ -1287,7 +1285,7 @@
 												<!--end::Shipping Due=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-success fw-bolder my-1">Received</div>
+													<div class="badge badge-light-success fw-bolder my-1">Reshelved</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
