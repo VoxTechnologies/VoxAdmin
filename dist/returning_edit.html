@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Returning Detail - Returning - Operate - VoxStore</title>
+		<title>Returning Edit - Returning - Operate - VoxStore</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
@@ -863,33 +863,34 @@
 								<!--end::Breadcrumb-->
 							</div>
 							<!--end::Page title=-->
-							<!--begin::Wrapper-->
-							<div class="d-flex d-lg-none align-items-center ms-n2 me-2">
-								<!--begin::Aside mobile toggle-->
-									<!--begin::Logo-->
-										<a href="../dist/index.html" class="logo d-flex align-items-center ms-2">
-											<img alt="Logo" src="assets/media/logos/logo-default.svg" class="h-35px" />
-										</a>
-									<!--end::Logo-->
-								<!--end::Aside mobile toggle-->
-							</div>
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
 									Store #2DB652AD
 								</div>
 							<!--end::Mobile Title-->
-							<!--begin::Aside mobile toggle-->
-								<div class="btn btn-icon btn-active-icon-primary d-lg-none" id="kt_aside_toggle">
-									<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
-									<span class="svg-icon svg-icon-2x">
+							<!--begin::Toolbar wrapper-->
+							<div class="d-flex flex-shrink-0">
+								<!--begin::Discard-->
+								<div class="d-flex ms-3">
+									<a href="../dist/returning_detail.html" class="btn btn-light btn-text-info btn-active-info" tooltip="Discard">Discard</a>
+								</div>
+								<!--end::Discard-->
+								<!--begin::Save-->
+								<div class="d-flex ms-3">
+									<a href="../dist/returning_detail.html" class="btn btn-primary btn-active-white">
+									<span class="svg-icon svg-icon-3">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M21 6H3C3 6 3 6 3 6C3 6 2 6 2 5C2 4.00005 2.9999 4 3 4C3 4 3 4 3 4H21C22 4 22 5 22 5V5C22 5 22 6 21 6Z" fill="black" />
-											<path d="M21 13H3C3 13 2 13 2 12C2 11 3 11 3 11L21 11C21 11 22 11 22 12C22 13 21 13 21 13ZM22 19C22 18 21 18 21 18H3C3 18 2 18 2 19C2 20 3 20 3 20H21C21 20 22 20 22 19Z" fill="black" />
+											<path d="M14.4 11H2.99999C2.39999 11 1.99999 11.4 1.99999 12C1.99999 12.6 2.39999 13 2.99999 13H14.4V11Z" fill="black"/>
+											<path d="M17.7762 13.2561C18.4572 12.5572 18.4572 11.4429 17.7762 10.7439L13.623 6.48107C13.1221 5.96697 12.25 6.32158 12.25 7.03934V16.9607C12.25 17.6785 13.1221 18.0331 13.623 17.519L17.7762 13.2561Z" fill="black"/>
+											<rect width="2" height="16" rx="1" transform="matrix(-1 0 0 1 22 4)" fill="black"/>
 										</svg>
 									</span>
-									<!--end::Svg Icon-->
+									<span class="align-center align-middle">Save</span>
+									</a>
 								</div>
-							<!--end::Aside mobile toggle-->
+								<!--end::Save-->
+							</div>
+							<!--end::Toolbar wrapper-->
 							<!--end::Wrapper-->
 						</div>
 						<!--end::Container-->
@@ -912,11 +913,6 @@
 												<h2 class="fw-bolder">Reshelving List</h2>
 											</div>
 											<!--begin::Card title-->
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar">
-												<a href="../dist/returning_edit.html" class="btn btn-sm btn-light-primary">Edit Reshelving Status</a>
-											</div>
-											<!--end::Card toolbar-->
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
@@ -927,12 +923,12 @@
 												<thead>
 													<!--begin::Table row-->
 													<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+														<th class="min-w-80px">Reshelved</th>
+														<th class="min-w-80px">Missed/Damaged</th>
 														<th class="min-w-300px">Product</th>
 														<th class="min-w-40px">Qty</th>
 														<th class="min-w-40px">Location</th>
-														<th class="min-w-40px">Reshelved</th>
-														<th class="min-w-40px">Operator</th>
-														<th class="text-end min-w-80px sorting_disabled">Status</th>
+														<th class="text-end min-w-40px sorting_disabled">GTIN</th>
 													</tr>
 													<!--end::Table row-->
 												</thead>
@@ -941,6 +937,20 @@
 												<tbody class="text-gray-600 fw-bold">
 													<!--begin::Table row-->
 													<tr>
+														<!--begin::Status=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" checked="checked"/>
+															</div>
+														</td>
+														<!--end::Status=-->
+														<!--begin::Missed/Damaged=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" disabled=""/>
+															</div>
+														</td>
+														<!--end::Missed/Damaged=-->
 														<!--begin::Product=-->
 														<td class="d-flex align-items-center">
 															<!--begin:: Image -->
@@ -970,25 +980,29 @@
 															<div class="me-1">002FA51D</div>
 														</td>
 														<!--end::Location=-->
-														<!--begin::Picked Date=-->
-														<td>
-															<div class="me-1">Dec 18 2021</div>
-														</td>
-														<!--end::Picked Date=-->
-														<!--begin::Operator=-->
-														<td>
-															<div class="me-1"><a href="#" class="text-gray-900 text-hover-primary">Francisco d'Anconia</a></div>
-														</td>
-														<!--end::Operator=-->
-														<!--begin::Status=-->
+														<!--begin::GTIN-->
 														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">Reshelved</div>
+															<div class="me-1">527653072214</div>
 														</td>
-														<!--end::Status=-->
+														<!--end::GTIN=-->
 													</tr>
 													<!--end::Table row-->
 													<!--begin::Table row-->
 													<tr>
+														<!--begin::Status=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" checked="checked"/>
+															</div>
+														</td>
+														<!--end::Status=-->
+														<!--begin::Missed/Damaged=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" disabled=""/>
+															</div>
+														</td>
+														<!--end::Missed/Damaged=-->
 														<!--begin::Product=-->
 														<td class="d-flex align-items-center">
 															<!--begin:: Image -->
@@ -1018,25 +1032,29 @@
 															<div class="me-1">9A6433E6</div>
 														</td>
 														<!--end::Location=-->
-														<!--begin::Picked Date=-->
-														<td>
-															<div class="me-1">Dec 18 2021</div>
-														</td>
-														<!--end::Picked Date=-->
-														<!--begin::Operator=-->
-														<td>
-															<div class="me-1"><a href="#" class="text-gray-900 text-hover-primary">Francisco d'Anconia</a></div>
-														</td>
-														<!--end::Operator=-->
-														<!--begin::Status=-->
+														<!--begin::GTIN-->
 														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">Reshelved</div>
+															<div class="me-1">436060316851</div>
 														</td>
-														<!--end::Status=-->
+														<!--end::GTIN=-->
 													</tr>
 													<!--end::Table row-->
 													<!--begin::Table row-->
 													<tr>
+														<!--begin::Status=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" disabled=""/>
+															</div>
+														</td>
+														<!--end::Status=-->
+														<!--begin::Missed/Damaged=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid form-check-danger align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60" checked="checked"/>
+															</div>
+														</td>
+														<!--end::Missed/Damaged=-->
 														<!--begin::Product=-->
 														<td class="d-flex align-items-center">
 															<!--begin:: Image -->
@@ -1066,25 +1084,29 @@
 															<div class="me-1">3D65B552</div>
 														</td>
 														<!--end::Location=-->
-														<!--begin::Picked Date=-->
-														<td>
-															<div class="me-1">Dec 18 2021</div>
-														</td>
-														<!--end::Picked Date=-->
-														<!--begin::Operator=-->
-														<td>
-															<div class="me-1"><a href="#" class="text-gray-900 text-hover-primary">Francisco d'Anconia</a></div>
-														</td>
-														<!--end::Operator=-->
-														<!--begin::Status=-->
+														<!--begin::GTIN-->
 														<td class="text-end">
-															<div class="badge badge-light-danger fw-bolder my-1 ms-1">Missed/Damaged</div>
+															<div class="me-1">852109411837</div>
 														</td>
-														<!--end::Status=-->
+														<!--end::GTIN=-->
 													</tr>
 													<!--end::Table row-->
 													<!--begin::Table row-->
 													<tr>
+														<!--begin::Status=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60"/>
+															</div>
+														</td>
+														<!--end::Status=-->
+														<!--begin::Missed/Damaged=-->
+														<td>
+															<div class="form-check form-switch form-check-custom form-check-solid form-check-danger align-right">
+																<input class="form-check-input h-30px w-50px align-right" type="checkbox" value="" id="flexSwitch40x60"/>
+															</div>
+														</td>
+														<!--end::Missed/Damaged=-->
 														<!--begin::Product=-->
 														<td class="d-flex align-items-center">
 															<!--begin:: Image -->
@@ -1114,19 +1136,11 @@
 															<div class="me-1">A8E9893D</div>
 														</td>
 														<!--end::Location=-->
-														<!--begin::Picked Date=-->
-														<td>
-															<div class="me-1">Dec 18 2021</div>
-														</td>
-														<!--end::Picked Date=-->
-														<!--begin::Operator=-->
-														<td>
-														</td>
-														<!--end::Operator=-->
-														<!--begin::Status=-->
+														<!--begin::GTIN-->
 														<td class="text-end">
+															<div class="me-1">129362728999</div>
 														</td>
-														<!--end::Status=-->
+														<!--end::GTIN=-->
 													</tr>
 													<!--end::Table row-->
 												</tbody>
@@ -1218,22 +1232,21 @@
 											<!--begin::Section-->
 											<div class="mb-7">
 												<!--begin::Title-->
-												<h5 class="mb-4">Returning Status</h5>
+												<h5 class="mb-5">Status:</h5>
 												<!--end::Title-->
-												<!--begin::Details-->
-												<div class="mb-0">
-													<!--begin::Status-->
-													<span class="badge badge-light-info me-2">On Reshelving</span>
-													<!--end::Status-->
-												</div>
-												<!--end::Details-->
+												<select class="form-select form-select-solid" name="status" data-control="select2" data-hide-search="true">
+													<option value="Returned">Returned</option>
+													<option value="On Reshelving" selected="selected">On Reshelving</option>
+													<option value="Reshelved">Reshelved</option>
+													<option value="MissedDamaged">Missed/Damaged Items</option>
+												</select>
 											</div>
 											<!--end::Section-->
 											<!--begin::Seperator-->
 											<div class="separator mb-7"></div>
 											<!--end::Seperator-->
 											<!--begin::Section-->
-											<div class="mb-5">
+											<div class="mb-0">
 												<!--begin::Title-->
 												<h5 class="mb-4">Package</h5>
 												<!--end::Title-->
@@ -1260,33 +1273,7 @@
 													<!--begin::Row-->
 													<tr class="">
 														<td class="text-gray-400">Shipment#:</td>
-														<td class="text-gray-800 text-end">87AC3DD7</td>
-													</tr>
-													<!--end::Row-->
-												</table>
-												<!--end::Details-->
-											</div>
-											<!--end::Section-->
-											<!--begin::Seperator-->
-											<div class="separator mb-7"></div>
-											<!--end::Seperator-->
-											<!--begin::Section-->
-											<div class="mb-0">
-												<!--begin::Title-->
-												<h5 class="mb-4">Timeline</h5>
-												<!--end::Title-->
-												<!--begin::Details-->
-												<table class="table fs-6 fw-bold gs-0 gy-1 gx-2">
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Collection Date:</td>
-														<td class="text-gray-800 text-end">Dec 20 2021</td>
-													</tr>
-													<!--end::Row-->
-													<!--begin::Row-->
-													<tr class="">
-														<td class="text-gray-400">Returned Date:</td>
-														<td class="text-gray-800 text-end">Dec 21 2021</td>
+														<td class="text-gray-800 text-end">1CF29258</td>
 													</tr>
 													<!--end::Row-->
 												</table>
