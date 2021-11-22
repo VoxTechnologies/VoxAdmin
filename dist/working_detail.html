@@ -909,617 +909,1014 @@
 										<div class="card-header">
 											<!--begin::Card title-->
 											<div class="card-title">
-												<h2 class="fw-bolder">Item List</h2>
+												<ul class="nav nav-stretch fs-5 fw-bold nav-line-tabs nav-line-tabs-2x border-transparent me-8 my-2" role="tablist">
+														<li class="nav-item" role="presentation">
+															<a id="kt_referrals_items_tab" class="nav-link text-active-primary text-gray-400 active" data-bs-toggle="tab" role="tab" href="#kt_working_items">Item List</a>
+														</li>
+														<li class="nav-item" role="presentation">
+															<a id="kt_referrals_transactions_tab" class="nav-link text-active-primary text-gray-400 ms-3" data-bs-toggle="tab" role="tab" href="#kt_working_transactions">Sales Transactions</a>
+														</li>
+													</ul>
 											</div>
 											<!--begin::Card title-->
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar">
-												<a href="../dist/working_edit.html" class="btn btn-sm btn-light-primary me-3">Edit Sales Status</a>
-												<a href="#" class="btn btn-sm btn-primary">Sales Transactions</a>
+												<a href="../dist/working_edit.html" class="btn btn-sm btn-light-primary">Edit Sales Status</a>
 											</div>
 											<!--end::Card toolbar-->
 										</div>
 										<!--end::Card header-->
 										<!--begin::Card body-->
 										<div class="card-body pt-0">
-											<!--begin::Table-->
-											<table class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5 table-responsive" id="kt_table_users">
-												<!--begin::Table head-->
-												<thead>
-													<!--begin::Table row-->
-													<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
-														<th class="min-w-300px">Product</th>
-														<th class="min-w-40px">Price</th>
-														<th class="min-w-40px">Stock</th>
-														<th class="min-w-40px">Sold</th>
-														<th class="min-w-40px">Sell-by Date</th>
-														<th class="text-end min-w-80px sorting_disabled">Sales Status</th>
-													</tr>
-													<!--end::Table row-->
-												</thead>
-												<!--end::Table head-->
-												<!--begin::Table body-->
-												<tbody class="text-gray-600 fw-bold">
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/32.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Jalapeno Lime Tortilla Chips</a>
-																<span class="fs-7">5.5 oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$9.49</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/23.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Black le Hot Sauce</a>
-																<span class="fs-7">6 oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$7.99</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/25.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Black Cherry Sparkling Water</a>
-																<span class="fs-7">144 fl oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$12.2</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/26.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Premium Whole Macadamia Nuts</a>
-																<span class="fs-7">8 oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$6.29</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/24.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Major Dickason's Blend K-cup</a>
-																<span class="fs-7">0.44 oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$18.79</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/27.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Pinot Noir</a>
-																<span class="fs-7"></span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$4.69</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/28.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Two Chip Chocolate Chip Cookies</a>
-																<span class="fs-7">82 oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$11.99</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/29.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Toasted Coconut Almond Milk</a>
-																<span class="fs-7">48 fl oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->	
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$15.89</div>
-														</td>
-														<!--end::Price=-->													
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/30.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Genoa Salami Trio</a>
-																<span class="fs-7"></span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$10.49</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->														
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">20:30 Dec 24 2021</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-danger fw-bolder my-1 ms-1">Stopped Selling</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/31.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Lavender Air Freshener</a>
-																<span class="fs-7">7 fl oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$20.49</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/33.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">100% Pure Avocado Oil</a>
-																<span class="fs-7">16.9 fl oz</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$18.99</div>
-														</td>
-														<!--end::Price=-->
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">-</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-													<!--begin::Table row-->
-													<tr>
-														<!--begin::Product=-->
-														<td class="d-flex align-items-center">
-															<!--begin:: Image -->
-															<div class="symbol symbol-45px overflow-hidden me-4">
-																<a href="../dist/product_detail.html">
-																	<div class="symbol-label">
-																		<img src="assets/media/products/34.jpg" class="w-100" />
-																	</div>
-																</a>
-															</div>
-															<!--end::Image-->
-															<!--begin::Variation-->
-															<div class="d-flex flex-column">
-																<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Whiskey And Cake Gelato</a>
-																<span class="fs-7">1 pint</span>
-															</div>
-															<!--begin::Variation-->
-														</td>
-														<!--end::Product=-->
-														<!--begin::Price-->
-														<td>
-															<div class="me-1">$22.49</div>
-														</td>
-														<!--end::Price=-->														
-														<!--begin::Quantity=-->
-														<td>
-															<div class="me-1">1</div>
-														</td>
-														<!--end::Quantity=-->
-														<!--begin::Sol Quantity=-->
-														<td>
-															<div class="me-1">0</div>
-														</td>
-														<!--end::Sold Quantity=-->
-														<!--begin::Sell-by Date=-->
-														<td>
-															<div class="me-1">17:00 Dec 25 2021</div>
-														</td>
-														<!--end::Sell-by Date=-->
-														<!--begin::Status=-->
-														<td class="text-end">
-															<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
-														</td>
-														<!--end::Status=-->
-													</tr>
-													<!--end::Table row-->
-												</tbody>
-												<!--end::Table body-->
-											</table>
-											<!--end::Table-->
+											<!--begin::Tab Content-->
+											<div id="kt_referred_users_tab_content" class="tab-content">
+												<!--begin::Tab panel-->
+												<div id="kt_working_items" class="tab-pane fade show active" role="tabpanel">
+													<!--begin::Table wrapper-->
+													<div class="table-responsive">
+														<!--begin::Table-->
+														<table class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5 table-responsive" id="kt_working_items">
+															<!--begin::Table head-->
+															<thead>
+																<!--begin::Table row-->
+																<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+																	<th class="min-w-300px">Product</th>
+																	<th class="min-w-40px">Price</th>
+																	<th class="min-w-40px">Stock</th>
+																	<th class="min-w-40px">Sold</th>
+																	<th class="min-w-100px">Sell-by Date</th>
+																	<th class="text-end min-w-80px sorting_disabled">Sales Status</th>
+																</tr>
+																<!--end::Table row-->
+															</thead>
+															<!--end::Table head-->
+															<!--begin::Table body-->
+															<tbody class="text-gray-600 fw-bold">
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/32.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Jalapeno Lime Tortilla Chips</a>
+																			<span class="fs-7">5.5 oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$9.49</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/23.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Black le Hot Sauce</a>
+																			<span class="fs-7">6 oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$7.99</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/25.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Black Cherry Sparkling Water</a>
+																			<span class="fs-7">144 fl oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$12.2</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/26.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Premium Whole Macadamia Nuts</a>
+																			<span class="fs-7">8 oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$6.29</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/24.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Major Dickason's Blend K-cup</a>
+																			<span class="fs-7">0.44 oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$18.79</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/27.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Pinot Noir</a>
+																			<span class="fs-7"></span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$4.69</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/28.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Two Chip Chocolate Chip Cookies</a>
+																			<span class="fs-7">82 oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$11.99</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/29.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Toasted Coconut Almond Milk</a>
+																			<span class="fs-7">48 fl oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->	
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$15.89</div>
+																	</td>
+																	<!--end::Price=-->													
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/30.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Genoa Salami Trio</a>
+																			<span class="fs-7"></span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$10.49</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->														
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">20:30 Dec 24 2021</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-danger fw-bolder my-1 ms-1">Stopped Selling</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/31.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Lavender Air Freshener</a>
+																			<span class="fs-7">7 fl oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$20.49</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/33.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">100% Pure Avocado Oil</a>
+																			<span class="fs-7">16.9 fl oz</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$18.99</div>
+																	</td>
+																	<!--end::Price=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">-</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-info fw-bolder my-1 ms-1">Sold Out</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Product=-->
+																	<td class="d-flex align-items-center">
+																		<!--begin:: Image -->
+																		<div class="symbol symbol-45px overflow-hidden me-4">
+																			<a href="../dist/product_detail.html">
+																				<div class="symbol-label">
+																					<img src="assets/media/products/34.jpg" class="w-100" />
+																				</div>
+																			</a>
+																		</div>
+																		<!--end::Image-->
+																		<!--begin::Variation-->
+																		<div class="d-flex flex-column">
+																			<a href="../dist/product_detail.html" class="text-gray-900 text-hover-primary mb-1">Whiskey And Cake Gelato</a>
+																			<span class="fs-7">1 pint</span>
+																		</div>
+																		<!--begin::Variation-->
+																	</td>
+																	<!--end::Product=-->
+																	<!--begin::Price-->
+																	<td>
+																		<div class="me-1">$22.49</div>
+																	</td>
+																	<!--end::Price=-->														
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Sol Quantity=-->
+																	<td>
+																		<div class="me-1">0</div>
+																	</td>
+																	<!--end::Sold Quantity=-->
+																	<!--begin::Sell-by Date=-->
+																	<td>
+																		<div class="me-1">17:00 Dec 25 2021</div>
+																	</td>
+																	<!--end::Sell-by Date=-->
+																	<!--begin::Status=-->
+																	<td class="text-end">
+																		<div class="badge badge-light-success fw-bolder my-1 ms-1">On Sale</div>
+																	</td>
+																	<!--end::Status=-->
+																</tr>
+																<!--end::Table row-->
+															</tbody>
+															<!--end::Table body-->
+														</table>
+														<!--end::Table-->
+													</div>
+													<!--end::Table wrapper-->
+												</div>
+												<!--end::Tab panel-->
+												<!--begin::Tab panel-->
+												<div id="kt_working_transactions" class="tab-pane fade" role="tabpanel">
+													<!--begin::Table wrapper-->
+													<div class="table-responsive">
+														<!--begin::Table-->
+														<table class="table align-middle table-row-bordered table-row-gray-200 fs-6 gy-5 table-responsive" id="kt_working_transactions">
+															<!--begin::Table head-->
+															<thead>
+																<!--begin::Table row-->
+																<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
+																	<th class="min-w-40px">Transaction#</th>
+																	<th class="min-w-40px">Type</th>
+																	<th class="min-w-150px">Items</th>
+																	<th class="min-w-40px">Qty</th>
+																	<th class="min-w-40px">Amount</th>
+																	<th class="min-w-40px">Date</th>
+																	<th class="text-end min-w-80px sorting_disabled">User</th>
+																</tr>
+																<!--end::Table row-->
+															</thead>
+															<!--end::Table head-->
+															<!--begin::Table body-->
+															<tbody class="text-gray-600 fw-bold">
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">FC15CDAD4456</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/613f8b6fe11bfde3601602f0_dld-0890444000236-glamor-front-2021-08-06t20-14-15-iphone-x-quality-90-1-25-4-user-5984ad42a967f880524de2c4-duc9-103206-1631554405756._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>	
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$9.49</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">13:29 Dec 23 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">E7F83DFDCC39</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5ebc67f2706ad5d54a3c6b6a_00860000468503-glamor-frontpackageglamor-2020-02-28t15-54-05-iphone-7-quality-90-1-20-1-user-5dc17de060e00edd1f03737a-nl48-994744._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>	
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$7.99</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">13:37 Dec 23 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">86E4C9375E27</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-danger fw-bolder me-1">Return</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f8f7a69b6b3d8adc5f3c5f5_00785357023505-glamor-frontpackageglamor-2020-09-29t12-19-47-iphone-7-quality-90-1-21-1-user-5da5b1b3afdfaf0fde51f3e1-s1ze-796211._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">-$6.29</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">13:20 Dec 23 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">BE35D03EC8D1</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5f8f7a69b6b3d8adc5f3c5f5_00785357023505-glamor-frontpackageglamor-2020-09-29t12-19-47-iphone-7-quality-90-1-21-1-user-5da5b1b3afdfaf0fde51f3e1-s1ze-796211._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$6.29</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">09:30 Dec 23 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">0A82F0486B05</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/6038fdd283c69c2516b4928e_00856036001197-glamor-frontpackageglamor-2021-01-29t16-37-14-iphone-x-quality-90-1-21-8-user-5d7652c1db2c4b51d4c666ca-17lm-356534._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e6bc110a3fc288ec1585057_00011013740074-glamor-frontpackageglamor-2020-03-09t17-08-05-iphone-7-quality-90-1-21-1-user-5c4f16e4fc9c91accd101ce4-cwth-950066._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>	
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">2</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$18.79</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">22:10 Dec 22 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">7181AFA7A4A8</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/60510c652b11785ea7e18d35_00025317102001-c1n1._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$11.99</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">18:29 Dec 22 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">D37A0F147C6B</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/5e6bc110a3fc288ec1585057_00011013740074-glamor-frontpackageglamor-2020-03-09t17-08-05-iphone-7-quality-90-1-21-1-user-5c4f16e4fc9c91accd101ce4-cwth-950066._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$18.99</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">15:07 Dec 22 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																<!--begin::Table row-->
+																<tr>
+																	<!--begin::Transaction#=-->
+																	<td>
+																		<div class="me-1">63025135F6B9</div>
+																	</td>
+																	<!--end::Transaction#=-->
+																	<!--begin::Type=-->
+																	<td>
+																		<div class="badge badge-light-info fw-bolder me-1">Purchase</div>
+																	</td>
+																	<!--end::Type=-->
+																	<!--begin::Items=-->
+																	<td>
+																		<div class="symbol-group symbol-hover">
+																				<a class="symbol symbol-circle symbol-40px" href="../dist/product_detail.html">
+																					<img src="https://m.media-amazon.com/images/S/assets.wholefoodsmarket.com/PIE/product/6112dc9767833178ee98f931_dld-0736211701084-glamor-front-2021-05-29t01-29-32-iphone-7-quality-90-1-25-4-user-5c4f16e4fc9c91accd101ce4-ogzf-850448-1628626070635._TTD_._SR300,300_.jpg" alt=""/>
+																				</a>	
+																			</div>
+																	</td>
+																	<!--end::Items=-->
+																	<!--begin::Quantity=-->
+																	<td>
+																		<div class="me-1">1</div>
+																	</td>
+																	<!--end::Quantity=-->
+																	<!--begin::Amount-->
+																	<td>
+																		<div class="me-1">$4.69</div>
+																	</td>
+																	<!--end::Amount=-->
+																	<!--begin::Date-->
+																	<td>
+																		<div class="me-1">07:10 Dec 22 2021</div>
+																	</td>
+																	<!--end::Date=-->
+																	<!--begin::User-->
+																	<td class="text-end">
+																		<a href="../dist/user_detail.html" class="text-gray-900 text-hover-primary me-1">Elise Dolton</a>
+																	</td>
+																	<!--end::User=-->
+																</tr>
+																<!--end::Table row-->
+																
+															</tbody>
+															<!--end::Table body-->
+														</table>
+														<!--end::Table-->
+													</div>
+													<!--end::Table wrapper-->
+												</div>
+												<!--end::Tab panel-->
+											</div>
+											<!--end::Tab Content-->
 										</div>
 										<!--end::Card body-->
 									</div>
