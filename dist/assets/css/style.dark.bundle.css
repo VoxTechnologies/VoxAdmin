@@ -6885,7 +6885,6 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
-  margin-bottom: -1px;
 }
 
 .d-inline-flex {
@@ -39308,70 +39307,70 @@ a:hover {
 }
 
 .btn.btn-color-gray-400 {
-  color: #476880;
+  color: #145369;
 }
 .btn.btn-color-gray-400 i {
-  color: #476880;
+  color: #145369;
 }
 .btn.btn-color-gray-400 .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #145369;
 }
 .btn.btn-color-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn.btn-color-gray-400.dropdown-toggle:after {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-color-gray-400, .btn-check:active + .btn.btn-active-color-gray-400, .btn.btn-active-color-gray-400:focus:not(.btn-active), .btn.btn-active-color-gray-400:hover:not(.btn-active), .btn.btn-active-color-gray-400:active:not(.btn-active), .btn.btn-active-color-gray-400.active, .btn.btn-active-color-gray-400.show, .show > .btn.btn-active-color-gray-400 {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-color-gray-400 i, .btn-check:active + .btn.btn-active-color-gray-400 i, .btn.btn-active-color-gray-400:focus:not(.btn-active) i, .btn.btn-active-color-gray-400:hover:not(.btn-active) i, .btn.btn-active-color-gray-400:active:not(.btn-active) i, .btn.btn-active-color-gray-400.active i, .btn.btn-active-color-gray-400.show i, .show > .btn.btn-active-color-gray-400 i {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-color-gray-400 .svg-icon svg [fill]:not(.permanent):not(g), .btn-check:active + .btn.btn-active-color-gray-400 .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400.active .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400.show .svg-icon svg [fill]:not(.permanent):not(g), .show > .btn.btn-active-color-gray-400 .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #145369;
 }
 .btn-check:checked + .btn.btn-active-color-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn-check:active + .btn.btn-active-color-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400.active .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-color-gray-400.show .svg-icon svg:hover [fill]:not(.permanent):not(g), .show > .btn.btn-active-color-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn-check:checked + .btn.btn-active-color-gray-400.dropdown-toggle:after, .btn-check:active + .btn.btn-active-color-gray-400.dropdown-toggle:after, .btn.btn-active-color-gray-400:focus:not(.btn-active).dropdown-toggle:after, .btn.btn-active-color-gray-400:hover:not(.btn-active).dropdown-toggle:after, .btn.btn-active-color-gray-400:active:not(.btn-active).dropdown-toggle:after, .btn.btn-active-color-gray-400.active.dropdown-toggle:after, .btn.btn-active-color-gray-400.show.dropdown-toggle:after, .show > .btn.btn-active-color-gray-400.dropdown-toggle:after {
-  color: #476880;
+  color: #145369;
 }
 
 .btn.btn-icon-gray-400 i {
-  color: #476880;
+  color: #145369;
 }
 .btn.btn-icon-gray-400 .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #145369;
 }
 .btn.btn-icon-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn.btn-icon-gray-400.dropdown-toggle:after {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-icon-gray-400 i, .btn-check:active + .btn.btn-active-icon-gray-400 i, .btn.btn-active-icon-gray-400:focus:not(.btn-active) i, .btn.btn-active-icon-gray-400:hover:not(.btn-active) i, .btn.btn-active-icon-gray-400:active:not(.btn-active) i, .btn.btn-active-icon-gray-400.active i, .btn.btn-active-icon-gray-400.show i, .show > .btn.btn-active-icon-gray-400 i {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-icon-gray-400 .svg-icon svg [fill]:not(.permanent):not(g), .btn-check:active + .btn.btn-active-icon-gray-400 .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:focus:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:hover:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:active:not(.btn-active) .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400.active .svg-icon svg [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400.show .svg-icon svg [fill]:not(.permanent):not(g), .show > .btn.btn-active-icon-gray-400 .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #145369;
 }
 .btn-check:checked + .btn.btn-active-icon-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn-check:active + .btn.btn-active-icon-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:focus:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:hover:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400:active:not(.btn-active) .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400.active .svg-icon svg:hover [fill]:not(.permanent):not(g), .btn.btn-active-icon-gray-400.show .svg-icon svg:hover [fill]:not(.permanent):not(g), .show > .btn.btn-active-icon-gray-400 .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
 }
 .btn-check:checked + .btn.btn-active-icon-gray-400.dropdown-toggle:after, .btn-check:active + .btn.btn-active-icon-gray-400.dropdown-toggle:after, .btn.btn-active-icon-gray-400:focus:not(.btn-active).dropdown-toggle:after, .btn.btn-active-icon-gray-400:hover:not(.btn-active).dropdown-toggle:after, .btn.btn-active-icon-gray-400:active:not(.btn-active).dropdown-toggle:after, .btn.btn-active-icon-gray-400.active.dropdown-toggle:after, .btn.btn-active-icon-gray-400.show.dropdown-toggle:after, .show > .btn.btn-active-icon-gray-400.dropdown-toggle:after {
-  color: #476880;
+  color: #145369;
 }
 
 .btn.btn-text-gray-400 {
-  color: #476880;
+  color: #145369;
 }
 .btn-check:checked + .btn.btn-active-text-gray-400, .btn-check:active + .btn.btn-active-text-gray-400, .btn.btn-active-text-gray-400:focus:not(.btn-active), .btn.btn-active-text-gray-400:hover:not(.btn-active), .btn.btn-active-text-gray-400:active:not(.btn-active), .btn.btn-active-text-gray-400.active, .btn.btn-active-text-gray-400.show, .show > .btn.btn-active-text-gray-400 {
-  color: #476880;
+  color: #145369;
 }
 
 .btn.btn-color-gray-500 {
