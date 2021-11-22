@@ -946,16 +946,16 @@
 												<div class="px-7 py-5" data-kt-user-table-filter="form">
 													<!--begin::Input group-->
 													<div class="mb-6">
-														<label class="form-label fs-6 fw-bold">Working Status:</label>
+														<label class="form-label fs-6 fw-bold">Transaction Status:</label>
 														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Status" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
 															<option></option>
-															<option value="Not Started">Not Started</option>
-															<option value="On Picking">On Picking</option>
-															<option value="Picking Completed">Picking Completed</option>
-															<option value="Shipped">Shipped</option>
-															<option value="Shipped">Over Due</option>
-															<option value="Delivered">Delivered</option>
-															<option value="Received">Received</option>
+															<option value="Standby">Standby</option>
+															<option value="Item Purchased">Item Purchased</option>
+															<option value="Opened to Pickup">Opened to Pickup</option>
+															<option value="Door Closed">Door Closed</option>
+															<option value="Reopened to Pickup">Reopened to Pickup</option>
+															<option value="Reopened to Return">Reopened to Return</option>
+															<option value="Error">Error</option>
 														</select>
 													</div>
 													<!--end::Input group-->
@@ -1007,12 +1007,13 @@
 											<!--begin::Table row-->
 											<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">											
 												<th class="min-w-80px">Store#</th>
-												<th class="min-w-100px">User</th>
-												<th class="min-w-60px">Type</th>
-												<th class="min-w-60px">Plan</th>
-												<th class="min-w-40px">Shipping Due</th>
-												<th class="min-w-40px">Delivery Date</th>
-												<th class="text-end min-w-80px sorting_disabled">Shipping Status</th>
+												<th class="min-w-125px">User</th>
+												<th class="min-w-40px">Type</th>
+												<th class="min-w-40px">Plan</th>
+												<th class="min-w-40px">Delivered</th>
+												<th class="min-w-40px">Collection</th>
+												<th class="min-w-40px">Battery</th>
+												<th class="text-end min-w-60px sorting_disabled">Transaction Status</th>
 											</tr>
 											<!--end::Table row-->
 										</thead>
@@ -1041,19 +1042,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 22 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 24 2021</a>
+													<div class="me-1">Dec 29 2021</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">92%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-danger fw-bolder my-1">Over Due</div>
+													<div class="badge badge-light fw-bolder my-1">Standby</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1080,19 +1086,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Bi-weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 22 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 24 2021</a>
+													<div class="me-1">Jan 3 2022</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">87%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-warning fw-bolder my-1">Not Started</div>
+													<div class="badge badge-light-info fw-bolder my-1">Opened to Pickup</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1119,19 +1130,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 24 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 26 2021</a>
+													<div class="me-1">Dec 31 2021</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">98%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light fw-bolder my-1">On Picking</div>
+													<div class="badge badge-light-primary fw-bolder my-1">Item Purchased</div>
 												</td>
 												<!--end::Status=-->												
 											</tr>
@@ -1158,19 +1174,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Monthly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 25 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 28 2021</a>
+													<div class="me-1">Jan 24 2022</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">86%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-dark fw-bolder my-1">Picking Completed</div>
+													<div class="badge badge-light-success fw-bolder my-1">Door Closed</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1197,19 +1218,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 26 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 29 2021</a>
+													<div class="me-1">Jan 2 2022</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">93%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-primary fw-bolder my-1">Shipped</div>
+													<div class="badge badge-light-danger fw-bolder my-1">Error</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1236,19 +1262,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 21 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 23 2021</a>
+													<div class="me-1">Dec 28 2021</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">90%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-info fw-bolder my-1">Delivered</div>
+													<div class="badge badge-light-warning fw-bolder my-1">Reopened to Return</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
@@ -1275,19 +1306,24 @@
 													<div class="badge badge-light-dark fw-bolder my-1">Bi-weekly</div>
 												</td>
 												<!--end::Plan=-->
-												<!--begin::Planning Due=-->
+												<!--begin::Delivered Date=-->
 												<td>
 													<div class="me-1">Dec 20 2021</a>
 												</td>
-												<!--end::Planning Due=-->
-												<!--begin::Shipping Due=-->
+												<!--end::Delivered Date=-->
+												<!--begin::Collection Date=-->
 												<td>
-													<div class="me-1">Dec 21 2021</a>
+													<div class="me-1">Jan 3 2022</a>
 												</td>
-												<!--end::Shipping Due=-->
+												<!--end::Collection Date=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1">85%</a>
+												</td>
+												<!--end::Battery Level=-->
 												<!--begin::Status-->
 												<td class="text-end">
-													<div class="badge badge-light-success fw-bolder my-1">Received</div>
+													<div class="badge badge-light-warning fw-bolder my-1">Reopened to Pickup</div>
 												</td>
 												<!--end::Status=-->
 											</tr>
