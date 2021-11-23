@@ -977,11 +977,11 @@
 														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Latest Event" data-allow-clear="true" data-kt-user-table-filter="event" data-hide-search="true">
 															<option></option>
 															<option value="Opened at Picking">Opened at Picking</option>
-															<option value="Closed after Picking">Closed at Picking</option>
+															<option value="Closed after Picking">Closed after Picking</option>
 															<option value="Opened at Pickup">Opened at Pickup</option>
-															<option value="Closed after Pickup">Closed at Pickup</option>
+															<option value="Closed after Pickup">Closed after Pickup</option>
 															<option value="Opened at Reshelving">Opened at Reshelving</option>
-															<option value="Closed after Reshelving">Closed at Reshelving</option>
+															<option value="Closed after Reshelving">Closed after Reshelving</option>
 															<option value="Battery Changed">Battery Changed</option>
 															<option value="Firmware Updated">Firmware Updated</option>
 														</select>
@@ -1016,9 +1016,10 @@
 														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Merchant" data-allow-clear="true" data-kt-user-table-filter="merchant">
 															<option></option>
 															<option value="Unallocated">Unallocated</option>
-															<option value="Merchant A">Merchant A</option>
-															<option value="Merchant B">Merchant B</option>
-															<option value="Merchant C">Merchant C</option>
+															<option value="Wallstreet Mart">Wallstreet Mart</option>
+															<option value="Taggart Mart">Taggart Mart</option>
+															<option value="Coast&Co">Coast&Co</option>
+															<option value="Partialfoods">Partialfoods</option>
 														</select>
 													</div>
 													<!--end::Input group-->
@@ -1080,7 +1081,7 @@
 												<!--end::Container=-->
 												<!--begin::Latest event-->
 												<td>
-													<div class="badge badge-light-success fw-bolder my-1">Closed after Reshelving</div>
+													<div class="badge badge-light-info fw-bolder my-1">Closed after Reshelving</div>
 												</td>
 												<!--end::Latest event=-->
 												<!--begin::Firmware=-->
@@ -1176,6 +1177,756 @@
 																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
 																				<span class="form-check-label text-gray-600">
 																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">07B870</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-info fw-bolder my-1">Closed after Picking</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.2.0</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-success">86%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<a href="../dist/merchant_detail.html" class="text-gray-900 text-hover-primary me-1">Partialfoods</a>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">Denver Dark Store</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-success fw-bolder my-1">Active</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_2">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_2">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">07B870</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated">Unallocated</option>
+																				<option value="Wallstreet Mart">Wallstreet Mart</option>
+																				<option value="Taggart Mart">Taggart Mart</option>
+																				<option value="Coast&Co">Coast&Co</option>
+																				<option value="Partialfoods" selected="">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">8F101A</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-primary fw-bolder my-1">Opened at Picking</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.1.2</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-warning">79%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<a href="../dist/merchant_detail.html" class="text-gray-900 text-hover-primary me-1">Coast&Co</a>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">Long Island Center</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-success fw-bolder my-1">Active</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_3">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_3">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">8F101A</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated">Unallocated</option>
+																				<option value="Wallstreet Mart">Wallstreet Mart</option>
+																				<option value="Taggart Mart">Taggart Mart</option>
+																				<option value="Coast&Co" selected="">Coast&Co</option>
+																				<option value="Partialfoods">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">3E8E13</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-info fw-bolder my-1">Closed after Pickup</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.1.1</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-success">88%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<a href="../dist/merchant_detail.html" class="text-gray-900 text-hover-primary me-1">Wallstreet Mart</a>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">WeWalk Manhattan</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-success fw-bolder my-1">Active</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_4">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_4">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">3E8E13</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated">Unallocated</option>
+																				<option value="Wallstreet Mart" selected="">Wallstreet Mart</option>
+																				<option value="Taggart Mart">Taggart Mart</option>
+																				<option value="Coast&Co">Coast&Co</option>
+																				<option value="Partialfoods">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">2939B2</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-secondary fw-bolder my-1">Firmware Updated</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.2.1</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-danger">64%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<a href="../dist/merchant_detail.html" class="text-gray-900 text-hover-primary me-1">Taggart Mart</a>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">Bronx FC</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-danger fw-bolder my-1">Disabled</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_5">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_5">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">2939B2</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated">Unallocated</option>
+																				<option value="Wallstreet Mart">Wallstreet Mart</option>
+																				<option value="Taggart Mart" selected="">Taggart Mart</option>
+																				<option value="Coast&Co">Coast&Co</option>
+																				<option value="Partialfoods">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">77E049</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-secondary fw-bolder my-1">Battery Changed</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.2.1</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-success">98%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<a href="../dist/merchant_detail.html" class="text-gray-900 text-hover-primary me-1">Coast&Co</a>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">Long Island Center</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-success fw-bolder my-1">Active</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_6">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_6">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">313E7C</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated">Unallocated</option>
+																				<option value="Wallstreet Mart">Wallstreet Mart</option>
+																				<option value="Taggart Mart" selected="">Taggart Mart</option>
+																				<option value="Coast&Co">Coast&Co</option>
+																				<option value="Partialfoods">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/containers.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Container=-->
+												<td>
+													<a href="../dist/container_detail.html" class="text-gray-900 text-hover-primary me-1">FA80917</a>
+												</td>
+												<!--end::Container=-->
+												<!--begin::Latest event-->
+												<td>
+													<div class="badge badge-light-secondary fw-bolder my-1">Firmware Updated</div>
+												</td>
+												<!--end::Latest event=-->
+												<!--begin::Firmware=-->
+												<td>
+													<div class="me-1">v.2.1</a>
+												</td>
+												<!--end::Firmware=-->
+												<!--begin::Battery Level=-->
+												<td>
+													<div class="me-1 text-success">99%</a>
+												</td>
+												<!--end::Battery Level=-->
+												<!--begin::Merchant=-->
+												<td>
+													<div class="me-1">Unallocated</div>
+												</td>
+												<!--end::Merchant=-->
+												<!--begin::Location=-->
+												<td>
+													<a href="#" class="text-gray-900 text-hover-primary me-1">Vox SC</a>
+												</td>
+												<!--end::Location=-->
+												<!--begin::Status-->
+												<td>
+													<div class="badge badge-light-danger fw-bolder my-1">Disabled</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_7">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_7">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Container</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Container ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">FA80917</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Merchant</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Merchant">
+																				<option value="Unallocated" selected="">Unallocated</option>
+																				<option value="Wallstreet Mart">Wallstreet Mart</option>
+																				<option value="Taggart Mart">Taggart Mart</option>
+																				<option value="Coast&Co">Coast&Co</option>
+																				<option value="Partialfoods">Partialfoods</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Disabled
 																				</span>
 																			</label>
 																			<!--end::Switch-->

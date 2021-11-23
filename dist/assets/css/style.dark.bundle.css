@@ -46221,12 +46221,13 @@ code:not([class*=language-]) {
 }
 
 .badge-secondary {
-  color: #9CB5C7;
+  color: #b4d1e5;
   background-color: #0C2F3C;
 }
 
 .badge-light-secondary {
-  color: #0C2F3C;
+  color: #bacfdd;
+  background-color: #1f2e39;
 }
 
 .badge-success {
