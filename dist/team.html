@@ -892,8 +892,8 @@
 															<span class="menu-title">Business Settings</span>
 														</a>
 													</div>
-													<div class="menu-item">
-														<a class="menu-link active" href="../dist/team.html">
+													<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+														<span class="menu-link">
 															<span class="menu-icon">
 																<span class="svg-icon svg-icon-2">
 																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -905,7 +905,26 @@
 																</span>
 															</span>
 															<span class="menu-title">Team</span>
-														</a>
+															<span class="menu-arrow"></span>
+														</span>
+														<div class="menu-sub menu-sub-accordion">
+															<div class="menu-item">
+																<a class="menu-link active" href="../dist/team.html">
+																	<span class="menu-bullet">
+																		<span class="bullet bullet-dot"></span>
+																	</span>
+																	<span class="menu-title">Members</span>
+																</a>
+															</div>
+															<div class="menu-item">
+																<a class="menu-link" href="../dist/roles.html">
+																	<span class="menu-bullet">
+																		<span class="bullet bullet-dot"></span>
+																	</span>
+																	<span class="menu-title">Roles</span>
+																</a>
+															</div>
+														</div>
 													</div>
 													<div class="menu-item">
 														<a class="menu-link" href="../dist/locations.html">
@@ -1167,7 +1186,7 @@
 												</svg>
 											</span>
 											<!--end::Svg Icon-->
-											<input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Operators" />
+											<input type="text" data-kt-user-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Member" />
 										</div>
 										<!--end::Search-->
 									</div>
@@ -1201,23 +1220,25 @@
 												<div class="px-7 py-5" data-kt-user-table-filter="form">
 													<!--begin::Input group-->
 													<div class="mb-6">
-														<label class="form-label fs-6 fw-bold">Status:</label>
-														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Status" data-allow-clear="true" data-kt-user-table-filter="month" data-hide-search="true">
+														<label class="form-label fs-6 fw-bold">Role:</label>
+														<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Role" data-allow-clear="true" data-hide-search="true">
 															<option></option>
-															<option value="Active">Active</option>
-															<option value="Disabled">Disabled</option>
+															<option value="Super Admin">Super Admin</option>
+															<option value="Administrator">Administrator</option>
+															<option value="Manager">Manager</option>
+															<option value="Planner">Planner</option>
+															<option value="Analyst">Analyst</option>
+															<option value="Support">Support</option>
 														</select>
 													</div>
 													<!--end::Input group-->
 													<!--begin::Input group-->
 													<div class="mb-6">
-														<label class="form-label fs-6 fw-bold">Location:</label>
-														<select class="form-select form-select-lg form-select-solid select2-hidden-accessible" data-control="select2" data-placeholder="Select Location" data-allow-clear="true" data-kt-user-table-filter="status" data-hide-search="true">
+														<label class="form-label fs-6 fw-bold">Status:</label>
+														<select class="form-select form-select-solid fw-bold" data-kt-select2="true" data-placeholder="Select Status" data-allow-clear="true" data-hide-search="true">
 															<option></option>
-															<option value="Queens FC">Queens FC</option>
-															<option value="Brooklyn FC">Brooklyn FC</option>
-															<option value="Bronx FC">Bronx FC</option>
-															<option value="Manhattan FC">Manhattan FC</option>
+															<option value="Active">Active</option>
+															<option value="Disabled">Disabled</option>
 														</select>
 													</div>
 													<!--end::Input group-->
@@ -1240,14 +1261,14 @@
 												<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 												</svg>
 											</span>
-											<span class="align-center align-middle">Add Operator</span></a>
+											<span class="align-center align-middle">Add Member</span></a>
 											<!--end::Add product-->
 											<!--begin::Modal Add Operator-->
 											<div class="modal fade" tabindex="-1" id="kt_modal_0">
 												<div class="modal-dialog">
 													<div class="modal-content text-start">
 														<div class="modal-header">
-															<h2 class="modal-title">Add Operator</h2>
+															<h2 class="modal-title">Add Member</h2>
 															<!--begin::Close-->
 															<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																<span class="svg-icon svg-icon-2x">
@@ -1263,7 +1284,7 @@
 															<!--begin::Input group-->
 															<div class="fv-row mb-9">
 																<!--begin::Label-->
-																<label class="form-label fs-6 fw-bold required mb-3">Operator Name</label>
+																<label class="form-label fs-6 fw-bold required mb-3">Member Name</label>
 																<!--end::Label-->
 																<!--begin::Input-->
 																<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_name" value="" />
@@ -1283,40 +1304,25 @@
 															<!--begin::Input group-->
 															<div class="fv-row mb-9">
 																<!--begin::Label-->
-																<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																<!--end::Label-->
 																<!--begin::Input-->
-																<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
+																<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select Role" data-hide-search="true">
 																	<option></option>
-																	<option value="Queens FC">Queens FC</option>
-																	<option value="Brooklyn FC">Brooklyn FC</option>
-																	<option value="Bronx FC">Bronx FC</option>
-																	<option value="Manhattan FC">Manhattan FC</option>
+																	<option value="Super Admin">Super Admin</option>
+																	<option value="Administrator">Administrator</option>
+																	<option value="Manager">Manager</option>
+																	<option value="Planner">Planner</option>
+																	<option value="Analyst">Analyst</option>
+																	<option value="Support">Support</option>
 																</select>
-																<!--end::Input-->
-															</div>
-															<!--end::Input group-->
-															<!--begin::Input group-->
-															<div class="fv-row mb-0">
-																<!--begin::Label-->
-																<label class="form-label fs-6 fw-bold mb-3">Status</label>
-																<!--end::Label-->
-																<!--begin::Input-->
-																<!--begin::Switch-->
-																<label class="form-check form-switch form-check-custom form-check-solid">
-																	<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
-																	<span class="form-check-label text-gray-600">
-																		Activate
-																	</span>
-																</label>
-																<!--end::Switch-->
 																<!--end::Input-->
 															</div>
 															<!--end::Input group-->
 														</div>
 														<div class="modal-footer">
-															<button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-															<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save</button>
+															<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+															<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Submit</button>
 														</div>
 													</div>
 												</div>
@@ -1344,9 +1350,7 @@
 											<!--begin::Table row-->
 											<tr class="text-start text-muted fw-bolder fs-8 text-uppercase gs-0 ls-1">
 												<th class="min-w-200px">Name</th>
-												<th class="min-w-40px">Operator ID</th>
-												<th class="min-w-40px">Location</th>
-												<th class="min-w-40px">Registered</th>
+												<th class="min-w-40px">Role</th>
 												<th class="min-w-40px">Status</th>
 												<th class="text-end min-w-80px sorting_disabled">Actions</th>
 											</tr>
@@ -1361,36 +1365,24 @@
 												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
 													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
-														<a href="../dist/operator_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/avatars/150-6.jpg" class="w-100" />
-															</div>
-														</a>
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-28.jpg" class="w-100" />
+														</div>
 													</div>
 													<!--end::Image-->
 													<!--begin::Variation-->
 													<div class="d-flex flex-column">
-														<a href="../dist/operator_detail.html" class="text-gray-900 text-hover-primary mb-1">James Taggart</a>
-														<span class="fs-7">james@taggart.mart</span>
+														<div class="text-gray-800 mb-1">John Galt</div>
+														<span class="fs-7">john@taggart.mart</span>
 													</div>
 													<!--begin::Variation-->
 												</td>
 												<!--end::Name=-->
-												<!--begin::Operator ID=-->
+												<!--begin::Role=-->
 												<td>
-													<div class="me-1">5C08A85B</a>
+													<div class="me-1">Super Admin</a>
 												</td>
-												<!--end::Operator ID=-->
-												<!--begin::Location=-->
-												<td>
-													<div class="me-1">Brooklyn FC</a>
-												</td>
-												<!--end::Location=-->
-												<!--begin::Registered Date=-->
-												<td>
-													<div class="me-1">10 Nov 2021</a>
-												</td>
-												<!--end::Registered Date=-->
+												<!--end::Role=-->
 												<!--begin::Status=-->
 												<td>
 													<div class="badge badge-light-success fw-bolder my-1 me-1">Active</div>
@@ -1414,7 +1406,7 @@
 															<div class="modal-dialog">
 																<div class="modal-content text-start">
 																	<div class="modal-header">
-																		<h2 class="modal-title">Edit Operator</h2>
+																		<h2 class="modal-title">Edit Member</h2>
 																		<!--begin::Close-->
 																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																			<span class="svg-icon svg-icon-2x">
@@ -1430,20 +1422,20 @@
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">James Taggart</p>
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="John Galt" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">5C08A85B</p>
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1453,22 +1445,24 @@
 																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="james@taggart.mart" />
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="john@taggart.mart" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
 																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
 																				<option></option>
-																				<option value="Queens FC">Queens FC</option>
-																				<option value="Brooklyn FC" selected="">Brooklyn FC</option>
-																				<option value="Bronx FC">Bronx FC</option>
-																				<option value="Manhattan FC">Manhattan FC</option>
+																				<option value="Super Admin" selected="">Super Admin</option>
+																				<option value="Administrator">Administrator</option>
+																				<option value="Manager">Manager</option>
+																				<option value="Planner">Planner</option>
+																				<option value="Analyst">Analyst</option>
+																				<option value="Support">Support</option>
 																			</select>
 																			<!--end::Input-->
 																		</div>
@@ -1493,7 +1487,7 @@
 																	</div>
 																	<div class="modal-footer">
 																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
 																	</div>
 																</div>
 															</div>
@@ -1521,36 +1515,24 @@
 												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
 													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
-														<a href="../dist/operator_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/avatars/150-7.jpg" class="w-100" />
-															</div>
-														</a>
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-31.jpg" class="w-100" />
+														</div>
 													</div>
 													<!--end::Image-->
 													<!--begin::Variation-->
 													<div class="d-flex flex-column">
-														<a href="../dist/operator_detail.html" class="text-gray-900 text-hover-primary mb-1">Danny Wade</a>
-														<span class="fs-7">danny@taggart.mart</span>
+														<div class="text-gray-800 mb-1">Emma Chalmers</div>
+														<span class="fs-7">emma@taggart.mart</span>
 													</div>
 													<!--begin::Variation-->
 												</td>
 												<!--end::Name=-->
-												<!--begin::Operator ID=-->
+												<!--begin::Role=-->
 												<td>
-													<div class="me-1">58AD6F60</a>
+													<div class="me-1">Administrator</a>
 												</td>
-												<!--end::Operator ID=-->
-												<!--begin::Location=-->
-												<td>
-													<div class="me-1">Queens FC</a>
-												</td>
-												<!--end::Location=-->
-												<!--begin::Registered Date=-->
-												<td>
-													<div class="me-1">3 Nov 2021</a>
-												</td>
-												<!--end::Registered Date=-->
+												<!--end::Role=-->
 												<!--begin::Status=-->
 												<td>
 													<div class="badge badge-light-success fw-bolder my-1 me-1">Active</div>
@@ -1574,7 +1556,7 @@
 															<div class="modal-dialog">
 																<div class="modal-content text-start">
 																	<div class="modal-header">
-																		<h2 class="modal-title">Edit Operator</h2>
+																		<h2 class="modal-title">Edit Member</h2>
 																		<!--begin::Close-->
 																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																			<span class="svg-icon svg-icon-2x">
@@ -1590,20 +1572,20 @@
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">Danny Wade</p>
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="Emma Chalmers" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">58AD6F60</p>
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1613,22 +1595,24 @@
 																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="danny@taggart.mart" />
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="emma@taggart.mart" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
 																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
 																				<option></option>
-																				<option value="Queens FC" selected="">Queens FC</option>
-																				<option value="Brooklyn FC">Brooklyn FC</option>
-																				<option value="Bronx FC">Bronx FC</option>
-																				<option value="Manhattan FC">Manhattan FC</option>
+																				<option value="Super Admin">Super Admin</option>
+																				<option value="Administrator" selected="">Administrator</option>
+																				<option value="Manager">Manager</option>
+																				<option value="Planner">Planner</option>
+																				<option value="Analyst">Analyst</option>
+																				<option value="Support">Support</option>
 																			</select>
 																			<!--end::Input-->
 																		</div>
@@ -1653,7 +1637,7 @@
 																	</div>
 																	<div class="modal-footer">
 																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
 																	</div>
 																</div>
 															</div>
@@ -1681,36 +1665,24 @@
 												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
 													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
-														<a href="../dist/operator_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/avatars/150-18.jpg" class="w-100" />
-															</div>
-														</a>
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-29.jpg" class="w-100" />
+														</div>
 													</div>
 													<!--end::Image-->
 													<!--begin::Variation-->
 													<div class="d-flex flex-column">
-														<a href="../dist/operator_detail.html" class="text-gray-900 text-hover-primary mb-1">Marc Hodges</a>
-														<span class="fs-7">marc@taggart.mart</span>
+														<div class="text-gray-800 mb-1">Ellis Wyatt</div>
+														<span class="fs-7">ellis@taggart.mart</span>
 													</div>
 													<!--begin::Variation-->
 												</td>
 												<!--end::Name=-->
-												<!--begin::Operator ID=-->
+												<!--begin::Role=-->
 												<td>
-													<div class="me-1">4BB04D37</a>
+													<div class="me-1">Administrator</a>
 												</td>
-												<!--end::Operator ID=-->
-												<!--begin::Location=-->
-												<td>
-													<div class="me-1">Queens FC</a>
-												</td>
-												<!--end::Location=-->
-												<!--begin::Registered Date=-->
-												<td>
-													<div class="me-1">30 Oct 2021</a>
-												</td>
-												<!--end::Registered Date=-->
+												<!--end::Role=-->
 												<!--begin::Status=-->
 												<td>
 													<div class="badge badge-light-success fw-bolder my-1 me-1">Active</div>
@@ -1734,7 +1706,7 @@
 															<div class="modal-dialog">
 																<div class="modal-content text-start">
 																	<div class="modal-header">
-																		<h2 class="modal-title">Edit Operator</h2>
+																		<h2 class="modal-title">Edit Member</h2>
 																		<!--begin::Close-->
 																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																			<span class="svg-icon svg-icon-2x">
@@ -1750,20 +1722,20 @@
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">Marc Hodges</p>
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="Ellis Wyatt" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">4BB04D37</p>
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1773,22 +1745,24 @@
 																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="marc@taggart.mart" />
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="ellis@taggart.mart" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
 																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
 																				<option></option>
-																				<option value="Queens FC" selected="">Queens FC</option>
-																				<option value="Brooklyn FC">Brooklyn FC</option>
-																				<option value="Bronx FC">Bronx FC</option>
-																				<option value="Manhattan FC">Manhattan FC</option>
+																				<option value="Super Admin">Super Admin</option>
+																				<option value="Administrator" selected="">Administrator</option>
+																				<option value="Manager">Manager</option>
+																				<option value="Planner">Planner</option>
+																				<option value="Analyst">Analyst</option>
+																				<option value="Support">Support</option>
 																			</select>
 																			<!--end::Input-->
 																		</div>
@@ -1813,7 +1787,7 @@
 																	</div>
 																	<div class="modal-footer">
 																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
 																	</div>
 																</div>
 															</div>
@@ -1841,39 +1815,27 @@
 												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
 													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
-														<a href="../dist/operator_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/avatars/150-11.jpg" class="w-100" />
-															</div>
-														</a>
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-30.jpg" class="w-100" />
+														</div>
 													</div>
 													<!--end::Image-->
 													<!--begin::Variation-->
 													<div class="d-flex flex-column">
-														<a href="../dist/operator_detail.html" class="text-gray-900 text-hover-primary mb-1">Whitney Curtis</a>
-														<span class="fs-7">whitney@taggart.mart</span>
+														<div class="text-gray-800 mb-1">Lillian Rearden</div>
+														<span class="fs-7">lillian@taggart.mart</span>
 													</div>
 													<!--begin::Variation-->
 												</td>
 												<!--end::Name=-->
-												<!--begin::Operator ID=-->
+												<!--begin::Role=-->
 												<td>
-													<div class="me-1">E31405D7</a>
+													<div class="me-1">Manager</a>
 												</td>
-												<!--end::Operator ID=-->
-												<!--begin::Location=-->
-												<td>
-													<div class="me-1">Bronx FC</a>
-												</td>
-												<!--end::Location=-->
-												<!--begin::Registered Date=-->
-												<td>
-													<div class="me-1">17 Oct 2021</a>
-												</td>
-												<!--end::Registered Date=-->
+												<!--end::Role=-->
 												<!--begin::Status=-->
 												<td>
-													<div class="badge badge-light-danger fw-bolder my-1 me-1">Disabled</div>
+													<div class="badge badge-light-success fw-bolder my-1 me-1">Active</div>
 												</td>
 												<!--end::Status=-->
 												<!--begin::Action=-->
@@ -1894,7 +1856,7 @@
 															<div class="modal-dialog">
 																<div class="modal-content text-start">
 																	<div class="modal-header">
-																		<h2 class="modal-title">Edit Operator</h2>
+																		<h2 class="modal-title">Edit Member</h2>
 																		<!--begin::Close-->
 																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																			<span class="svg-icon svg-icon-2x">
@@ -1910,20 +1872,20 @@
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">Whitney Curtis</p>
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="Lillian Rearden" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">E31405D7</p>
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -1933,22 +1895,174 @@
 																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="whitney@taggart.mart" />
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="lillian@taggart.mart" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
 																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
 																				<option></option>
-																				<option value="Queens FC">Queens FC</option>
-																				<option value="Brooklyn FC">Brooklyn FC</option>
-																				<option value="Bronx FC" selected="">Bronx FC</option>
-																				<option value="Manhattan FC">Manhattan FC</option>
+																				<option value="Super Admin">Super Admin</option>
+																				<option value="Administrator">Administrator</option>
+																				<option value="Manager" selected="">Manager</option>
+																				<option value="Planner">Planner</option>
+																				<option value="Analyst">Analyst</option>
+																				<option value="Support">Support</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
+															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path d="M5 9C5 8.44772 5.44772 8 6 8H18C18.5523 8 19 8.44772 19 9V18C19 19.6569 17.6569 21 16 21H8C6.34315 21 5 19.6569 5 18V9Z" fill="black"></path>
+																	<path opacity="0.5" d="M5 5C5 4.44772 5.44772 4 6 4H18C18.5523 4 19 4.44772 19 5V5C19 5.55228 18.5523 6 18 6H6C5.44772 6 5 5.55228 5 5V5Z" fill="black"></path>
+																	<path opacity="0.5" d="M9 4C9 3.44772 9.44772 3 10 3H14C14.5523 3 15 3.44772 15 4V4H9V4Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+													</div>
+												</td>
+												<!--end::Action=-->
+											</tr>
+											<!--end::Table row-->
+											<!--begin::Table row-->
+											<tr>
+												<!--begin::Name=-->
+												<td class="d-flex align-items-center">
+													<!--begin:: Image -->
+													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-32.jpg" class="w-100" />
+														</div>
+													</div>
+													<!--end::Image-->
+													<!--begin::Variation-->
+													<div class="d-flex flex-column">
+														<div class="text-gray-800 mb-1">Andrew Stockton</div>
+														<span class="fs-7">andrew@taggart.mart</span>
+													</div>
+													<!--begin::Variation-->
+												</td>
+												<!--end::Name=-->
+												<!--begin::Role=-->
+												<td>
+													<div class="me-1">Planner</a>
+												</td>
+												<!--end::Role=-->
+												<!--begin::Status=-->
+												<td>
+													<div class="badge badge-light-danger fw-bolder my-1 me-1">Disabled</div>
+												</td>
+												<!--end::Status=-->
+												<!--begin::Action=-->
+												<td class="text-end">
+													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_5">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_5">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Member</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="Andrew Stockton" />
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="andrew@taggart.mart" />
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
+																				<option></option>
+																				<option value="Super Admin">Super Admin</option>
+																				<option value="Administrator">Administrator</option>
+																				<option value="Manager">Manager</option>
+																				<option value="Planner" selected="">Planner</option>
+																				<option value="Analyst">Analyst</option>
+																				<option value="Support">Support</option>
 																			</select>
 																			<!--end::Input-->
 																		</div>
@@ -1973,7 +2087,7 @@
 																	</div>
 																	<div class="modal-footer">
 																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
 																	</div>
 																</div>
 															</div>
@@ -2001,36 +2115,24 @@
 												<td class="d-flex align-items-center">
 													<!--begin:: Image -->
 													<div class="symbol symbol-circle symbol-50px overflow-hidden me-4">
-														<a href="../dist/operator_detail.html">
-															<div class="symbol-label">
-																<img src="assets/media/avatars/150-8.jpg" class="w-100" />
-															</div>
-														</a>
+														<div class="symbol-label">
+															<img src="assets/media/avatars/150-33.jpg" class="w-100" />
+														</div>
 													</div>
 													<!--end::Image-->
 													<!--begin::Variation-->
 													<div class="d-flex flex-column">
-														<a href="../dist/operator_detail.html" class="text-gray-900 text-hover-primary mb-1">Ray Burton</a>
-														<span class="fs-7">ray@taggart.mart</span>
+														<div class="text-gray-800 mb-1">Eddie Willers</div>
+														<span class="fs-7">eddie@taggart.mart</span>
 													</div>
 													<!--begin::Variation-->
 												</td>
 												<!--end::Name=-->
-												<!--begin::Operator ID=-->
+												<!--begin::Role=-->
 												<td>
-													<div class="me-1">3CD6C1A7</a>
+													<div class="me-1">Analyst</a>
 												</td>
-												<!--end::Operator ID=-->
-												<!--begin::Location=-->
-												<td>
-													<div class="me-1">Manhattan FC</a>
-												</td>
-												<!--end::Location=-->
-												<!--begin::Registered Date=-->
-												<td>
-													<div class="me-1">5 Oct 2021</a>
-												</td>
-												<!--end::Registered Date=-->
+												<!--end::Role=-->
 												<!--begin::Status=-->
 												<td>
 													<div class="badge badge-light-success fw-bolder my-1 me-1">Active</div>
@@ -2039,7 +2141,7 @@
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
-														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_5">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_6">
 															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
 															<span class="svg-icon svg-icon-3">
 																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -2050,11 +2152,11 @@
 															<!--end::Svg Icon-->
 														</a>
 														<!--begin::Modal Edit Category-->
-														<div class="modal fade" tabindex="-1" id="kt_modal_5">
+														<div class="modal fade" tabindex="-1" id="kt_modal_6">
 															<div class="modal-dialog">
 																<div class="modal-content text-start">
 																	<div class="modal-header">
-																		<h2 class="modal-title">Edit Operator</h2>
+																		<h2 class="modal-title">Edit Member</h2>
 																		<!--begin::Close-->
 																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
 																			<span class="svg-icon svg-icon-2x">
@@ -2070,20 +2172,20 @@
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<label class="form-label fs-6 fw-bold required mb-2">Name</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">Ray Burton</p>
+																			<input type="text" class="form-control form-control-lg form-control-solid" placeholder="" name="member_name" value="Eddie Willers" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<label class="form-label fs-6 fw-bold mb-2">Member ID</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<p class="fs-6 fw-bold text-gray-800">3CD6C1A7</p>
+																			<p class="fs-6 fw-bold text-gray-800">B18A550B</p>
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
@@ -2093,22 +2195,24 @@
 																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
-																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="ray@taggart.mart" />
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="member_email" value="eddie@taggart.mart" />
 																			<!--end::Input-->
 																		</div>
 																		<!--end::Input group-->
 																		<!--begin::Input group-->
 																		<div class="fv-row mb-9">
 																			<!--begin::Label-->
-																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<label class="form-label fs-6 fw-bold required mb-3">Role</label>
 																			<!--end::Label-->
 																			<!--begin::Input-->
 																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
 																				<option></option>
-																				<option value="Queens FC">Queens FC</option>
-																				<option value="Brooklyn FC">Brooklyn FC</option>
-																				<option value="Bronx FC">Bronx FC</option>
-																				<option value="Manhattan FC" selected="">Manhattan FC</option>
+																				<option value="Super Admin">Super Admin</option>
+																				<option value="Administrator">Administrator</option>
+																				<option value="Manager">Manager</option>
+																				<option value="Planner">Planner</option>
+																				<option value="Analyst" selected="">Analyst</option>
+																				<option value="Support">Support</option>
 																			</select>
 																			<!--end::Input-->
 																		</div>
@@ -2121,9 +2225,9 @@
 																			<!--begin::Input-->
 																			<!--begin::Switch-->
 																			<label class="form-check form-switch form-check-custom form-check-solid">
-																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="0"/>
 																				<span class="form-check-label text-gray-600">
-																					Activate
+																					Active
 																				</span>
 																			</label>
 																			<!--end::Switch-->
@@ -2133,7 +2237,7 @@
 																	</div>
 																	<div class="modal-footer">
 																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
-																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/team.html'">Save Changes</button>
 																	</div>
 																</div>
 															</div>
@@ -2155,6 +2259,7 @@
 												<!--end::Action=-->
 											</tr>
 											<!--end::Table row-->
+											
 										</tbody>
 										<!--end::Table body-->
 									</table>
