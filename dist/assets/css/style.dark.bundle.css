@@ -35684,7 +35684,7 @@ a:hover {
 }
 .menu-icon-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
-  fill: #476880;
+  fill: #4a7e91;
 }
 .menu-icon-gray-400 .menu-item .menu-link .menu-icon .svg-icon svg:hover [fill]:not(.permanent):not(g) {
   transition: fill 0.3s ease;
@@ -35810,7 +35810,7 @@ a:hover {
   color: #476880;
 }
 .menu-title-gray-600 .menu-item .menu-link .menu-title {
-  color: #476880;
+  color: #4a7e91;
 }
 
 .menu-icon-gray-600 .menu-item .menu-link .menu-icon i {
@@ -37012,7 +37012,7 @@ a:hover {
   font-size: 1.15rem;
 }
 .custom-symbol .svg-icon svg [fill]:not(.permanent):not(g) {
-  fill: #5691a7;
+  fill: #4a7e91;
 }
 .custom-symbol.active .svg-icon svg [fill]:not(.permanent):not(g) {
   fill: #75C8E5;
@@ -37021,8 +37021,8 @@ a:hover {
   fill: #75C8E5;
 }
 .custom-list a {
-  fill: #5691a7;
-  color: #5691a7;
+  fill: #4a7e91;
+  color: #4a7e91;
 }
 .custom-list a:hover [fill]:not(.permanent):not(g){
   color: #51BADE;
