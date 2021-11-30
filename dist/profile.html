@@ -1135,36 +1135,33 @@
 							</div>
 							<!--end::Page title=-->
 							<!--begin::Wrapper-->
+							<div class="d-flex d-lg-none align-items-center">
+								<!--begin::Aside mobile toggle-->
+									<!--begin::Logo-->
+										<a href="../dist/index.html" class="logo d-flex align-items-center ms-2">
+											<img alt="Logo" src="assets/media/logos/logo-default.svg" class="h-35px" />
+										</a>
+									<!--end::Logo-->
+								<!--end::Aside mobile toggle-->
+							</div>
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
 									Profile
 								</div>
 							<!--end::Mobile Title-->
-							<!--end::Wrapper-->
-							<!--begin::Toolbar wrapper-->
-							<div class="d-flex flex-shrink-0">
-								<!--begin::Discard-->
-								<div class="d-flex ms-3">
-									<a href="../dist/profile.html" class="btn btn-light btn-text-info btn-active-info" tooltip="Discard">Discard</a>
-								</div>
-								<!--end::Discard-->
-								<!--begin::Save-->
-								<div class="d-flex ms-3">
-									<a href="../dist/profile.html" class="btn btn-primary btn-active-white">
-									<span class="svg-icon svg-icon-3">
+							<!--begin::Aside mobile toggle-->
+								<div class="btn btn-icon btn-active-icon-primary d-lg-none" id="kt_aside_toggle">
+									<!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+									<span class="svg-icon svg-icon-2x">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-											<path d="M14.4 11H2.99999C2.39999 11 1.99999 11.4 1.99999 12C1.99999 12.6 2.39999 13 2.99999 13H14.4V11Z" fill="black"/>
-											<path d="M17.7762 13.2561C18.4572 12.5572 18.4572 11.4429 17.7762 10.7439L13.623 6.48107C13.1221 5.96697 12.25 6.32158 12.25 7.03934V16.9607C12.25 17.6785 13.1221 18.0331 13.623 17.519L17.7762 13.2561Z" fill="black"/>
-											<rect width="2" height="16" rx="1" transform="matrix(-1 0 0 1 22 4)" fill="black"/>
+											<path d="M21 6H3C3 6 3 6 3 6C3 6 2 6 2 5C2 4.00005 2.9999 4 3 4C3 4 3 4 3 4H21C22 4 22 5 22 5V5C22 5 22 6 21 6Z" fill="black" />
+											<path d="M21 13H3C3 13 2 13 2 12C2 11 3 11 3 11L21 11C21 11 22 11 22 12C22 13 21 13 21 13ZM22 19C22 18 21 18 21 18H3C3 18 2 18 2 19C2 20 3 20 3 20H21C21 20 22 20 22 19Z" fill="black" />
 										</svg>
 									</span>
 									<!--end::Svg Icon-->
-									<span class="align-center align-middle">Save</span>
-									</a>
 								</div>
-								<!--end::Save-->
-							</div>
-							<!--end::Toolbar wrapper-->
+							<!--end::Aside mobile toggle-->
+							<!--end::Wrapper-->
 						</div>
 						<!--end::Container-->
 					</div>
@@ -1400,6 +1397,12 @@
 											<!--end::Input group-->
 										</div>
 										<!--end::Card body-->
+										<!--begin::Card footer-->
+										<div class="card-footer d-flex justify-content-end py-6 px-9">
+											<button class="btn btn-info btn-active-light-primary me-2">Discard</button>
+											<button class="btn btn-primary px-6">Save Changes</button>
+										</div>
+										<!--end::Card footer-->
 									</form>
 									<!--end::Form-->
 								</div>
@@ -1484,6 +1487,12 @@
 											<!--end::Option-->
 										</div>
 										<!--end::Card body-->
+										<!--begin::Card footer-->
+										<div class="card-footer d-flex justify-content-end py-6 px-9">
+											<button class="btn btn-info btn-active-light-primary me-2">Discard</button>
+											<button class="btn btn-primary px-6">Save Changes</button>
+										</div>
+										<!--end::Card footer-->
 									</form>
 									<!--end::Form-->
 								</div>
