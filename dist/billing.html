@@ -1185,7 +1185,7 @@
 											<!--begin::Card title-->
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar">
-												<a href="#" class="btn btn-sm btn-light-primary">Edit Quantity</a>
+												<a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_1">Edit Quantity</a>
 											</div>
 											<!--end::Card toolbar-->
 										</div>
@@ -1317,7 +1317,7 @@
 											<!--begin::Card title-->
 											<!--begin::Card toolbar-->
 											<div class="card-toolbar">
-												<a href="#" class="btn btn-sm btn-light-primary">Edit Quantity</a>
+												<a href="#" class="btn btn-sm btn-light-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_2">Edit Quantity</a>
 											</div>
 											<!--end::Card toolbar-->
 										</div>
@@ -1735,7 +1735,7 @@
 																</tr>
 																<tr>
 																	<td>B2F97C65</td>
-																	<td>Nov 01, 2021</td>
+																	<td>Nov 01, 2020</td>
 																	<td>$82,030.00</td>
 																	<td>
 																		<span class="badge badge-light-success">Paid</span>
@@ -1757,7 +1757,7 @@
 																</tr>
 																<tr>
 																	<td>0CCD2BC0</td>
-																	<td>Oct 01, 2021</td>
+																	<td>Oct 01, 2020</td>
 																	<td>$82,030.00</td>
 																	<td>
 																		<span class="badge badge-light-success">Paid</span>
@@ -1822,7 +1822,7 @@
 												<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-6 w-200px py-4" data-kt-menu="true">
 													<!--begin::Menu item-->
 													<div class="menu-item px-3">
-														<a href="#" class="menu-link px-3">Update Card</a>
+														<a href="#" class="menu-link px-3" data-bs-toggle="modal" data-bs-target="#kt_modal_new_card">Update Card</a>
 													</div>
 													<!--end::Menu item-->
 													<!--begin::Menu item-->
@@ -1954,7 +1954,416 @@
 								<!--end::Sidebar-->
 							</div>
 							<!--end::Layout-->
-							
+							<!--begin::Modals-->
+							<!--begin::Modal Edit Products-->
+							<div class="modal fade" tabindex="-1" id="kt_modal_1">
+								<div class="modal-dialog">
+									<div class="modal-content text-start">
+										<div class="modal-header">
+											<h2 class="modal-title">Edit Product Subscription</h2>
+											<!--begin::Close-->
+											<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+												<span class="svg-icon svg-icon-2x">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+													</svg>
+												</span>
+											</div>
+											<!--end::Close-->
+										</div>
+										<div class="modal-body py-10 px-lg-17">
+											<!--begin::Input group-->
+											<div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Container: Small</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="100"
+														data-kt-dialer-max="10000000"
+														data-kt-dialer-step="100">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="500" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+											<!--begin::Input group-->
+											<div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Container: Medium</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="100"
+														data-kt-dialer-max="10000000"
+														data-kt-dialer-step="100">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="6000" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+											<!--begin::Input group-->
+											<div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Container: Large</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="100"
+														data-kt-dialer-max="10000000"
+														data-kt-dialer-step="100">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="2000" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+											<!--begin::Input group-->
+											<div class="row mb-2">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Install Base</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="100"
+														data-kt-dialer-max="10000000"
+														data-kt-dialer-step="100">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="1000" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+											<button type="button" class="btn btn-primary" onclick="location.href='../dist/billing.html'">Save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end::Modal Edit Products-->
+							<!--begin::Modal Edit Seats-->
+							<div class="modal fade" tabindex="-1" id="kt_modal_2">
+								<div class="modal-dialog">
+									<div class="modal-content text-start">
+										<div class="modal-header">
+											<h2 class="modal-title">Edit Seat Subscription</h2>
+											<!--begin::Close-->
+											<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+												<span class="svg-icon svg-icon-2x">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+													</svg>
+												</span>
+											</div>
+											<!--end::Close-->
+										</div>
+										<div class="modal-body py-10 px-lg-17">
+											<!--begin::Input group-->
+											<div class="row mb-6">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Member</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="1"
+														data-kt-dialer-max="1000"
+														data-kt-dialer-step="1">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="6" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+											<!--begin::Input group-->
+											<div class="row mb-2">
+												<!--begin::Label-->
+												<label class="col-lg-6 col-form-label fw-bold fs-6">Operator</label>
+												<!--end::Label-->
+												<!--begin::Col-->
+												<div class="col-lg-6 fv-row">
+													<!--begin::Dialer-->
+													<div class="input-group w-100"
+														data-kt-dialer="true"
+														data-kt-dialer-min="1"
+														data-kt-dialer-max="1000"
+														data-kt-dialer-step="1">
+														<!--begin::Decrease control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="decrease">
+															<i class="bi bi-dash fs-1"></i>
+														</button>
+														<!--end::Decrease control-->
+														<!--begin::Input control-->
+														<input type="text" class="form-control" readonly placeholder="Amount" value="18" data-kt-dialer-control="input" style="text-align:center;"/>
+														<!--end::Input control-->
+														<!--begin::Increase control-->
+														<button class="btn btn-icon btn-outline btn-outline-secondary" type="button" data-kt-dialer-control="increase">
+															<i class="bi bi-plus fs-1"></i>
+														</button>
+														<!--end::Increase control-->
+													</div>
+													<!--end::Dialer-->
+												</div>
+												<!--end::Col-->
+											</div>
+											<!--end::Input group-->
+										</div>
+										<div class="modal-footer">
+											<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+											<button type="button" class="btn btn-primary" onclick="location.href='../dist/billing.html'">Save</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--end::Modal Edit Seats-->
+							<!--begin::Modal Update Card-->
+							<div class="modal fade" id="kt_modal_new_card" tabindex="-1" aria-hidden="true">
+								<!--begin::Modal dialog-->
+								<div class="modal-dialog modal-dialog-centered mw-650px">
+									<!--begin::Modal content-->
+									<div class="modal-content">
+										<!--begin::Modal header-->
+										<div class="modal-header">
+											<!--begin::Modal title-->
+											<h2>Update Card</h2>
+											<!--end::Modal title-->
+											<!--begin::Close-->
+											<div class="btn btn-sm btn-icon btn-active-color-primary" data-bs-dismiss="modal">
+												<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+												<span class="svg-icon svg-icon-1">
+													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+														<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+														<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+													</svg>
+												</span>
+												<!--end::Svg Icon-->
+											</div>
+											<!--end::Close-->
+										</div>
+										<!--end::Modal header-->
+										<!--begin::Modal body-->
+										<div class="modal-body scroll-y mx-5 mx-xl-10 my-7">
+											<!--begin::Form-->
+											<form id="kt_modal_new_card_form" class="form" action="#">
+												<!--begin::Input group-->
+												<div class="d-flex flex-column mb-7 fv-row">
+													<!--begin::Label-->
+													<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+														<span class="required">Name On Card</span>
+														<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a card holder's name"></i>
+													</label>
+													<!--end::Label-->
+													<input type="text" class="form-control form-control-solid" placeholder="Enter name" name="card_name" value="" />
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="d-flex flex-column mb-7 fv-row">
+													<!--begin::Label-->
+													<label class="required fs-6 fw-bold form-label mb-2">Card Number</label>
+													<!--end::Label-->
+													<!--begin::Input wrapper-->
+													<div class="position-relative">
+														<!--begin::Input-->
+														<input type="text" class="form-control form-control-solid" placeholder="Enter card number" name="card_number" value="" />
+														<!--end::Input-->
+														<!--begin::Card logos-->
+														<div class="position-absolute translate-middle-y top-50 end-0 me-5">
+															<img src="assets/media/svg/card-logos/visa.svg" alt="" class="h-25px" />
+															<img src="assets/media/svg/card-logos/mastercard.svg" alt="" class="h-25px" />
+															<img src="assets/media/svg/card-logos/american-express.svg" alt="" class="h-25px" />
+														</div>
+														<!--end::Card logos-->
+													</div>
+													<!--end::Input wrapper-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Input group-->
+												<div class="row mb-4">
+													<!--begin::Col-->
+													<div class="col-md-8 fv-row">
+														<!--begin::Label-->
+														<label class="required fs-6 fw-bold form-label mb-2">Expiration Date</label>
+														<!--end::Label-->
+														<!--begin::Row-->
+														<div class="row fv-row">
+															<!--begin::Col-->
+															<div class="col-6">
+																<select name="card_expiry_month" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Month">
+																	<option></option>
+																	<option value="1">1</option>
+																	<option value="2">2</option>
+																	<option value="3">3</option>
+																	<option value="4">4</option>
+																	<option value="5">5</option>
+																	<option value="6">6</option>
+																	<option value="7">7</option>
+																	<option value="8">8</option>
+																	<option value="9">9</option>
+																	<option value="10">10</option>
+																	<option value="11">11</option>
+																	<option value="12">12</option>
+																</select>
+															</div>
+															<!--end::Col-->
+															<!--begin::Col-->
+															<div class="col-6">
+																<select name="card_expiry_year" class="form-select form-select-solid" data-control="select2" data-hide-search="true" data-placeholder="Year">
+																	<option></option>
+																	<option value="2021">2021</option>
+																	<option value="2022">2022</option>
+																	<option value="2023">2023</option>
+																	<option value="2024">2024</option>
+																	<option value="2025">2025</option>
+																	<option value="2026">2026</option>
+																	<option value="2027">2027</option>
+																	<option value="2028">2028</option>
+																	<option value="2029">2029</option>
+																	<option value="2030">2030</option>
+																	<option value="2031">2031</option>
+																</select>
+															</div>
+															<!--end::Col-->
+														</div>
+														<!--end::Row-->
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col-md-4 fv-row">
+														<!--begin::Label-->
+														<label class="d-flex align-items-center fs-6 fw-bold form-label mb-2">
+															<span class="required">CVV</span>
+															<i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Enter a card CVV code"></i>
+														</label>
+														<!--end::Label-->
+														<!--begin::Input wrapper-->
+														<div class="position-relative">
+															<!--begin::Input-->
+															<input type="text" class="form-control form-control-solid" minlength="3" maxlength="4" placeholder="CVV" name="card_cvv" />
+															<!--end::Input-->
+															<!--begin::CVV icon-->
+															<div class="position-absolute translate-middle-y top-50 end-0 me-3">
+																<!--begin::Svg Icon | path: icons/duotune/finance/fin002.svg-->
+																<span class="svg-icon svg-icon-2hx">
+																	<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																		<path d="M22 7H2V11H22V7Z" fill="black" />
+																		<path opacity="0.3" d="M21 19H3C2.4 19 2 18.6 2 18V6C2 5.4 2.4 5 3 5H21C21.6 5 22 5.4 22 6V18C22 18.6 21.6 19 21 19ZM14 14C14 13.4 13.6 13 13 13H5C4.4 13 4 13.4 4 14C4 14.6 4.4 15 5 15H13C13.6 15 14 14.6 14 14ZM16 15.5C16 16.3 16.7 17 17.5 17H18.5C19.3 17 20 16.3 20 15.5C20 14.7 19.3 14 18.5 14H17.5C16.7 14 16 14.7 16 15.5Z" fill="black" />
+																	</svg>
+																</span>
+																<!--end::Svg Icon-->
+															</div>
+															<!--end::CVV icon-->
+														</div>
+														<!--end::Input wrapper-->
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Input group-->
+												<!--begin::Actions-->
+												<div class="text-center pt-15">
+													<button type="reset" id="kt_modal_new_card_cancel" class="btn btn-light me-3">Discard</button>
+													<button type="submit" id="kt_modal_new_card_submit" class="btn btn-primary">
+														<span class="indicator-label">Submit</span>
+														<span class="indicator-progress">Please wait...
+														<span class="spinner-border spinner-border-sm align-middle ms-2"></span></span>
+													</button>
+												</div>
+												<!--end::Actions-->
+											</form>
+											<!--end::Form-->
+										</div>
+										<!--end::Modal body-->
+									</div>
+									<!--end::Modal content-->
+								</div>
+								<!--end::Modal dialog-->
+							</div>
+							<!--end::Modal Update Card-->
+							<!--end::Modals-->
 						</div>
 						<!--end::Container-->
 					</div>
