@@ -157,7 +157,7 @@
 							<!--end::Fullscreen-->
 							<!--begin::Notifications-->
 							<div class="d-flex align-items-center mb-5">
-								<a class="btn btn-icon btn-custom" data-kt-menu-overflow="true" data-kt-menu-placement="top-start" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-dismiss="click" title="Notifications" href="../dist/notifications.html">
+								<a class="btn btn-icon btn-custom" data-kt-menu-overflow="true" data-kt-menu-placement="top-start" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-dismiss="click" title="Notifications" id="kt_notification_toggle" data-kt-menu-trigger="click">
 									<!--begin::Svg Icon | path: icons/duotune/general/gen019.svg-->
 									<span class="svg-icon svg-icon-2 svg-icon-lg-2x">
 										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1861,6 +1861,253 @@
 							<!--end::Layout-->
 						</div>
 						<!--end::Container-->
+						<!--begin::Drawer Notification-->
+						<div id="kt_notification" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="activities" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'400px', 'md': '460px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_notification_toggle" data-kt-drawer-close="#kt_notification_close">
+							<div class="card shadow-none rounded-0">
+								<!--begin::Header-->
+								<div class="card-header" id="kt_activities_header">
+									<h3 class="card-title fw-bolder text-dark">Notifications</h3>
+									<div class="card-toolbar">
+										<button type="button" class="btn btn-sm btn-icon btn-active-light-primary me-n5" id="kt_notification_close">
+											<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+											<span class="svg-icon svg-icon-1">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+													<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</button>
+									</div>
+								</div>
+								<!--end::Header-->
+								<!--begin::Body-->
+								<div class="card-body position-relative mt-n8 mb-n8" id="kt_activities_body">
+									<!--begin::Content-->
+									<div id="kt_activities_scroll" class="position-relative scroll-y me-n5 pe-5" data-kt-scroll="true" data-kt-scroll-height="auto" data-kt-scroll-wrappers="#kt_activities_body" data-kt-scroll-dependencies="#kt_activities_header, #kt_activities_footer" data-kt-scroll-offset="5px">
+										<!--begin::Table wrapper-->
+										<div class="pt-2">
+											<!--begin::Table-->
+											<table class="table align-middle table-row-bordered fs-6 text-gray-600 fw-bold gy-7">
+												<!--begin::Table body-->
+												<tbody>
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-primary">
+																	<span class="svg-icon svg-icon-1 svg-icon-primary align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21 18H3C2.4 18 2 17.6 2 17V7C2 6.4 2.4 6 3 6H21C21.6 6 22 6.4 22 7V17C22 17.6 21.6 18 21 18Z" fill="black"/>
+																			<path d="M11.4 13.5C11.8 13.8 12.3 13.8 12.6 13.5L21.6 6.30005C21.4 6.10005 21.2 6 20.9 6H2.99998C2.69998 6 2.49999 6.10005 2.29999 6.30005L11.4 13.5Z" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																New request <a href="../dist/request_detail.html" class="fw-bolder text-gray-800 text-hover-info">#14BEE240</a> has been submitted
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-danger">
+																	<span class="svg-icon svg-icon-1 svg-icon-danger align-center" style="padding-left:2px;padding-top:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6 7H3C2.4 7 2 6.6 2 6V3C2 2.4 2.4 2 3 2H6C6.6 2 7 2.4 7 3V6C7 6.6 6.6 7 6 7Z" fill="black"/>
+																			<path opacity="0.3" d="M13 7H10C9.4 7 9 6.6 9 6V3C9 2.4 9.4 2 10 2H13C13.6 2 14 2.4 14 3V6C14 6.6 13.6 7 13 7ZM21 6V3C21 2.4 20.6 2 20 2H17C16.4 2 16 2.4 16 3V6C16 6.6 16.4 7 17 7H20C20.6 7 21 6.6 21 6ZM7 13V10C7 9.4 6.6 9 6 9H3C2.4 9 2 9.4 2 10V13C2 13.6 2.4 14 3 14H6C6.6 14 7 13.6 7 13ZM14 13V10C14 9.4 13.6 9 13 9H10C9.4 9 9 9.4 9 10V13C9 13.6 9.4 14 10 14H13C13.6 14 14 13.6 14 13ZM21 13V10C21 9.4 20.6 9 20 9H17C16.4 9 16 9.4 16 10V13C16 13.6 16.4 14 17 14H20C20.6 14 21 13.6 21 13ZM7 20V17C7 16.4 6.6 16 6 16H3C2.4 16 2 16.4 2 17V20C2 20.6 2.4 21 3 21H6C6.6 21 7 20.6 7 20ZM14 20V17C14 16.4 13.6 16 13 16H10C9.4 16 9 16.4 9 17V20C9 20.6 9.4 21 10 21H13C13.6 21 14 20.6 14 20ZM21 20V17C21 16.4 20.6 16 20 16H17C16.4 16 16 16.4 16 17V20C16 20.6 16.4 21 17 21H20C20.6 21 21 20.6 21 20Z" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																Planning for <a href="../dist/planning_detail.html" class="fw-bolder text-gray-800 text-hover-info">#97AE709C</a> is overdued 
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-warning">
+																	<span class="svg-icon svg-icon-1 svg-icon-warning align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="black"/>
+																			<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																<a href="#" class="fw-bolder text-gray-800 text-hover-info">Cleverland Clinic</a> has downgraded plan
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-danger">
+																	<span class="svg-icon svg-icon-1 svg-icon-danger align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M20 8H16C15.4 8 15 8.4 15 9V16H10V17C10 17.6 10.4 18 11 18H16C16 16.9 16.9 16 18 16C19.1 16 20 16.9 20 18H21C21.6 18 22 17.6 22 17V13L20 8Z" fill="black"/>
+																			<path opacity="0.3" d="M20 18C20 19.1 19.1 20 18 20C16.9 20 16 19.1 16 18C16 16.9 16.9 16 18 16C19.1 16 20 16.9 20 18ZM15 4C15 3.4 14.6 3 14 3H3C2.4 3 2 3.4 2 4V13C2 13.6 2.4 14 3 14H15V4ZM6 16C4.9 16 4 16.9 4 18C4 19.1 4.9 20 6 20C7.1 20 8 19.1 8 18C8 16.9 7.1 16 6 16Z" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																Shipping of <a href="../dist/shipping_detail.html" class="fw-bolder text-gray-800 text-hover-info">#DED77782</a> is overdued 
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-danger">
+																	<span class="svg-icon svg-icon-1 svg-icon-danger align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M21 11H18.9C18.5 7.9 16 5.49998 13 5.09998V3C13 2.4 12.6 2 12 2C11.4 2 11 2.4 11 3V5.09998C7.9 5.49998 5.50001 8 5.10001 11H3C2.4 11 2 11.4 2 12C2 12.6 2.4 13 3 13H5.10001C5.50001 16.1 8 18.4999 11 18.8999V21C11 21.6 11.4 22 12 22C12.6 22 13 21.6 13 21V18.8999C16.1 18.4999 18.5 16 18.9 13H21C21.6 13 22 12.6 22 12C22 11.4 21.6 11 21 11ZM12 17C9.2 17 7 14.8 7 12C7 9.2 9.2 7 12 7C14.8 7 17 9.2 17 12C17 14.8 14.8 17 12 17Z" fill="black"/>
+																			<path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																Transaction error at <a href="../dist/working_detail.html" class="fw-bolder text-gray-800 text-hover-info">#9ECF18EE</a>
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-danger">
+																	<span class="svg-icon svg-icon-1 svg-icon-danger align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path opacity="0.3" d="M13.625 22H9.625V3C9.625 2.4 10.025 2 10.625 2H12.625C13.225 2 13.625 2.4 13.625 3V22Z" fill="black"/>
+																			<path d="M19.625 10H12.625V4H19.625L21.025 6.09998C21.325 6.59998 21.325 7.30005 21.025 7.80005L19.625 10Z" fill="black"/>
+																			<path d="M3.62499 16H10.625V10H3.62499L2.225 12.1001C1.925 12.6001 1.925 13.3 2.225 13.8L3.62499 16Z" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																Found missed/damaged item at <a href="../dist/returning_detail.html" class="fw-bolder text-gray-800 text-hover-info">#2DB652AD</a>
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->
+													<!--begin::Table row-->
+													<tr>
+														<!--begin::Event=-->
+														<td class="d-flex align-items-center" style="margin-bottom:-1px;">
+															<!--begin::Symbol-->
+															<div class="symbol symbol-40px me-5">
+																<span class="symbol-label bg-light-danger">
+																	<span class="svg-icon svg-icon-1 svg-icon-danger align-center" style="padding-left:1px;">
+																		<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																			<path d="M6.28548 15.0861C7.34369 13.1814 9.35142 12 11.5304 12H12.4696C14.6486 12 16.6563 13.1814 17.7145 15.0861L19.3493 18.0287C20.0899 19.3618 19.1259 21 17.601 21H6.39903C4.87406 21 3.91012 19.3618 4.65071 18.0287L6.28548 15.0861Z" fill="black"/>
+																			<rect opacity="0.3" x="8" y="3" width="8" height="8" rx="4" fill="black"/>
+																		</svg>
+																	</span>
+																</span>
+															</div>
+															<!--end::Symbol-->
+															<!--begin::Text-->
+															<div class="flex-column">
+																<a href="#" class="fw-bolder text-gray-800 text-hover-info">Rosalind Romero</a> has cancelled subscription
+															</div>
+															<!--end::Text-->
+														</td>
+														<!--end::Event=-->
+														<!--begin::Timestamp=-->
+														<td class="pe-0 text-gray-600 text-end fs-8 min-w-80px">24 Jun 2021<br><span>2:40 pm</span></td>
+														<!--end::Timestamp=-->
+													</tr>
+													<!--end::Table row-->													
+												</tbody>
+												<!--end::Table body-->
+											</table>
+											<!--end::Table-->
+										</div>
+										<!--end::Table wrapper-->
+										
+										
+									</div>
+									<!--end::Content-->
+								</div>
+								<!--end::Body-->
+								<!--begin::Footer-->
+								<div class="card-footer py-5 mb-4" id="kt_activities_footer">
+									<button class="btn btn-light btn-active-primary btn-sm" data-kt-drawer-dismiss="true">Mark all as read</button>
+								</div>
+								<!--end::Footer-->
+							</div>
+						</div>
+						<!--end::Drawer Notification-->
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
