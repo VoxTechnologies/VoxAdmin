@@ -963,7 +963,7 @@
 											<!--end::Menu 1-->
 											<!--end::Filter-->
 											<!--begin::New Announcement-->
-											<a href="../dist/announcement_new.html" class="btn btn-primary">
+											<a href="../dist/announcement_new.html" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_0">
 											<span class="svg-icon svg-icon-3">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
 												<rect x="11.364" y="20.364" width="16" height="2" rx="1" transform="rotate(-90 11.364 20.364)" fill="black"/>
@@ -974,6 +974,13 @@
 											<!--end::New Announcement-->
 										</div>
 										<!--end::Toolbar-->
+										<!--begin::Group actions-->
+										<div class="d-flex justify-content-end align-items-center d-none" data-kt-user-table-toolbar="selected">
+											<div class="fw-bolder me-5">
+											<span class="me-2" data-kt-user-table-select="selected_count"></span>Selected</div>
+											<button type="button" class="btn btn-danger" data-kt-user-table-select="delete_selected">Delete Selected</button>
+										</div>
+										<!--end::Group actions-->
 									</div>
 									<!--end::Card toolbar-->
 								</div>
@@ -1042,6 +1049,116 @@
 												<!--begin::Action=-->
 												<td class="text-end">
 													<div class="d-flex justify-content-end flex-shrink-0">
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1"data-kt-drawer-show="true" data-kt-drawer-target="#kt_drawer_chat">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd" d="M2 16V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V16C22 16.6 21.6 17 21 17H18V20C18 20.8 17.1 21.1 16.6 20.6L13 17H3C2.4 17 2 16.6 2 16ZM6 9H18C18.6 9 19 8.6 19 8C19 7.4 18.6 7 18 7H6C5.4 7 5 7.4 5 8C5 8.6 5.4 9 6 9ZM15 11C15.6 11 16 11.4 16 12C16 12.6 15.6 13 15 13H6C5.4 13 5 12.6 5 12C5 11.4 5.4 11 6 11H15Z" fill="black"/>
+																	<path opacity="0.3" d="M18 9H6C5.4 9 5 8.6 5 8C5 7.4 5.4 7 6 7H18C18.6 7 19 7.4 19 8C19 8.6 18.6 9 18 9ZM16 12C16 11.4 15.6 11 15 11H6C5.4 11 5 11.4 5 12C5 12.6 5.4 13 6 13H15C15.6 13 16 12.6 16 12Z" fill="black"/>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#kt_modal_1">
+															<!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
+															<span class="svg-icon svg-icon-3">
+																<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																	<path opacity="0.3" d="M21.4 8.35303L19.241 10.511L13.485 4.755L15.643 2.59595C16.0248 2.21423 16.5426 1.99988 17.0825 1.99988C17.6224 1.99988 18.1402 2.21423 18.522 2.59595L21.4 5.474C21.7817 5.85581 21.9962 6.37355 21.9962 6.91345C21.9962 7.45335 21.7817 7.97122 21.4 8.35303ZM3.68699 21.932L9.88699 19.865L4.13099 14.109L2.06399 20.309C1.98815 20.5354 1.97703 20.7787 2.03189 21.0111C2.08674 21.2436 2.2054 21.4561 2.37449 21.6248C2.54359 21.7934 2.75641 21.9115 2.989 21.9658C3.22158 22.0201 3.4647 22.0084 3.69099 21.932H3.68699Z" fill="black"></path>
+																	<path d="M5.574 21.3L3.692 21.928C3.46591 22.0032 3.22334 22.0141 2.99144 21.9594C2.75954 21.9046 2.54744 21.7864 2.3789 21.6179C2.21036 21.4495 2.09202 21.2375 2.03711 21.0056C1.9822 20.7737 1.99289 20.5312 2.06799 20.3051L2.696 18.422L5.574 21.3ZM4.13499 14.105L9.891 19.861L19.245 10.507L13.489 4.75098L4.13499 14.105Z" fill="black"></path>
+																</svg>
+															</span>
+															<!--end::Svg Icon-->
+														</a>
+														<!--begin::Modal Edit Category-->
+														<div class="modal fade" tabindex="-1" id="kt_modal_1">
+															<div class="modal-dialog">
+																<div class="modal-content text-start">
+																	<div class="modal-header">
+																		<h2 class="modal-title">Edit Operator</h2>
+																		<!--begin::Close-->
+																		<div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+																			<span class="svg-icon svg-icon-2x">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+																					<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+																					<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+																				</svg>
+																			</span>
+																		</div>
+																		<!--end::Close-->
+																	</div>
+																	<div class="modal-body py-10 px-lg-17">
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Operator Name</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">James Taggart</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-2">Operator ID</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<p class="fs-6 fw-bold text-gray-800">5C08A85B</p>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Email</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<input type="email" class="form-control form-control-lg form-control-solid" placeholder="" name="operator_email" value="james@taggart.mart" />
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-9">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold required mb-3">Location</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<select class="form-select form-select-lg form-select-solid" data-control="select2" data-placeholder="Select location">
+																				<option></option>
+																				<option value="Queens FC">Queens FC</option>
+																				<option value="Brooklyn FC" selected="">Brooklyn FC</option>
+																				<option value="Bronx FC">Bronx FC</option>
+																				<option value="Manhattan FC">Manhattan FC</option>
+																			</select>
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																		<!--begin::Input group-->
+																		<div class="fv-row mb-0">
+																			<!--begin::Label-->
+																			<label class="form-label fs-6 fw-bold mb-3">Status</label>
+																			<!--end::Label-->
+																			<!--begin::Input-->
+																			<!--begin::Switch-->
+																			<label class="form-check form-switch form-check-custom form-check-solid">
+																				<input class="form-check-input h-40px w-60px me-2" type="checkbox" checked="checked" value="1"/>
+																				<span class="form-check-label text-gray-600">
+																					Activate
+																				</span>
+																			</label>
+																			<!--end::Switch-->
+																			<!--end::Input-->
+																		</div>
+																		<!--end::Input group-->
+																	</div>
+																	<div class="modal-footer">
+																		<button type="button" class="btn btn-light" data-bs-dismiss="modal">Discard</button>
+																		<button type="button" class="btn btn-primary" onclick="location.href='../dist/operators.html'">Save Changes</button>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<!--end::Modal Edit Category-->
 														<a href="#" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm" data-kt-users-table-filter="delete_row">
 															<!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
 															<span class="svg-icon svg-icon-3">
@@ -1995,6 +2112,260 @@
 							</div>
 						</div>
 						<!--end::Drawer Notification-->
+						<!--begin::Chat drawer-->
+						<div id="kt_drawer_chat" class="bg-body" data-kt-drawer="true" data-kt-drawer-name="chat" data-kt-drawer-activate="true" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'300px', 'md': '500px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_drawer_chat_toggle" data-kt-drawer-close="#kt_drawer_chat_close">
+							<!--begin::Messenger-->
+							<div class="card w-100 rounded-0" id="kt_drawer_chat_messenger">
+								<!--begin::Card header-->
+								<div class="card-header pe-5" id="kt_drawer_chat_messenger_header">
+									<!--begin::Title-->
+									<div class="card-title">
+										<!--begin::User-->
+										<div class="d-flex justify-content-center flex-column me-3">
+											<a href="#" class="fs-4 fw-bolder text-gray-900 text-hover-primary me-1 mb-0 lh-1 mt-1">James Taggart</a>
+											<!--begin::Info-->
+											<div class="mb-0 lh-1">
+												<span class="badge badge-success badge-circle w-6px h-6px me-0"></span>
+												<span class="fs-8 fw-bold text-muted">Active</span>
+											</div>
+											<!--end::Info-->
+										</div>
+										<!--end::User-->
+									</div>
+									<!--end::Title-->
+									<!--begin::Card toolbar-->
+									<div class="card-toolbar">
+										<!--begin::Close-->
+										<div class="btn btn-sm btn-icon btn-active-light-primary" id="kt_drawer_chat_close">
+											<!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+											<span class="svg-icon svg-icon-2">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+													<rect x="6" y="17.3137" width="16" height="2" rx="1" transform="rotate(-45 6 17.3137)" fill="black" />
+													<rect x="7.41422" y="6" width="16" height="2" rx="1" transform="rotate(45 7.41422 6)" fill="black" />
+												</svg>
+											</span>
+											<!--end::Svg Icon-->
+										</div>
+										<!--end::Close-->
+									</div>
+									<!--end::Card toolbar-->
+								</div>
+								<!--end::Card header-->
+								<!--begin::Card body-->
+								<div class="card-body" id="kt_drawer_chat_messenger_body">
+									<!--begin::Messages-->
+									<div class="scroll-y me-n5 pe-5" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_drawer_chat_messenger_header, #kt_drawer_chat_messenger_footer" data-kt-scroll-wrappers="#kt_drawer_chat_messenger_body" data-kt-scroll-offset="0px">
+										<!--begin::Message(in)-->
+										<div class="d-flex justify-content-start mb-10">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-start">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-6.jpg" />
+													</div>
+													<!--end::Avatar-->
+													<!--begin::Details-->
+													<div class="ms-3">
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary me-1">James Taggart</a>
+														<span class="text-muted fs-7 mb-1">2 mins</span>
+													</div>
+													<!--end::Details-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-info text-dark fw-bold mw-lg-400px text-start lh-base" data-kt-element="message-text">How should I handle the damaged items?</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(in)-->
+										<!--begin::Message(out)-->
+										<div class="d-flex justify-content-end mb-10">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-end">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Details-->
+													<div class="me-3">
+														<span class="text-muted fs-7 mb-1">5 mins</span>
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary ms-1">You</a>
+													</div>
+													<!--end::Details-->
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-28.jpg" />
+													</div>
+													<!--end::Avatar-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-primary text-dark fw-bold mw-lg-400px lh-base" data-kt-element="message-text">Hey there, we’re just trying to inspect the cause and reaching out to the customer now.</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(out)-->
+										<!--begin::Message(in)-->
+										<div class="d-flex justify-content-start mb-10">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-start">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-6.jpg" />
+													</div>
+													<!--end::Avatar-->
+													<!--begin::Details-->
+													<div class="ms-3">
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary me-1">James Taggart</a>
+														<span class="text-muted fs-7 mb-1">1 Hour</span>
+													</div>
+													<!--end::Details-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-info text-dark fw-bold mw-lg-400px text-start lh-base" data-kt-element="message-text">Ok, Understood!</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(in)-->
+										<!--begin::Message(out)-->
+										<div class="d-flex justify-content-end mb-10">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-end">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Details-->
+													<div class="me-3">
+														<span class="text-muted fs-7 mb-1">2 Hours</span>
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary ms-1">You</a>
+													</div>
+													<!--end::Details-->
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-28.jpg" />
+													</div>
+													<!--end::Avatar-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-primary text-dark fw-bold mw-lg-400px lh-base" data-kt-element="message-text">You’ll receive notifications for all issues regarding damaged and missed items.</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(out)-->
+										<!--begin::Message(in)-->
+										<div class="d-flex justify-content-start mb-10">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-start">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-6.jpg" />
+													</div>
+													<!--end::Avatar-->
+													<!--begin::Details-->
+													<div class="ms-3">
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary me-1">James Taggart</a>
+														<span class="text-muted fs-7 mb-1">3 Hours</span>
+													</div>
+													<!--end::Details-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-info text-dark fw-bold mw-lg-400px text-start lh-base" data-kt-element="message-text">Please check the reshelving status and prepare for restocking items.</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(in)-->
+										<!--begin::Message(template for out)-->
+										<div class="d-flex justify-content-end mb-10 d-none" data-kt-element="template-out">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-end">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Details-->
+													<div class="me-3">
+														<span class="text-muted fs-7 mb-1">Just now</span>
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary ms-1">You</a>
+													</div>
+													<!--end::Details-->
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-28.jpg" />
+													</div>
+													<!--end::Avatar-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-primary text-dark fw-bold mw-lg-400px text-end" data-kt-element="message-text"></div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(template for out)-->
+										<!--begin::Message(template for in)-->
+										<div class="d-flex justify-content-start mb-10 d-none" data-kt-element="template-in">
+											<!--begin::Wrapper-->
+											<div class="d-flex flex-column align-items-start">
+												<!--begin::User-->
+												<div class="d-flex align-items-center mb-2">
+													<!--begin::Avatar-->
+													<div class="symbol symbol-35px symbol-circle">
+														<img alt="Pic" src="assets/media/avatars/150-6.jpg" />
+													</div>
+													<!--end::Avatar-->
+													<!--begin::Details-->
+													<div class="ms-3">
+														<a href="#" class="fs-5 fw-bolder text-gray-900 text-hover-primary me-1">James Taggart</a>
+														<span class="text-muted fs-7 mb-1">Just now</span>
+													</div>
+													<!--end::Details-->
+												</div>
+												<!--end::User-->
+												<!--begin::Text-->
+												<div class="p-5 rounded bg-light-info text-dark fw-bold mw-lg-400px text-start" data-kt-element="message-text">Right before vacation season we have the next Big Deal for you.</div>
+												<!--end::Text-->
+											</div>
+											<!--end::Wrapper-->
+										</div>
+										<!--end::Message(template for in)-->
+									</div>
+									<!--end::Messages-->
+								</div>
+								<!--end::Card body-->
+								<!--begin::Card footer-->
+								<div class="card-footer pt-4" id="kt_drawer_chat_messenger_footer">
+									<!--begin::Input-->
+									<textarea class="form-control form-control-flush mb-3" rows="1" data-kt-element="input" placeholder="Type a message"></textarea>
+									<!--end::Input-->
+									<!--begin:Toolbar-->
+									<div class="d-flex flex-stack">
+										<!--begin::Actions-->
+										<div class="d-flex align-items-center me-2">
+											<button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button">
+												<i class="bi bi-paperclip fs-3"></i>
+											</button>
+										</div>
+										<!--end::Actions-->
+										<!--begin::Send-->
+										<button class="btn btn-primary" type="button" data-kt-element="send">Send</button>
+										<!--end::Send-->
+									</div>
+									<!--end::Toolbar-->
+								</div>
+								<!--end::Card footer-->
+							</div>
+							<!--end::Messenger-->
+						</div>
+						<!--end::Chat drawer-->
 					</div>
 					<!--end::Content-->
 					<!--begin::Footer-->
