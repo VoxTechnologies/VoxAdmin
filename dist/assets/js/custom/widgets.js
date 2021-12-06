@@ -3802,16 +3802,20 @@ var KTWidgets = function () {
     
             var options = {
                 series: [{
-                    name: 'Net Profit',
+                    name: 'Private',
                     data: [35, 65, 75, 55, 45, 60, 55]
                 }, {
-                    name: 'Revenue',
+                    name: 'Shared',
+                    data: [40, 70, 80, 60, 50, 65, 60]
+                }, {
+                    name: 'Public',
                     data: [40, 70, 80, 60, 50, 65, 60]
                 }],
                 chart: {
                     fontFamily: 'inherit',
                     type: 'bar',
                     height: height,
+                    stacked: true,
                     toolbar: {
                         show: false
                     },
@@ -3822,8 +3826,8 @@ var KTWidgets = function () {
                 plotOptions: {
                     bar: {
                         horizontal: false,
-                        columnWidth: ['30%'],
-                        borderRadius: 4
+                        columnWidth: ['20%'],
+                        borderRadius: 6
                     }
                 },
                 legend: {
@@ -3853,8 +3857,6 @@ var KTWidgets = function () {
                     }
                 },
                 yaxis: {
-                    min: 0,
-                    max: 100,
                     labels: {
                         style: {
                             colors: labelColor,
@@ -3863,8 +3865,8 @@ var KTWidgets = function () {
                     }
                 },
                 fill: {
-                    type: ['solid', 'solid'],
-                    opacity: [0.25, 1]
+                    type: ['solid', 'solid', 'solid'],
+                    opacity: [1, 0.5, 0.75]
                 },
                 states: {
                     normal: {
@@ -3893,14 +3895,14 @@ var KTWidgets = function () {
                     },
                     y: {
                         formatter: function (val) {
-                            return "$" + val + " thousands"
+                            return "$" + val
                         }
                     },
                     marker: {
                         show: false
                     }
                 },
-                colors: ['#ffffff', '#ffffff'],
+                colors: ['#51BADE', '#51BADE'],
                 grid: {
                     borderColor: borderColor,
                     strokeDashArray: 4,
