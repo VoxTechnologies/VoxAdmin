@@ -3429,9 +3429,9 @@ var KTWidgets = function () {
         });        
     }
     
-    // COGS
-    var cogs = function() {
-        var charts = document.querySelectorAll('.cogs');
+    // COGS/Store
+    var cogs_store = function() {
+        var charts = document.querySelectorAll('.cogs_store');
     
         var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
         var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
@@ -3444,7 +3444,7 @@ var KTWidgets = function () {
             var options = {
                 series: [{
                     name: 'COGS',
-                    data: [5683665, 5842942, 6294204, 6449022, 6549222, 6706896]
+                    data: [33.46, 33.87, 34.85, 34.96, 35.12, 35.60]
                 }],
                 chart: {
                     fontFamily: 'inherit',
@@ -3547,9 +3547,9 @@ var KTWidgets = function () {
         });        
     }
     
-    // $Gross Margin
-    var a_grossmargin = function() {
-        var charts = document.querySelectorAll('.a_grossmargin');
+    // $Gross Margin/Store
+    var a_grossmargin_store = function() {
+        var charts = document.querySelectorAll('.a_grossmargin_store');
     
         var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
         var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
@@ -3562,7 +3562,7 @@ var KTWidgets = function () {
             var options = {
                 series: [{
                     name: '$Gross Margin',
-                    data: [1705099, 1752882, 1888261, 1934706, 1964766, 2012068]
+                    data: [15.74, 15.92, 16.13, 16.31, 16.59, 16.72]
                 }],
                 chart: {
                     fontFamily: 'inherit',
@@ -3646,7 +3646,7 @@ var KTWidgets = function () {
                     },
                     y: {
                         formatter: function (val) {
-                            return val
+                            return "$" + val
                         }
                     }
                 },
@@ -3665,9 +3665,9 @@ var KTWidgets = function () {
         });        
     }
     
-    // %Gross Margin
-    var p_grossmargin = function() {
-        var charts = document.querySelectorAll('.p_grossmargin');
+    // %Gross Margin/Store
+    var p_grossmargin_store = function() {
+        var charts = document.querySelectorAll('.p_grossmargin_store');
     
         var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
         var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
@@ -3764,7 +3764,7 @@ var KTWidgets = function () {
                     },
                     y: {
                         formatter: function (val) {
-                            return val
+                            return val + "%"
                         }
                     }
                 },
@@ -4592,9 +4592,9 @@ var KTWidgets = function () {
             fulfillment_store();
             shipping_store();
             payment_store();
-            cogs();
-            a_grossmargin();
-            p_grossmargin();
+            cogs_store();
+            a_grossmargin_store();
+            p_grossmargin_store();
             
             // Dashboard Widgets
             dash_salestransactions();
