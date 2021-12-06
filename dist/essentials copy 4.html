@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="">
-		<title>Dashboard - Metrics - VoxStore</title>
+		<title>Essentials - Analysis - VoxStore</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
@@ -56,7 +56,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item mb-3" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="right" data-bs-dismiss="click" title="Metrics">
 										<!--begin::Nav link-->
-										<a class="nav-link btn btn-custom btn-icon active" data-bs-toggle="tab" href="#kt_aside_nav_tab_metrics">
+										<a class="nav-link btn btn-custom btn-icon" data-bs-toggle="tab" href="#kt_aside_nav_tab_metrics">
 											<!--begin::Svg Icon | path: icons/duotune/graphs/gra001.svg-->
 											<span class="svg-icon svg-icon-2x">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -72,7 +72,7 @@
 									<!--begin::Nav item-->
 									<li class="nav-item mb-3" data-bs-toggle="tooltip" data-bs-trigger="hover" data-bs-placement="right" data-bs-dismiss="click" title="Analysis">
 										<!--begin::Nav link-->
-										<a class="nav-link btn btn-custom btn-icon" data-bs-toggle="tab" href="#kt_aside_nav_tab_analysis">
+										<a class="nav-link btn btn-custom btn-icon active" data-bs-toggle="tab" href="#kt_aside_nav_tab_analysis">
 											<!--begin::Svg Icon | path: icons/duotune/graphs/gra010.svg-->
 											<span class="svg-icon svg-icon-2x">
 												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -262,7 +262,7 @@
 									<!--begin::Tab content-->
 									<div class="tab-content">
 										<!--begin::Tab pane-->
-										<div class="tab-pane fade active show" id="kt_aside_nav_tab_metrics" role="tabpanel">
+										<div class="tab-pane fade" id="kt_aside_nav_tab_metrics" role="tabpanel">
 											<!--begin::Wrapper-->
 											<div class="m-0">
 												<!--begin::Projects-->
@@ -278,7 +278,7 @@
 													<!--begin::Items-->
 													<div class="mb-10 custom-list">
 														<!--begin::Item-->
-														<a href="../dist/index.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2 active">
+														<a href="../dist/index.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2">
 															<!--begin::Symbol-->
 															<span class="symbol symbol-40px me-5">
 																<span class="symbol-label svg-icon svg-icon-2">
@@ -392,7 +392,7 @@
 										</div>
 										<!--end::Tab pane-->
 										<!--begin::Tab pane-->
-										<div class="tab-pane fade" id="kt_aside_nav_tab_analysis" role="tabpanel">
+										<div class="tab-pane fade active show" id="kt_aside_nav_tab_analysis" role="tabpanel">
 											<!--begin::Wrapper-->
 											<div class="m-0">
 												<!--begin::Projects-->
@@ -408,7 +408,7 @@
 													<!--begin::Items-->
 													<div class="mb-10 custom-list">
 														<!--begin::Item-->
-														<a href="../dist/essentials.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2">
+														<a href="../dist/essentials.html" class="custom-symbol custom-list-title d-flex align-items-center px-5 py-2 active">
 															<!--begin::Symbol-->
 															<span class="symbol symbol-40px me-5">
 																<span class="symbol-label svg-icon svg-icon-2">
@@ -831,15 +831,15 @@
 							<!--begin::Page title-->
 							<div class="page-title d-flex flex-column align-items-start justify-content-center flex-wrap me-lg-2 pb-5 pb-lg-0" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', lg: '#kt_header_container'}">
 								<!--begin::Heading-->
-								<h1 class="text-dark fw-bold my-0 fs-2 mb-1">Dashboard</h1>
+								<h1 class="text-dark fw-bold my-0 fs-2 mb-1">Essentials</h1>
 								<!--end::Heading-->
 								<!--begin::Breadcrumb-->
 								<ul class="breadcrumb text-muted fw-bold fs-base">
 									<li class="breadcrumb-item">
-										<span class="text-gray-600">Metrics</span>
+										<span class="text-gray-600">Analysis</span>
 									</li>
 									<li class="breadcrumb-item">
-										<span class="text-gray-800">Dashboard</span>
+										<span class="text-gray-800">Essentials</span>
 									</li>
 								</ul>
 								<!--end::Breadcrumb-->
@@ -857,7 +857,7 @@
 							</div>
 							<!--begin::Mobile Title-->
 								<div class="d-lg-none fs-4 fw-bolder">
-									Dashboard
+									Essentials
 								</div>
 							<!--end::Mobile Title-->
 							<!--begin::Aside mobile toggle-->
@@ -875,11 +875,11 @@
 							<!--end::Wrapper-->
 							<!--begin::Toolbar wrapper-->
 							<div class="toolbar d-flex flex-shrink-0">
-								<!--begin::Invite user-->
+								<!--begin::Edit-->
 								<div class="d-flex ms-3">
-									<a href="../dist/dashboard_edit.html" class="btn btn-light btn-text-info btn-active-info">Edit</a>
+									<a href="../dist/essentials_edit.html" class="btn btn-light btn-text-info btn-active-info">Edit</a>
 								</div>
-								<!--end::Invite user-->
+								<!--end::Edit-->
 								<!--begin::Add metrics-->
 								<div class="d-flex ms-3">
 									<a href="#" class="btn btn-primary btn-active-white">
@@ -889,7 +889,7 @@
 											<rect x="4.36396" y="11.364" width="16" height="2" rx="1" fill="black"/>
 											</svg>
 										</span>
-										<span class="align-center align-middle">Add Metrics</span>
+										<span class="align-center align-middle">Add Analysis</span>
 									</a>
 								</div>
 								<!--end::Add metrics-->
@@ -903,451 +903,1009 @@
 					<div class="content d-flex flex-column flex-column-fluid" id="kt_content">
 						<!--begin::Container-->
 						<div class="container-xxl" id="kt_content_container">
-							<!--begin::Row-->
-							<div class="row gy-0 g-xl-8">
-								<!--begin::Col-->
-								<div class="col-xl-6">
-									<!--begin::Charts Widget 1-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8">
-										<!--begin::Header-->
-										<div class="card-header border-0 pt-5">
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Sales Transaction</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$283,482</span>												
-											</h3>
-											<!--begin::Toolbar-->
-											<a class="card-toolbar" href="../dist/sales.html">
-												<!--begin::Menu-->
-												<button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary me-n3">
-													<!--begin::Svg Icon-->
-													<span class="svg-icon svg-icon-2">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="3" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="17" width="4" height="4" rx="2" fill="black"/>
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</button>
-												<!--end::Menu-->
-											</a>
-											<!--end::Toolbar-->
+							<!--begin::Content-->
+							<div class="flex-lg-row-fluid">
+								<!--begin:::Tabs-->
+								<ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-6 fw-bold mb-8">
+									<!--begin:::Tab item-->
+									<li class="nav-item">
+										<a class="nav-link text-gray-400 text-active-primary active" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_users">Users</a>
+									</li>
+									<!--end:::Tab item-->
+									<!--begin:::Tab item-->
+									<li class="nav-item">
+										<a class="nav-link text-gray-400 text-active-primary" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_items">Items</a>
+									</li>
+									<!--end:::Tab item-->
+									<!--begin:::Tab item-->
+									<li class="nav-item">
+										<a class="nav-link text-gray-400 text-active-primary" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_stores">Stores</a>
+									</li>
+									<!--end:::Tab item-->
+									<!--begin:::Tab item-->
+									<li class="nav-item ms-auto d-flex flex-shrink-0">
+										<!--begin::Unit-->
+										<div class="me-3">
+											<select class="form-select form-select-sm fw-bold" data-kt-select2="true" data-kt-user-table-filter="period" data-hide-search="true">
+												<option value="Monthly" selected="">Monthly</option>
+												<option value="Weekly">Weekly</option>
+											</select>
 										</div>
-										<!--end::Header-->
-										<!--begin::Body-->
-										<div class="card-body d-flex align-items-end pb-0 px-5 pt-0">
-											<!--begin::Chart-->
-											<div id="kt_apexcharts_1" class="w-100" style="height: 350px"></div>
-											<!--end::Chart-->
-										</div>
-										<!--end::Body-->
-										<!--begin::Stats-->
-										<div class="card-rounded card position-relative card-px py-4">
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Net Sales</div>
-													<div class="fs-2 fw-bold text-gray-800">$6,500</div>
+										<!--end::Unit-->
+										<!--begin::Period-->
+										<select class="form-select form-select-sm fw-bold" data-kt-select2="true" data-kt-user-table-filter="period" data-hide-search="true">
+											<option value="Last 30 days">Last 30 days</option>
+											<option value="Last 3 months">Last 3 months</option>
+											<option value="Last 6 months" selected="">Last 6 months</option>
+											<option value="This year">This year</option>
+											<option value="Last year">Last year</option>
+											<option value="All time">All time</option>
+										</select>
+										<!--end::Period-->
+									</li>
+									<!--end:::Tab item-->
+								</ul>
+								<!--end:::Tabs-->
+								<!--begin:::Tab content-->
+								<div class="tab-content" id="myTabContent">
+									<!--begin:::Tab pane-->
+									<div class="tab-pane fade show active" id="kt_users" role="tabpanel">
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Subscriber-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Subscribers</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="69425">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+8.9%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 63,210</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="subscribers card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
 												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARPU</div>
-													<div class="fs-2 fw-bold text-gray-800">$230</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARPU Change</div>
-													<div class="fs-2 fw-bold text-gray-800">14%</div>
-												</div>
-												<!--end::Col-->
+												<!--end::Subscriber-->
 											</div>
-											<!--end::Row-->
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARR</div>
-													<div class="fs-2 fw-bold text-gray-800">$69,500</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::MRR-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">MRR</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="69425">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+8.9%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 63,210</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="mrr card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
 												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARR Change</div>
-													<div class="fs-2 fw-bold text-gray-800">25%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Gross Margin</div>
-													<div class="fs-2 fw-bold text-gray-800">14%</div>
-												</div>
-												<!--end::Col-->
+												<!--end::MRR-->
 											</div>
-											<!--end::Row-->
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::ARPU-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">ARPA</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-prefix="$" data-kt-countup-value="139.42">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+5.7%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from $131.41</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="arpa card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::ARPU-->
+											</div>
+											<!--end::Col-->
 										</div>
-										<!--end::Stats-->
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::New Subscriber-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">New Subscribers</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="newsubscribers card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::New Subscriber-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Trials-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Trials</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="2284">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+28.5%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 1,634</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="trials card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Trials-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::New Trials-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">New Trials</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="69425">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+8.9%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 63,210</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="newtrials card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::New Trials-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::#Customer Churn-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">#Customer Churn</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="n_customerchurn card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::#Customer Churn-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::%Customer Churn-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">%Customer Churn</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="p_customerchurn card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::%Customer Churn-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Expansions-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Expansions</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="expansions card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Expansions-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Contractions-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Contractions</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="contractions card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Contractions-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Reactivations-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Reactivations</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="reactivations card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Reactivations-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Gross MRR Churn-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Gross MRR Churn</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="grossmrrchurn card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Gross MRR Churn-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Net MRR Churn-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Net MRR Churn</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="netmrrchurn card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Net MRR Churn-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Avg. Favorites-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Avg. Favorites</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="avgfavorites card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end::Avg. Favorites-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Avg. Essentials-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Avg. Essentials</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="avgessentials card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Avg. Essentials-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
 									</div>
-									<!--end::Charts Widget 1-->
-								</div>
-								<!--end::Col-->
-								<!--begin::Col-->
-								<div class="col-xl-6">
-									<!--begin::Mixed Widget 2-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8">
-										<!--begin::Header-->
-										<div class="card-header border-0 bg-primary py-5">
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">MRR</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$73,230</span>												
-											</h3>
-											<a class="card-toolbar" href="../dist/mrr.html">
-												<!--begin::Menu-->
-												<button type="button" class="btn btn-sm btn-icon btn-color-white btn-active-info me-n3">
-													<!--begin::Svg Icon-->
-													<span class="svg-icon svg-icon-2">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="3" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="17" width="4" height="4" rx="2" fill="black"/>
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</button>
-												<!--end::Menu-->
-											</a>
-										</div>
-										<!--end::Header-->
-										<!--begin::Body-->
-										<div class="card-body p-0">
-											<!--begin::Chart-->
-											<div class="charts-widget-2-chart card-rounded-bottom bg-primary" data-kt-color="primary" style="height: 255px"></div>
-											<!--end::Chart-->
-											<!--begin::Stats-->
-											<div class="card-rounded card mt-n10 position-relative card-px py-11">
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Existing MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$21,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$6,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Expantion MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$1,500</div>
-													</div>
-													<!--end::Col-->
+									<!--end:::Tab pane-->
+									<!--begin:::Tab pane-->
+									<div class="tab-pane fade" id="kt_items" role="tabpanel">
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::SKUs-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">SKUs</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="skus card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
 												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Expantion MRR %</div>
-														<div class="fs-2 fw-bold text-gray-800">2.6%</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Contraction MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$400</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Churn MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$2,400</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Reactivation MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$200</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net New MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$2,000</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$28,432</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net MRR Growth</div>
-														<div class="fs-2 fw-bold text-gray-800">65%</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">NRR</div>
-														<div class="fs-2 fw-bold text-gray-800">55%</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Quick Ratio</div>
-														<div class="fs-2 fw-bold text-gray-800">3.2</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
+												<!--end:SKUs-->
 											</div>
-											<!--end::Stats-->
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Avg. Unsold-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Unsold</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="unsold card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Avg. Unsold-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Requests-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Requests</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="requests card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Requests-->
+											</div>
+											<!--end::Col-->
 										</div>
-										<!--end::Body-->
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::#Inventories-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">#Inventories</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="n_inventories card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:#Inventories-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Inventory Amount-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Inventory Amount</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="a_inventories card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Inventory Amount-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::DSI-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">DSI </span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="dsi card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:DSI-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
 									</div>
-									<!--end::Mixed Widget 2-->
+									<!--end:::Tab pane-->
+									<!--begin:::Tab pane-->
+									<div class="tab-pane fade" id="kt_stores" role="tabpanel">
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Stores Delivered-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Stores Delivered</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="storesdelivered card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Stores Delivered-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Sales/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Sales/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="sales_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Sales/Store-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Unsold-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Unsold</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="unsold card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Unsold-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Items Delivered/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Items Delivered/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="itemsdelivered_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Items Delivered/Store-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Items Sold/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Items Sold/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="itemssold_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Items Sold/Store-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Purchasing Cost/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Purchasing Cost/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="purchasing_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Purchasing Cost/Store-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->	
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Fulfillment Cost/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Fulfillment Cost/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="fulfillment_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Fulfillment Cost/Store-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Shipping Cost/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Shipping Cost/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="shipping_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Shipping Cost/Store-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Payment Cost/Store-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Payment Cost/Store</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="payment_store card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Payment Cost/Store-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->		
+										<!--begin::Row-->
+										<div class="row gy-0 g-xl-8">
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::COGS-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">COGS</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="cogs card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:COGS-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::Gross Margin-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">Gross Margin</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="a_grossmargin card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:Gross Margin-->
+											</div>
+											<!--end::Col-->
+											<!--begin::Col-->
+											<div class="col-xl-4">
+												<!--begin::%Gross Margin-->
+												<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
+													<!--begin::Header-->
+													<a class="card-header border-0 py-6" href="#">
+														<h3 class="card-title align-items-start flex-column">
+															<span class="card-label fw-bold fs-6 mb-2">%Gross Margin</span>
+															<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="5428">0</span>			
+														</h3>
+														<div class="d-flex flex-column text-end mt-2">
+															<span class="text-info fw-bold fs-3">+9.0%</span>
+															<span class="text-gray-400 fw-bold fs-6 mt-1">from 4,939</span>	
+														</div>
+													</a>
+													<!--end::Header-->
+													<!--begin::Body-->
+													<a class="card-body p-0" href="#">
+														<!--begin::Chart-->
+														<div class="p_grossmargin card-rounded-bottom" data-kt-color="primary" style="height: 100px"></div>
+														<!--end::Chart-->
+													</a>
+													<!--end::Body-->
+												</div>
+												<!--end:%Gross Margin-->
+											</div>
+											<!--end::Col-->
+										</div>
+										<!--end::Row-->										
+									</div>
+									<!--end:::Tab pane-->
+									<!--begin:::Hidden tab pane for kt_apexcharts_1-->
+									<div class="tab-pane fade" role="tabpanel">
+										<!--begin::Chart-->
+										<div id="kt_apexcharts_1" class="w-100" ></div>
+										<!--end::Chart-->
+									</div>
+									<!--end:::Hidden tab pane for kt_apexcharts_1-->
 								</div>
-								<!--end::Col-->
+								<!--end:::Tab content-->
 							</div>
-							<!--end::Row-->
-							<!--begin::Row-->
-							<div class="row gy-0 g-xl-8">
-								<!--begin::Col-->
-								<div class="col-xl-6">
-									<!--begin::Mixed Widget 2-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush">
-										<!--begin::Header-->
-										<div class="card-header border-0 bg-thirdry py-5">
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Full CAC</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$145</span>												
-											</h3>
-											<a class="card-toolbar" href="../dist/cac.html">
-												<!--begin::Menu-->
-												<button type="button" class="btn btn-sm btn-icon btn-color-white btn-active-info me-n3">
-													<!--begin::Svg Icon-->
-													<span class="svg-icon svg-icon-2">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="3" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="17" width="4" height="4" rx="2" fill="black"/>
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</button>
-												<!--end::Menu-->
-											</a>
-										</div>
-										<!--end::Header-->
-										<!--begin::Body-->
-										<div class="card-body p-0">
-											<!--begin::Chart-->
-											<div class="charts-widget-2-chart card-rounded-bottom bg-thirdry" data-kt-color="primary" style="height: 245px"></div>
-											<!--end::Chart-->
-											<!--begin::Stats-->
-											<div class="card-rounded card mt-n5 position-relative card-px py-11">
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Visitor</div>
-														<div class="fs-2 fw-bold text-gray-800">538,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New Lead</div>
-														<div class="fs-2 fw-bold text-gray-800">85,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New Trial</div>
-														<div class="fs-2 fw-bold text-gray-800">3,953</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Paid CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$231</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Organic CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$135</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Blended CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$324</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Salaries/Wages</div>
-														<div class="fs-2 fw-bold text-gray-800">$214,932</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Overhead</div>
-														<div class="fs-2 fw-bold text-gray-800">$45,934</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Full CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$324</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">LTV</div>
-														<div class="fs-2 fw-bold text-gray-800">$4,932</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">LTV:CAC Ratio</div>
-														<div class="fs-2 fw-bold text-gray-800">2.5</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Payback Period</div>
-														<div class="fs-2 fw-bold text-gray-800">3.5</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-											</div>
-											<!--end::Stats-->
-										</div>
-										<!--end::Body-->
-									</div>
-									<!--end::Mixed Widget 2-->
-								</div>
-								<!--end::Col-->
-								<!--begin::Col-->
-								<div class="col-xl-6">
-									<!--begin::Charts Widget 1-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8">
-										<!--begin::Header-->
-										<div class="card-header border-0 pt-5">
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Subscribers</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">1,280</span>												
-											</h3>
-											<!--begin::Toolbar-->
-											<a class="card-toolbar" href="../dist/subscribers.html">
-												<!--begin::Menu-->
-												<button type="button" class="btn btn-sm btn-icon btn-color-primary btn-active-light-primary me-n3">
-													<!--begin::Svg Icon-->
-													<span class="svg-icon svg-icon-2">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="3" width="4" height="4" rx="2" fill="black"/>
-																<rect x="10" y="17" width="4" height="4" rx="2" fill="black"/>
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</button>
-												<!--end::Menu-->
-											</a>
-											<!--end::Toolbar-->
-										</div>
-										<!--end::Header-->
-										<!--begin::Body-->
-										<div class="card-body d-flex align-items-end pb-0 px-5">
-											<!--begin::Chart-->
-											<div id="kt_charts_widget_1_chart" class="w-100" style="height: 350px"></div>
-											<!--end::Chart-->
-										</div>
-										<!--end::Body-->
-										<!--begin::Stats-->
-										<div class="card-rounded card position-relative card-px py-4">
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">New Subscribers</div>
-													<div class="fs-2 fw-bold text-gray-800">843</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">13</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Total Subscribers</div>
-													<div class="fs-2 fw-bold text-gray-800">21,243</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Customer Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">3.2%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Gross MRR Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">1.5%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Net MRR Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">2.7%</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->	
-
-										</div>
-										<!--end::Stats-->
-									</div>
-									<!--end::Charts Widget 1-->
-								</div>
-								<!--end::Col-->
-							</div>
-							<!--end::Row-->
+							<!--end::Content-->
 						</div>
 						<!--end::Container-->
 						<!--begin::Drawer Notification-->
@@ -1638,7 +2196,6 @@
 		<script src="assets/js/custom/modals/users-search.js"></script>
 		<script src="assets/js/custom/modals/new-card.js"></script>
 		<script src="assets/js/pcoded.min.js"></script>
-		<script src="assets/js/custom/documentation/charts/apexcharts.js"></script>
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
 	</body>
