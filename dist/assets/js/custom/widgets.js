@@ -3783,7 +3783,143 @@ var KTWidgets = function () {
         });        
     }
     
+    // Dashboard
     
+    // Sales Transactions
+    var dash_salestransactions = function() {
+        var charts = document.querySelectorAll('.dash_salestransactions');
+    
+        var color;
+        var strokeColor;
+        var height;
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var options;
+        var chart;
+    
+        [].slice.call(charts).map(function(element) {            
+            height = parseInt(KTUtil.css(element, 'height'));
+    
+            var options = {
+                series: [{
+                    name: 'Net Profit',
+                    data: [35, 65, 75, 55, 45, 60, 55]
+                }, {
+                    name: 'Revenue',
+                    data: [40, 70, 80, 60, 50, 65, 60]
+                }],
+                chart: {
+                    fontFamily: 'inherit',
+                    type: 'bar',
+                    height: height,
+                    toolbar: {
+                        show: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: false,
+                        columnWidth: ['30%'],
+                        borderRadius: 4
+                    }
+                },
+                legend: {
+                    show: false
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 1,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                    axisBorder: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false
+                    },
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                yaxis: {
+                    min: 0,
+                    max: 100,
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                fill: {
+                    type: ['solid', 'solid'],
+                    opacity: [0.25, 1]
+                },
+                states: {
+                    normal: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    hover: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    active: {
+                        allowMultipleDataPointsSelection: false,
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    }
+                },
+                tooltip: {
+                    style: {
+                        fontSize: '12px'
+                    },
+                    y: {
+                        formatter: function (val) {
+                            return "$" + val + " thousands"
+                        }
+                    },
+                    marker: {
+                        show: false
+                    }
+                },
+                colors: ['#ffffff', '#ffffff'],
+                grid: {
+                    borderColor: borderColor,
+                    strokeDashArray: 4,
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                    padding: {
+                        left: 20,
+                        right: 20
+                    }
+                }
+            };
+    
+            var chart = new ApexCharts(element, options);
+            chart.render()
+        });        
+    }
     
     var initChartsWidget2 = function() {
         var charts = document.querySelectorAll('.charts-widget-2-chart');
@@ -3919,9 +4055,146 @@ var KTWidgets = function () {
             chart.render()
         });        
     }
+    
+    // Charts widgets
+    var initChartsWidget1 = function() {
+        var element = document.getElementById("kt_charts_widget_1_chart");
+       
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var baseColor = KTUtil.getCssVariableValue('--bs-primary');
+        var lightColor = KTUtil.getCssVariableValue('--bs-gray-200');
+    
+        if (!element) {
+            return;
+        }
+    
+        var height = parseInt(KTUtil.css(element, 'height'));
+    
+        var options = {
+            series: [{
+                name: 'Net Profit',
+                data: [60, 60, 90, 90, 80, 80, 70, 70]
+            }],
+            chart: {
+                fontFamily: 'inherit',
+                type: 'area',
+                height: 350,
+                toolbar: {
+                    show: false
+                }
+            },
+            plotOptions: {
+    
+            },
+            legend: {
+                show: false
+            },
+            dataLabels: {
+                enabled: false
+            },
+            fill: {
+                type: 'solid',
+                opacity: 1
+            },
+            stroke: {
+                curve: 'smooth',
+                show: true,
+                width: 3,
+                colors: [baseColor]
+            },
+            xaxis: {
+                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false
+                },
+                labels: {
+                    style: {
+                        colors: labelColor,
+                        fontSize: '12px'
+                    }
+                },
+                crosshairs: {
+                    position: 'front',
+                    stroke: {
+                        color: baseColor,
+                        width: 1,
+                        dashArray: 3
+                    }
+                },
+                tooltip: {
+                    enabled: true,
+                    formatter: undefined,
+                    offsetY: 0,
+                    style: {
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: labelColor,
+                        fontSize: '12px'
+                    }
+                }
+            },
+            states: {
+                normal: {
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                },
+                hover: {
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                },
+                active: {
+                    allowMultipleDataPointsSelection: false,
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                }
+            },
+            tooltip: {
+                style: {
+                    fontSize: '12px'
+                },
+                y: {
+                    formatter: function (val) {
+                        return "$" + val + " thousands"
+                    }
+                }
+            },
+            colors: [lightColor],
+            grid: {
+                borderColor: borderColor,
+                strokeDashArray: 4,
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            },
+            markers: {
+                strokeColor: baseColor,
+                strokeWidth: 3
+            }
+        };
+    
+        var chart = new ApexCharts(element, options);
+        chart.render();   
+    }
 
     // Column Chart (Need keep)
-    var element = document.getElementById('kt_apexcharts_1');
+    var element = document.getElementById('salestransactions');
 
     var height = parseInt(KTUtil.css(element, 'height'));
     var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
@@ -4289,7 +4562,7 @@ var KTWidgets = function () {
             // Dark Mode
             initDarkModeToggle();      
 
-            // Essential widgets
+            // Essential Widgets
             subscribers();
             mrr();
             arpa();
@@ -4322,6 +4595,9 @@ var KTWidgets = function () {
             cogs();
             a_grossmargin();
             p_grossmargin();
+            
+            // Dashboard Widgets
+            dash_salestransactions();
             
             initChartsWidget2();
 
