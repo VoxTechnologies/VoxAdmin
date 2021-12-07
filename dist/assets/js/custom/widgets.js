@@ -3802,20 +3802,16 @@ var KTWidgets = function () {
     
             var options = {
                 series: [{
-                    name: 'Private',
-                    data: [35, 65, 75, 55, 45, 60, 55]
+                    name: 'Sales Transaction',
+                    data: [8083924, 8828441, 9382449, 10324284, 11318069, 12492350]
                 }, {
-                    name: 'Shared',
-                    data: [40, 70, 80, 60, 50, 65, 60]
-                }, {
-                    name: 'Public',
-                    data: [40, 70, 80, 60, 50, 65, 60]
+                    name: 'COGS',
+                    data: [6242492, 6642421, 7132842, 7452492, 7942893, 8348320]
                 }],
                 chart: {
                     fontFamily: 'inherit',
                     type: 'bar',
                     height: height,
-                    stacked: true,
                     toolbar: {
                         show: false
                     },
@@ -3826,8 +3822,8 @@ var KTWidgets = function () {
                 plotOptions: {
                     bar: {
                         horizontal: false,
-                        columnWidth: ['20%'],
-                        borderRadius: 6
+                        columnWidth: ['28%'],
+                        borderRadius: 5
                     }
                 },
                 legend: {
@@ -3842,7 +3838,7 @@ var KTWidgets = function () {
                     colors: ['transparent']
                 },
                 xaxis: {
-                    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                    categories: ['Jul 24', 'Aug 24', 'Sep 24', 'Oct 24', 'Nov 24', 'Dec 24'],
                     axisBorder: {
                         show: false,
                     },
@@ -3866,7 +3862,7 @@ var KTWidgets = function () {
                 },
                 fill: {
                     type: ['solid', 'solid', 'solid'],
-                    opacity: [1, 0.5, 0.75]
+                    opacity: [1, 0.2, 0.6]
                 },
                 states: {
                     normal: {
