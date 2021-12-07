@@ -140,7 +140,7 @@ var KTWidgets = function () {
             var options = {
                 series: [{
                     name: 'MRR',
-                    data: [8358332, 8589215, 8872528, 9349432, 9302950, 8942529]
+                    data: [8358332, 8589215, 8872528, 8942529, 9102950, 9349432]
                 }],
                 chart: {
                     fontFamily: 'inherit',
@@ -3893,9 +3893,6 @@ var KTWidgets = function () {
                         formatter: function (val) {
                             return "$" + val
                         }
-                    },
-                    marker: {
-                        show: false
                     }
                 },
                 colors: ['#51BADE', '#51BADE'],
@@ -3911,6 +3908,402 @@ var KTWidgets = function () {
                         left: 20,
                         right: 20
                     }
+                }
+            };
+    
+            var chart = new ApexCharts(element, options);
+            chart.render()
+        });        
+    }
+    
+    // MRR
+    var dash_mrr = function() {
+        var charts = document.querySelectorAll('.dash_mrr');
+    
+        var color;
+        var strokeColor;
+        var height;
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var options;
+        var chart;
+    
+        [].slice.call(charts).map(function(element) {            
+            height = parseInt(KTUtil.css(element, 'height'));
+    
+            var options = {
+                series: [{
+                    name: 'Churn MRR',
+                    data: [-53591, -51324, -52953, -54852, -53852, -55739]
+                }, {
+                    name: 'Contraction MRR',
+                        data: [-4958, -5580, -6290, -6953, -6492, -7124]
+                    }, {                   
+                    name: 'New MRR',
+                        data: [94821, 104829, 124820, 149825, 138421, 157209]
+                }, {
+                    name: 'Expansion MRR',
+                        data: [13530, 14593, 15238, 14582, 15824, 16952]
+                }, {
+                    name: 'Reactivation MRR',
+                    data: [4243, 3958, 4257, 4672, 4827, 4992]
+                }],
+                chart: {
+                    fontFamily: 'inherit',
+                    type: 'bar',
+                    stacked: true,
+                    height: height,
+                    toolbar: {
+                        show: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: false,
+                        columnWidth: ['26%'],
+                        borderRadius: 0
+                    }
+                },
+                legend: {
+                    show: false
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 1,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['Jul 24', 'Aug 24', 'Sep 24', 'Oct 24', 'Nov 24', 'Dec 24'],
+                    axisBorder: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false
+                    },
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                yaxis: {
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                fill: {
+                    type: ['solid', 'solid', 'solid', 'solid', 'solid'],
+                    opacity: [0.4, 0.2, 0.8, 0.5, 0.2]
+                },
+                states: {
+                    normal: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    hover: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    active: {
+                        allowMultipleDataPointsSelection: false,
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    }
+                },
+                tooltip: {
+                    style: {
+                        fontSize: '12px'
+                    },
+                    y: {
+                        formatter: function (val) {
+                            return "$" + val
+                        }
+                    }
+                },
+                colors: ['#001720', '#001720', '#DCF1F8', '#DCF1F8', '#DCF1F8'],
+                grid: {
+                    borderColor: borderColor,
+                    strokeDashArray: 4,
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                    padding: {
+                        left: 20,
+                        right: 20
+                    }
+                }
+            };
+    
+            var chart = new ApexCharts(element, options);
+            chart.render()
+        });        
+    }
+    
+    // Full CAC
+    var dash_cac = function() {
+        var charts = document.querySelectorAll('.dash_cac');
+    
+        var color;
+        var strokeColor;
+        var height;
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var options;
+        var chart;
+    
+        [].slice.call(charts).map(function(element) {            
+            height = parseInt(KTUtil.css(element, 'height'));
+    
+            var options = {
+                series: [{
+                    name: 'Paid CAC',
+                    data: [334.59, 330.39, 326.42, 328.39, 326.48, 324.23]
+                }, {
+                    name: 'Organic CAC',
+                    data: [148.49, 143.98, 146.59, 138.95, 142.04, 135.48]
+                }],
+                chart: {
+                    fontFamily: 'inherit',
+                    type: 'bar',
+                    height: height,
+                    toolbar: {
+                        show: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                plotOptions: {
+                    bar: {
+                        horizontal: false,
+                        columnWidth: ['28%'],
+                        borderRadius: 5
+                    }
+                },
+                legend: {
+                    show: false
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                stroke: {
+                    show: true,
+                    width: 1,
+                    colors: ['transparent']
+                },
+                xaxis: {
+                    categories: ['Jul 24', 'Aug 24', 'Sep 24', 'Oct 24', 'Nov 24', 'Dec 24'],
+                    axisBorder: {
+                        show: false,
+                    },
+                    axisTicks: {
+                        show: false
+                    },
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                yaxis: {
+                    labels: {
+                        style: {
+                            colors: labelColor,
+                            fontSize: '12px'
+                        }
+                    }
+                },
+                fill: {
+                    type: ['solid', 'solid'],
+                    opacity: [0.4, 1]
+                },
+                states: {
+                    normal: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    hover: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    active: {
+                        allowMultipleDataPointsSelection: false,
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    }
+                },
+                tooltip: {
+                    style: {
+                        fontSize: '12px'
+                    },
+                    y: {
+                        formatter: function (val) {
+                            return "$" + val
+                        }
+                    }
+                },
+                colors: ['#001720','#DCF1F8' ],
+                grid: {
+                    borderColor: borderColor,
+                    strokeDashArray: 4,
+                    yaxis: {
+                        lines: {
+                            show: true
+                        }
+                    },
+                    padding: {
+                        left: 20,
+                        right: 20
+                    }
+                }
+            };
+    
+            var chart = new ApexCharts(element, options);
+            chart.render()
+        });        
+    }
+    
+    // Subscribers
+    var dash_subscribers = function() {
+        var charts = document.querySelectorAll('.dash_subscribers');
+    
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var baseColor = KTUtil.getCssVariableValue('--bs-primary');
+        var lightColor = KTUtil.getCssVariableValue('--bs-gray-200');
+               
+            [].slice.call(charts).map(function(element) {            
+                height = parseInt(KTUtil.css(element, 'height'));
+       
+            var options = {
+                series: [{
+                    name: 'Leads',
+                    data: [7318, 7513, 7931, 8314, 8712, 8131]
+                }, {
+                    name: 'Trials',
+                    data: [1634, 1751, 1842, 1935, 2014, 2284]
+                }, {
+                    name: 'New Subscribers',
+                    data: [742, 798, 854, 930, 973, 1131]                    
+                }],
+                chart: {
+                    fontFamily: 'inherit',
+                    type: 'area',
+                    height: height,
+                    toolbar: {
+                        show: false
+                    },
+                    sparkline: {
+                        enabled: true
+                    },
+                },
+                plotOptions: {   
+                },
+                legend: {
+                    show: false
+                },
+                dataLabels: {
+                    enabled: false
+                },
+                fill: {
+                    type: ['solid', 'solid', 'solid'],
+                    opacity: [0.5, 0.5, 0.5]
+                },
+                stroke: {
+                    curve: 'smooth',
+                    show: true,
+                    width: 3,
+                    colors: ['#114557', '#1D7998', '#51BADE']
+                },
+                xaxis: {
+                    categories: ['Jul 24', 'Aug 24', 'Sep 24', 'Oct 24', 'Nov 24', 'Dec 24'],
+                    axisBorder: {
+                    show: false,
+                    },
+                    axisTicks: {
+                        show: false
+                    },
+                    labels: {
+                        show: false
+                    },
+                    crosshairs: {
+                        show: false
+                    },
+                    tooltip: {
+                        enabled: true,
+                        formatter: undefined,
+                        offsetY: 0,
+                        style: {
+                            fontSize: '12px'
+                        }
+                    },
+                },
+                yaxis: {
+                    show: false
+                },
+                states: {
+                    normal: {
+                        filter: {
+                        type: 'none',
+                        value: 0
+                        }
+                    },
+                    hover: {
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    },
+                    active: {
+                        allowMultipleDataPointsSelection: false,
+                        filter: {
+                            type: 'none',
+                            value: 0
+                        }
+                    }
+                },
+                tooltip: {
+                    style: {
+                        fontSize: '12px'
+                    },
+                    y: {
+                        formatter: function (val) {
+                            return val
+                        }
+                    }
+                },
+                colors: [lightColor, '#1D7998', '#51BADE'],
+                grid: {
+                    show: false
+                },
+                markers: {
+                    strokeColor: baseColor,
+                    strokeWidth: 3
                 }
             };
     
@@ -4596,6 +4989,9 @@ var KTWidgets = function () {
             
             // Dashboard Widgets
             dash_salestransactions();
+            dash_mrr();
+            dash_cac();
+            dash_subscribers();
             
             initChartsWidget2();
 
