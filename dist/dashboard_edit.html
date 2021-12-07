@@ -784,6 +784,11 @@
 											<!--end::Wrapper-->
 										</div>
 										<!--end::Tab pane-->
+										<!--begin::Tab pane for apexchart-->
+										<div class="tab-pane fade">
+											<div id="salestransactions"></div>
+										</div>
+										<!--end::Tab pane-->			
 									</div>
 									<!--end::Tab content-->
 								</div>
@@ -905,247 +910,189 @@
 						<!--begin::Container-->
 						<div class="container-xxl" id="kt_content_container">
 							<!--begin::Row-->
-							<div class="row gy-0 g-xl-8">
+							<div class="row gy-0 g-xl-8 draggable-zone">
 								<!--begin::Col-->
-								<div class="col-xl-6 draggable-zone">
-									<!--begin::Charts Widget 1-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8 draggable">
+								<div class="col-xl-6 draggable">
+									<!--begin::Sales Transaction-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush draggable-handle">	
 										<!--begin::Header-->
-										<div class="card-header border-0 pt-5 draggable-handle">
-											<!--begin::Card title-->
+										<div class="card-header border-0 py-6 " href="../dist/sales.html">
 											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Sales Transaction</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$283,482</span>												
+												<span class="card-label fw-bolder fs-6 mb-2 text-gray-900">Sales Transaction</span>
+												<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="12492350" data-kt-countup-prefix="$">0</span>
 											</h3>
-											<!--end::Card title-->
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar">
-												<!--begin::More options-->
-												<a href="#" class="btn btn-sm btn-icon btn-color-white btn-active-white" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-													<!--begin::Svg Icon | path: icons/duotune/general/gen052.svg-->
-													<span class="svg-icon svg-icon-3">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="17" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="3" y="10" width="4" height="4" rx="2" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</a>
-												<!--begin::Menu-->
-												<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-6 w-200px py-4" data-kt-menu="true">
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="#" class="menu-link px-3">Edit</a>
-													</div>
-													<!--end::Menu item-->
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="../dist/dashboard_edit.html" class="menu-link text-danger px-3" data-kt-subscriptions-view-action="edit">Delete</a>
-													</div>
-													<!--end::Menu item-->
-												</div>
-												<!--end::Menu-->
-												<!--end::More options-->
+											<div class="d-flex flex-column text-end mt-2">
+												<span class="text-gray-400 fw-bold fs-6">from $11,318,069</span>	
+												<span class="text-info fw-bold fs-2 mt-1">+9.4%</span>
 											</div>
-											<!--end::Card toolbar-->
 										</div>
 										<!--end::Header-->
 										<!--begin::Body-->
-										<div class="card-body d-flex align-items-end pb-0 px-5 pt-0">
-											<!--begin::Chart-->
-											<div id="kt_apexcharts_1" class="w-100" style="height: 350px"></div>
-											<!--end::Chart-->
-										</div>
-										<!--end::Body-->
-										<!--begin::Stats-->
-										<div class="card-rounded card position-relative card-px py-4">
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Net Sales</div>
-													<div class="fs-2 fw-bold text-gray-800">$6,500</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARPU</div>
-													<div class="fs-2 fw-bold text-gray-800">$230</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARPU Change</div>
-													<div class="fs-2 fw-bold text-gray-800">14%</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARR</div>
-													<div class="fs-2 fw-bold text-gray-800">$69,500</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">ARR Change</div>
-													<div class="fs-2 fw-bold text-gray-800">25%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Gross Margin</div>
-													<div class="fs-2 fw-bold text-gray-800">14%</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-										</div>
-										<!--end::Stats-->
-									</div>
-									<!--end::Charts Widget 1-->
-								</div>
-								<!--end::Col-->
-								<!--begin::Col-->
-								<div class="col-xl-6 draggable-zone">
-									<!--begin::Mixed Widget 2-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8 draggable">
-										<!--begin::Header-->
-										<div class="card-header border-0 bg-primary py-5 draggable-handle">
-											<!--begin::Card title-->
-											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">MRR</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$73,230</span>												
-											</h3>
-											<!--end::Card title-->
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar">
-												<!--begin::More options-->
-												<a href="#" class="btn btn-sm btn-icon btn-color-white btn-active-white" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-													<!--begin::Svg Icon | path: icons/duotune/general/gen052.svg-->
-													<span class="svg-icon svg-icon-3">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="17" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="3" y="10" width="4" height="4" rx="2" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</a>
-												<!--begin::Menu-->
-												<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-6 w-200px py-4" data-kt-menu="true">
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="#" class="menu-link px-3">Edit</a>
-													</div>
-													<!--end::Menu item-->
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="../dist/dashboard_edit.html" class="menu-link text-danger px-3" data-kt-subscriptions-view-action="edit">Delete</a>
-													</div>
-													<!--end::Menu item-->
-												</div>
-												<!--end::Menu-->
-												<!--end::More options-->
-											</div>
-											<!--end::Card toolbar-->
-										</div>
-										<!--end::Header-->
-										<!--begin::Body-->
-										<div class="card-body p-0">
-											<!--begin::Chart-->
-											<div class="charts-widget-2-chart card-rounded-bottom bg-primary" data-kt-color="primary" style="height: 255px"></div>
-											<!--end::Chart-->
+										<div class="card-body p-0 d-flex flex-column" href="../dist/sales.html">
 											<!--begin::Stats-->
-											<div class="card-rounded card mt-n10 position-relative card-px py-11">
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Existing MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$21,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$6,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Expantion MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$1,500</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Expantion MRR %</div>
-														<div class="fs-2 fw-bold text-gray-800">2.6%</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Contraction MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$400</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Churn MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$2,400</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Reactivation MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$200</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net New MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$2,000</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net MRR</div>
-														<div class="fs-2 fw-bold text-gray-800">$28,432</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
+											<div class="card-p mb-0 bg-body flex-grow-1">
 												<!--begin::Row-->
 												<div class="row g-0">
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Net MRR Growth</div>
-														<div class="fs-2 fw-bold text-gray-800">65%</div>
+														<div class="fs-7 text-gray-400 mb-2">Net Sales</div>
+														<div class="fs-3 fw-bold text-gray-800">$9,438,230</div>
 													</div>
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">NRR</div>
-														<div class="fs-2 fw-bold text-gray-800">55%</div>
+														<div class="fs-7 text-gray-400 mb-2">ARPA</div>
+														<div class="fs-3 fw-bold text-gray-800">$139.42</div>
 													</div>
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Quick Ratio</div>
-														<div class="fs-2 fw-bold text-gray-800">3.2</div>
+														<div class="fs-7 text-gray-400 mb-2">Purchasing Cost</div>
+														<div class="fs-3 fw-bold text-gray-800">$7,157,043</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Fulfillment Cost</div>
+														<div class="fs-3 fw-bold text-gray-800">$302,509</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Shipping Cost</div>
+														<div class="fs-3 fw-bold text-gray-800">$916,908</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Payment Cost</div>
+														<div class="fs-3 fw-bold text-gray-800">$290,784</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">COGS</div>
+														<div class="fs-3 fw-bold text-gray-800">$8,348,320</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">$Gross Margin</div>
+														<div class="fs-3 fw-bold text-gray-800">$4,144,030</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">%Gross Margin</div>
+														<div class="fs-3 fw-bold text-gray-800">33.2%</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Stats-->
+											<!--begin::Chart-->
+											<div class="dash_salestransactions card-rounded-bottom" style="height: 200px"></div>
+											<!--end::Chart-->
+										</div>
+										<!--end::Body-->
+									</div>
+									<!--end::Sales Transaction-->
+								</div>
+								<!--end::Col-->
+								<!--begin::Col-->
+								<div class="col-xl-6 draggable">
+									<!--begin::MRR-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8 draggable-handle">
+										<!--begin::Header-->
+										<div class="card-header border-0 bg-thirdry py-6" href="../dist/mrr.html">
+											<h3 class="card-title align-items-start flex-column">
+												<span class="card-label fw-bolder fs-6 mb-2">MRR</span>
+												<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="9349432" data-kt-countup-prefix="$">0</span>					
+											</h3>
+											<div class="d-flex flex-column text-end mt-2">
+												<span class="text-info fw-bold fs-6">from $9,102,950</span>	
+												<span class="text-gray-800 fw-bold fs-2 mt-1">+2.6%</span>
+											</div>
+										</div>
+										<!--end::Header-->
+										<!--begin::Body-->
+										<div class="card-body p-0 d-flex flex-column" href="../dist/mrr.html">
+											<!--begin::Chart-->
+											<div class="dash_mrr card-rounded-bottom bg-thirdry" data-kt-color="primary" style="height: 200px"></div>
+											<!--end::Chart-->
+											<!--begin::Stats-->
+											<div class="card-rounded card position-relative bg-thirdry card-px flex-grow-1 mt-n10 py-12">
+												<!--begin::Row-->
+												<div class="row g-0 mt-2">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Existing MRR</div>
+														<div class="fs-3 fw-bold text-dark">$9,102,950</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">New MRR</div>
+														<div class="fs-3 fw-bold text-dark">$157,209</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Churn MRR</div>
+														<div class="fs-3 fw-bold text-dark">$55,739</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Expansion MRR</div>
+														<div class="fs-3 fw-bold text-dark">$16,952</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Contraction MRR</div>
+														<div class="fs-3 fw-bold text-dark">$7,124</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Reactivation MRR</div>
+														<div class="fs-3 fw-bold text-dark">$4,992</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Net New MRR</div>
+														<div class="fs-3 fw-bold text-dark">$116,290</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">NRR</div>
+														<div class="fs-3 fw-bold text-dark">99.5%</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-info mb-2">Quick Ratio</div>
+														<div class="fs-3 fw-bold text-dark">2.8</div>
 													</div>
 													<!--end::Col-->
 												</div>
@@ -1155,149 +1102,98 @@
 										</div>
 										<!--end::Body-->
 									</div>
-									<!--end::Mixed Widget 2-->
+									<!--end::MRR-->
 								</div>
 								<!--end::Col-->
 							</div>
 							<!--end::Row-->
 							<!--begin::Row-->
-							<div class="row gy-0 g-xl-8">
+							<div class="row gy-0 g-xl-8 draggable-zone">
 								<!--begin::Col-->
-								<div class="col-xl-6 draggable-zone">
-									<!--begin::Mixed Widget 2-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush draggable">
+								<div class="col-xl-6 draggable">
+									<!--begin::Full CAC-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8 card-flush draggable-handle">
 										<!--begin::Header-->
-										<div class="card-header border-0 bg-thirdry py-5 draggable-handle">
-											<!--begin::Card title-->
+										<div class="card-header border-0 bg-thirdry py-6" href="../dist/cac.html">
 											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Full CAC</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">$145</span>												
+												<span class="card-label fw-bolder fs-6 mb-2 text-gray-900">Full CAC</span>
+												<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="263.73" data-kt-countup-prefix="$">0</span>					
 											</h3>
-											<!--end::Card title-->
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar">
-												<!--begin::More options-->
-												<a href="#" class="btn btn-sm btn-icon btn-color-white btn-active-white" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-													<!--begin::Svg Icon | path: icons/duotune/general/gen052.svg-->
-													<span class="svg-icon svg-icon-3">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="17" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="3" y="10" width="4" height="4" rx="2" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</a>
-												<!--begin::Menu-->
-												<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-6 w-200px py-4" data-kt-menu="true">
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="#" class="menu-link px-3">Edit</a>
-													</div>
-													<!--end::Menu item-->
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="../dist/dashboard_edit.html" class="menu-link text-danger px-3" data-kt-subscriptions-view-action="edit">Delete</a>
-													</div>
-													<!--end::Menu item-->
-												</div>
-												<!--end::Menu-->
-												<!--end::More options-->
+											<div class="d-flex flex-column text-end mt-2">
+												<span class="text-info fw-bold fs-6">from $266.63</span>	
+												<span class="text-gray-800 fw-bold fs-2 mt-1">-1.1%</span>
 											</div>
-											<!--end::Card toolbar-->
 										</div>
 										<!--end::Header-->
 										<!--begin::Body-->
-										<div class="card-body p-0">
+										<div class="card-body p-0 d-flex flex-column" href="../dist/cac.html">
 											<!--begin::Chart-->
-											<div class="charts-widget-2-chart card-rounded-bottom bg-thirdry" data-kt-color="primary" style="height: 245px"></div>
+											<div class="dash_cac card-rounded-bottom bg-thirdry" style="height: 200px"></div>
 											<!--end::Chart-->
 											<!--begin::Stats-->
-											<div class="card-rounded card mt-n5 position-relative card-px py-11">
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Visitor</div>
-														<div class="fs-2 fw-bold text-gray-800">538,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New Lead</div>
-														<div class="fs-2 fw-bold text-gray-800">85,500</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">New Trial</div>
-														<div class="fs-2 fw-bold text-gray-800">3,953</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Paid CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$231</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Organic CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$135</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Blended CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$324</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
-												<!--begin::Row-->
-												<div class="row g-0 mb-7">
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Salaries/Wages</div>
-														<div class="fs-2 fw-bold text-gray-800">$214,932</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Overhead</div>
-														<div class="fs-2 fw-bold text-gray-800">$45,934</div>
-													</div>
-													<!--end::Col-->
-													<!--begin::Col-->
-													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Full CAC</div>
-														<div class="fs-2 fw-bold text-gray-800">$324</div>
-													</div>
-													<!--end::Col-->
-												</div>
-												<!--end::Row-->
+											<div class="card-rounded card position-relative card-px flex-grow-1 mt-n10 py-12">
 												<!--begin::Row-->
 												<div class="row g-0">
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">LTV</div>
-														<div class="fs-2 fw-bold text-gray-800">$4,932</div>
+														<div class="fs-7 text-gray-400 mb-2">Paid CAC</div>
+														<div class="fs-3 fw-bold text-gray-800">$324.23</div>
 													</div>
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">LTV:CAC Ratio</div>
-														<div class="fs-2 fw-bold text-gray-800">2.5</div>
+														<div class="fs-7 text-gray-400 mb-2">Organic CAC</div>
+														<div class="fs-3 fw-bold text-gray-800">$135.48</div>
 													</div>
 													<!--end::Col-->
 													<!--begin::Col-->
 													<div class="col mx-5">
-														<div class="fs-7 text-gray-500 mb-1">Payback Period</div>
-														<div class="fs-2 fw-bold text-gray-800">3.5</div>
+														<div class="fs-7 text-gray-400 mb-2">Blended CAC</div>
+														<div class="fs-3 fw-bold text-gray-800">$234.84</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Ad Spend</div>
+														<div class="fs-3 fw-bold text-gray-800">$174,932</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">S&M</div>
+														<div class="fs-3 fw-bold text-gray-800">298,483</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Full CAC</div>
+														<div class="fs-3 fw-bold text-gray-800">$263.73</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">LTV</div>
+														<div class="fs-3 fw-bold text-gray-800">$4,932</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">LTV:CAC Ratio</div>
+														<div class="fs-3 fw-bold text-gray-800">2.5</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Payback Period</div>
+														<div class="fs-3 fw-bold text-gray-800">3.5</div>
 													</div>
 													<!--end::Col-->
 												</div>
@@ -1307,112 +1203,104 @@
 										</div>
 										<!--end::Body-->
 									</div>
-									<!--end::Mixed Widget 2-->
+									<!--end::Full CAC-->
 								</div>
 								<!--end::Col-->
 								<!--begin::Col-->
-								<div class="col-xl-6 draggable-zone">
-									<!--begin::Charts Widget 1-->
-									<div class="card card-xl-stretch mb-5 mb-xl-8 draggable">
+								<div class="col-xl-6 draggable">
+									<!--begin::Subscribers-->
+									<div class="card card-xl-stretch mb-5 mb-xl-8 draggable-handle">
 										<!--begin::Header-->
-										<div class="card-header border-0 pt-5 draggable-handle">
-											<!--begin::Card title-->
+										<div class="card-header border-0 py-6" href="../dist/subscribers.html">
 											<h3 class="card-title align-items-start flex-column">
-												<span class="card-label fw-bolder fs-6 mb-2">Subscribers</span>
-												<span class="text-muted fw-bolder fs-2x text-gray-900">1,280</span>												
+												<span class="card-label fw-bolder fs-6 mb-2 text-gray-900">Subscribers</span>
+												<span class="text-muted fw-bold fs-2x text-gray-900" data-kt-countup="true" data-kt-countup-value="69425">0</span>
 											</h3>
-											<!--end::Card title-->
-											<!--begin::Card toolbar-->
-											<div class="card-toolbar">
-												<!--begin::More options-->
-												<a href="#" class="btn btn-sm btn-icon btn-color-white btn-active-white" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">
-													<!--begin::Svg Icon | path: icons/duotune/general/gen052.svg-->
-													<span class="svg-icon svg-icon-3">
-														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-															<rect x="10" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="17" y="10" width="4" height="4" rx="2" fill="black" />
-															<rect x="3" y="10" width="4" height="4" rx="2" fill="black" />
-														</svg>
-													</span>
-													<!--end::Svg Icon-->
-												</a>
-												<!--begin::Menu-->
-												<div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-6 w-200px py-4" data-kt-menu="true">
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="#" class="menu-link px-3">Edit</a>
-													</div>
-													<!--end::Menu item-->
-													<!--begin::Menu item-->
-													<div class="menu-item px-3">
-														<a href="../dist/dashboard_edit.html" class="menu-link text-danger px-3" data-kt-subscriptions-view-action="edit">Delete</a>
-													</div>
-													<!--end::Menu item-->
-												</div>
-												<!--end::Menu-->
-												<!--end::More options-->
+											<div class="d-flex flex-column text-end mt-2">
+												<span class="text-gray-400 fw-bold fs-6">from 67,234</span>	
+												<span class="text-info fw-bold fs-2 mt-1">+3.1%</span>
 											</div>
-											<!--end::Card toolbar-->
 										</div>
 										<!--end::Header-->
 										<!--begin::Body-->
-										<div class="card-body d-flex align-items-end pb-0 px-5">
+										<div class="card-body p-0 d-flex flex-column" href="../dist/subscribers.html">
+											<!--begin::Stats-->
+											<div class="card-p mb-0 bg-body flex-grow-1">
+												<!--begin::Row-->
+												<div class="row g-0">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">New Leads</div>
+														<div class="fs-3 fw-bold text-gray-800">1,428</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Cost Per Lead</div>
+														<div class="fs-3 fw-bold text-gray-800">$5.8</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Total Leads</div>
+														<div class="fs-3 fw-bold text-gray-800">8,131</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">New Trials</div>
+														<div class="fs-3 fw-bold text-gray-800">389</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Cost Per Trial</div>
+														<div class="fs-3 fw-bold text-gray-800">$115.5</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">Total Trials</div>
+														<div class="fs-3 fw-bold text-gray-800">2,284</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+												<!--begin::Row-->
+												<div class="row g-0 mt-7">
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">New Subscribers</div>
+														<div class="fs-3 fw-bold text-gray-800">1,131</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">#Customer Churn</div>
+														<div class="fs-3 fw-bold text-gray-800">401</div>
+													</div>
+													<!--end::Col-->
+													<!--begin::Col-->
+													<div class="col mx-5">
+														<div class="fs-7 text-gray-400 mb-2">%Customer Churn</div>
+														<div class="fs-3 fw-bold text-gray-800">0.14%</div>
+													</div>
+													<!--end::Col-->
+												</div>
+												<!--end::Row-->
+											</div>
+											<!--end::Stats-->
 											<!--begin::Chart-->
-											<div id="kt_charts_widget_1_chart" class="w-100" style="height: 350px"></div>
+											<div class="dash_subscribers card-rounded-bottom" style="height: 200px"></div>
 											<!--end::Chart-->
 										</div>
 										<!--end::Body-->
-										<!--begin::Stats-->
-										<div class="card-rounded card position-relative card-px py-4">
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">New Subscribers</div>
-													<div class="fs-2 fw-bold text-gray-800">843</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">13</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Total Subscribers</div>
-													<div class="fs-2 fw-bold text-gray-800">21,243</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->
-											<!--begin::Row-->
-											<div class="row g-0 mb-7">
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Customer Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">3.2%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Gross MRR Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">1.5%</div>
-												</div>
-												<!--end::Col-->
-												<!--begin::Col-->
-												<div class="col mx-5">
-													<div class="fs-7 text-gray-500 mb-1">Net MRR Churn</div>
-													<div class="fs-2 fw-bold text-gray-800">2.7%</div>
-												</div>
-												<!--end::Col-->
-											</div>
-											<!--end::Row-->	
-
-										</div>
-										<!--end::Stats-->
 									</div>
-									<!--end::Charts Widget 1-->
+									<!--end::Subscribers-->
 								</div>
 								<!--end::Col-->
 							</div>
