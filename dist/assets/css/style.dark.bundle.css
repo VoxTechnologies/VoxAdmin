@@ -37598,7 +37598,7 @@ a:hover {
 }
 
 .btn.btn-light {
-  color: #145369;
+  color: #5296ad;
   border-color: #0b3242;
   background-color: #0b3242;
 }
@@ -37613,7 +37613,7 @@ a:hover {
   transition: fill 0.3s ease;
 }
 .btn.btn-light.dropdown-toggle:after {
-  color: #145369;
+  color: #5296ad;
 }
 .btn-check:checked + .btn.btn-light, .btn-check:active + .btn.btn-light, .btn.btn-light:focus:not(.btn-active), .btn.btn-light:hover:not(.btn-active), .btn.btn-light:active:not(.btn-active), .btn.btn-light.active, .btn.btn-light.show, .show > .btn.btn-light {
   color: #145369;
